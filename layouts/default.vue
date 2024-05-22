@@ -1,21 +1,24 @@
 <template>
-  <UHorizontalNavigation :links="links" x>
-    <template #default="{ link }">
-      <span class="group-hover:text-primary relative text-2xl">{{
-        link.label
-      }}</span>
-    </template>
-  </UHorizontalNavigation>
+  <UHorizontalNavigation
+    :links="links"
+    class="border-b-2 border-white-300"
+    :ui="{
+      label: 'text-xl text-white-50 font-medium',
+      active: 'font-bold',
+      after: 'after:h-[0px]',
+    }"
+  />
+
   <slot />
 </template>
 
 <script setup lang="ts">
-const colorMode = useColorMode();
 const links = [
   [],
   [
     {
       label: "ENTREPOT DEL TARTUFO",
+      labelClass: "font-bold text-3xl font-color-white",
       to: "/",
     },
   ],
