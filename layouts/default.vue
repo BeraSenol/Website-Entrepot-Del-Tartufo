@@ -1,13 +1,25 @@
 <template>
-  <UHorizontalNavigation
-    :links="links"
-    class="border-b-2 border-white-300"
-    :ui="{
-      label: 'text-xl text-white-50 font-medium',
-      active: 'font-bold',
-      after: 'after:h-[0px]',
-    }"
-  />
+  <div class="hidden lg:block">
+    <UHorizontalNavigation
+      :links="links"
+      class="border-b-2 border-white-300"
+      :ui="{
+        label: 'text-xl text-white-50 font-medium',
+        active: 'font-bold',
+        after: 'after:h-[0px]',
+      }"
+    />
+  </div>
+  <div class="block lg:hidden">
+    <UVerticalNavigation
+      :links="links"
+      :ui="{
+        label: 'text-xl text-white-50 font-medium ml-4',
+        active: 'font-bold before:bg-grey-900 dark:before:bg-grey-900',
+        after: 'after:h-[0px]',
+      }"
+    />
+  </div>
 
   <slot />
 </template>
@@ -22,7 +34,6 @@ const links = [
       to: "/",
     },
   ],
-  [],
   [
     {
       label: "Menu",

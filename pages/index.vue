@@ -1,5 +1,7 @@
 <template>
-  <UContainer class="bg-white-50 text-black-900 rounded-lg mt-8 text-center">
+  <UContainer
+    class="bg-white-50 text-black-900 rounded-lg mt-8 text-center sm:max-xl:mx-6"
+  >
     <UContainer class="flex justify-center pt-8">
       <img
         src="/assets/logo.jpg"
@@ -19,8 +21,8 @@
       Kom genieten van onze heerlijke lunch! Lunchmenu varieert van week tot
       week. <br />
       Maandag | Donderdag | Vrijdag <br />
-      2 Gangen 30 EUR <br />
-      3 Gangen 40 EUR <br />
+      2 Gangen €30 <br />
+      3 Gangen €40 <br />
     </p>
     <UButton
       color="black"
