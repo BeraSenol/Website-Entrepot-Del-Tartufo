@@ -1,6 +1,6 @@
 <template>
   <UContainer
-    class="bg-white-50 text-black-900 rounded-lg mt-8 text-center sm:max-xl:mx-6"
+    class="bg-white-50 text-black-900 place-items-center rounded-lg mt-8 text-center sm:max-xl:mx-6"
   >
     <UContainer class="flex justify-center pt-8">
       <img
@@ -26,18 +26,18 @@
     </p>
     <UButton
       color="black"
-      size="xl"
+      size="sm"
       variant="link"
       to="reservation"
-      class="text-lg"
+      class="text-lg my-4"
     >
       Klik Hier Om Te Reserveren
     </UButton>
     <p class="text-3xl pb-4 py-8 italic">Parmezaanbus @ CASA</p>
-    <p class="text-lg px-16">
+    <p class="text-lg">
       De Parmezaanbus brengt de restaurant-experience bij jouw thuis. Naast
       gerechten die op te warmen zijn bereiden wij op jouw oprit à la minute
-      Tagliolini al Tartufo – pasta gedraaid in een grote Parmzaanse kaas
+      Tagliolini al Tartufo - pasta gedraaid in een grote Parmzaanse kaas
       afgetopt met verse geraspte truffel. Donderdag t.e.m. maandag | Regio
       Hasselt | Levering en bereiding duurt 30min. tussen 18u en 20u | vanaf 6
       personen
@@ -46,11 +46,16 @@
       color="black"
       size="xl"
       variant="link"
-      to="reservation"
-      class="text-lg pb-8"
+      to="parmezan"
+      class="text-lg my-4 pb-4"
     >
       Reserveer de Parmezaanbus
     </UButton>
+    <p class="text-3xl pb-4 py-8 italic">Get In Touch</p>
+    <p class="text-lg pb-8">
+      Heeft u nog verdere vragen? <br />
+      Aarzel niet om contact op te nemen: info@entrepotdeltartufo.com
+    </p>
   </UContainer>
 </template>
 
