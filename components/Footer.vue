@@ -8,7 +8,7 @@
         Italian food with a touch of truffle
         <UContainer class="flex justify-center m-4">
           <div class="mx-1">
-            <a href="https://www.facebook.com/share/k9shNpfCWvVqujP6/">
+            <a href="https://www.facebook.com/share/k9shNpfCWvVqujP6/" target="_blank">
               <svg
                 width="2em"
                 height="2em"
@@ -24,7 +24,7 @@
           </div>
           <div class="mx-1">
             <a
-              href="https://www.instagram.com/entrepotdeltartufo"
+              href="https://www.instagram.com/entrepotdeltartufo" target="_blank"
             >
               <svg
                 width="2em"
@@ -45,7 +45,7 @@
         <p class="text-2xl font-bold">CONTACT</p>
         <br />
 
-        <a href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8"> Hemelrijk 22 / 3500 Hasselt</a>  <br />
+        <a href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank"> Hemelrijk 22 / 3500 Hasselt</a>  <br />
         <a href="tel:0472930869">0472 93 08 69</a> <br />
         <a href="mailto:info@entrepotdeltartufo.com">info@entrepotdeltartufo.com </a>
       </div>

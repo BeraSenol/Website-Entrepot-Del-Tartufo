@@ -35,11 +35,11 @@
     </UButton>
     <p class="text-3xl pb-4 py-8 italic">Parmezaanbus @ CASA</p>
     <p class="text-lg">
-      De Parmezaanbus brengt de restaurant-experience bij jouw thuis. Naast
-      gerechten die op te warmen zijn bereiden wij op jouw oprit à la minute
-      Tagliolini al Tartufo - pasta gedraaid in een grote Parmzaanse kaas
-      afgetopt met verse geraspte truffel. Donderdag t.e.m. maandag | Regio
-      Hasselt | Levering en bereiding duurt 30min. tussen 18u en 20u | vanaf 6
+      De Parmezaanbus brengt de restaurant-experience bij jouw thuis.
+      <br />Naast gerechten die op te warmen zijn bereiden wij op jouw oprit à
+      la minute Tagliolini al Tartufo - pasta gedraaid in een grote Parmzaanse
+      kaas afgetopt met verse geraspte truffel. <br />Donderdag t.e.m. maandag |
+      Regio Hasselt | Levering en bereiding duurt 30m tussen 18h - 20h | vanaf 6
       personen
     </p>
     <UButton
