@@ -39,8 +39,8 @@
       <br />Naast gerechten die op te warmen zijn bereiden wij op jouw oprit à
       la minute Tagliolini al Tartufo - pasta gedraaid in een grote Parmzaanse
       kaas afgetopt met verse geraspte truffel. <br />Donderdag t.e.m. maandag |
-      Regio Hasselt | Levering en bereiding duurt 30m tussen 18h - 20h | vanaf 6
-      personen
+      Regio Hasselt | Levering en bereiding duurt 30m tussen 18h - 20h | vanaf
+      6pers
     </p>
     <UButton
       color="black"

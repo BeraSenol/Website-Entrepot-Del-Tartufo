@@ -1,12 +1,11 @@
 <template>
   <div>
     <UContainer class="flex text-center justify-center flex-col md:flex-row">
-      <div class="sm:max-md:mt-4 my-8 basis-1/3">
-        <p class="text-2xl font-bold">ENTREPOT DEL TARTUFO</p>
-        <br />
+      <div class="sm:max-md:mt-4 my-4 basis-1/3">
+        <p class="text-2xl font-bold my-4">ENTREPOT DEL TARTUFO</p>
 
-        Italian food with a touch of truffle
-        <UContainer class="flex justify-center m-4">
+        <p class="my-4">Italian food with a touch of truffle</p>
+        <UContainer class="flex justify-center">
           <div class="mx-1">
             <a href="https://www.facebook.com/share/k9shNpfCWvVqujP6/" target="_blank">
               <svg
@@ -41,20 +40,28 @@
           </div>
         </UContainer>
       </div>
-      <div class="sm:max-md:mt-4 my-8 basis-1/3">
-        <p class="text-2xl font-bold">CONTACT</p>
-        <br />
-
+      <div class="sm:max-md:mt-4 my-4 basis-1/3">
+        <p class="text-2xl font-bold my-4">CONTACT</p>
         <a href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank"> Hemelrijk 22 / 3500 Hasselt</a>  <br />
         <a href="tel:0472930869">0472 93 08 69</a> <br />
         <a href="mailto:info@entrepotdeltartufo.com">info@entrepotdeltartufo.com </a>
       </div>
-      <div class="sm:max-md:mt-4 my-8 basis-1/3">
-        <p class="text-2xl font-bold">OPENINGSUREN</p>
-        <br />
-        MA, DO & VR: 12h - 14h & 18h - 22h <br />
-        ZA & ZO: 18h - 22h <br />
-        DI & WO: gesloten
+      <div class="sm:max-md:mt-4 my-4 basis-1/3">
+        <p class="text-2xl font-bold my-4">OPENINGSUREN</p>
+        <UContainer class="grid grid-cols-2 gap-x-10 gap-y-1">
+                
+                <div class="text-right"> MA / DO / VR</div>
+
+                <div class="text-left gap-y-0"> 12h - 14h <br> 18h - 22h</div>
+                <div class="text-right"> ZA / ZO</div>
+
+                <div class="text-left"> 18h - 22h </div>
+
+                <div class="text-right"> DI / WO</div>
+
+                <div class="text-left"> Gesloten</div>
+        </UContainer>
+         
       </div>
     </UContainer>
   </div>
