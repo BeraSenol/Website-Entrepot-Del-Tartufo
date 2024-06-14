@@ -3,18 +3,19 @@
     class="bg-white-50 text-black-900 place-items-center rounded-lg mt-8 text-center sm:max-xl:mx-6"
   >
     <p class="text-3xl py-8 italic">OVER ONS</p>
-    <p class="text-lg py-4 px-20 text-left">
+    <p class="text-lg py-4 px-4 md:px-16 text-left">
       Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse
       keuken naar hartje Hasselt. Nicolino Salvatore, alom gewaardeerd als chef
       van de vroegere Mario's Trattoria bereidt klassieke en minder klassieke
       Italiaanse gerechten met een touch of truffle. De jonge Olivier Daenen met
       gastronomische ervaring over de landsgrenzen heen, serveert als aperitief
-      zelf bereide "Barrel Aged" cocktails. Olivier laat u vervolgens een keuze
-      maken tussen steengoede Italiaanse- & wereldwijnen. Na het tafelen, kan u
-      digestieven met een heerlijke grappa of limoncello. Het restaurant is
-      gelegen in een charmant oud pakhuis in het rustige hemelrijk. Kortom, bij
-      ons gaat het om lekker eten in een ongestoorde gezellige sfeer. Onder het
-      motto:
+      zelf bereide "Barrel Aged" cocktails.
+      <br />
+      <br />Olivier laat u vervolgens een keuze maken tussen steengoede
+      Italiaanse- & wereldwijnen. Na het tafelen, kan u digestieven met een
+      heerlijke grappa of limoncello. Het restaurant is gelegen in een charmant
+      oud pakhuis in het rustige hemelrijk. Kortom, bij ons gaat het om lekker
+      eten in een ongestoorde gezellige sfeer. Onder het motto:
     </p>
     <UContainer class="pt-4 pb-8">
       Eenvoud is de ultieme verfijning <br />
@@ -22,7 +23,7 @@
       Simplicity is the ultimate sophistication <br />
     </UContainer>
     <p class="text-3xl py-8 italic">DEN ENTREPOT</p>
-    <p class="text-lg py-4 px-20 text-left">
+    <p class="text-lg py-4 px-4 md:px-16 text-left">
       <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en
       achter de gevel van elk huis en elk gebouw schuilt een verhaal… En waar
       past het karaktervolle gebouw Den Entrepot ergens in deze historie?
