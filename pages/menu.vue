@@ -2,10 +2,8 @@
   <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
     <UCard>
       <template #header>
-        <p class="text-center text-xl font-bold tracking-wider">
-          ANTIPASTI
-        </p></template
-      >
+        <p class="text-center text-xl font-bold tracking-wider">ANTIPASTI</p>
+      </template>
       <template v-for="antiPasti in antiPastis">
         <UContainer class="grid grid-rows-2 grid-flow-col gap-1 mb-6">
           <p class="font-bold">{{ antiPasti.title }}</p>
