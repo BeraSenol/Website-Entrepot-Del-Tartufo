@@ -1,9 +1,9 @@
 <template>
   <UContainer
-    class="bg-white-50 text-black-900 place-items-center rounded-lg mt-8 text-center sm:max-xl:mx-6"
+    class="place-items-center rounded-lg mt-8 text-center sm:max-xl:mx-6"
   >
-    <p class="text-3xl py-8 italic">OVER ONS</p>
-    <p class="text-lg py-4 px-4 md:px-16 text-left">
+    <p class="text-3xl pb-1 pt-8 italic">OVER ONS</p>
+    <p class="text-lg py-4 px-4 md:px-16 text-justify">
       Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse
       keuken naar hartje Hasselt. Nicolino Salvatore, alom gewaardeerd als chef
       van de vroegere Mario's Trattoria bereidt klassieke en minder klassieke
@@ -22,7 +22,7 @@
       La semplicità è l'ultima sofisticazione <br />
       Simplicity is the ultimate sophistication <br />
     </UContainer>
-    <p class="text-3xl py-8 italic">DEN ENTREPOT</p>
+    <p class="text-3xl pb-1 pt-8 italic">DEN ENTREPOT</p>
     <p class="text-lg py-4 px-4 md:px-16 text-left">
       <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en
       achter de gevel van elk huis en elk gebouw schuilt een verhaal… En waar
