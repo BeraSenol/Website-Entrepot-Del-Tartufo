@@ -17,14 +17,14 @@
     </p>
   </UContainer>
   <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-    <UContainer class="w-4/5 max-w-xl mt-4 mb-8">
+    <UContainer class="w-4/5 max-w-xl mt-0 mb-8">
       <UForm
         :schema="schema"
         :state="state"
         class="space-y-4"
         @submit="onSubmit"
       >
-        <UFormGroup label="Naam" name="name" required>
+        <UFormGroup label="Naam" name="name" required size="lg">
           <UInput
             v-model="state.name"
             :ui="{
@@ -41,6 +41,7 @@
           name="email"
           placeholder="you@example.com"
           required
+          size="lg"
         >
           <UInput
             v-model="state.email"
@@ -53,7 +54,7 @@
             }"
           />
         </UFormGroup>
-        <UFormGroup name="textarea" label="Opmerking" required>
+        <UFormGroup name="textarea" label="Opmerking" required size="lg">
           <UTextarea
             v-model="state.textarea"
             :ui="{

@@ -10,7 +10,7 @@
       TT bevinden zich op 5m wandelafstand.
     </p>
   </UContainer>
-  <UContainer class="w-1/3 pt-4">
+  <UContainer class="w-4/5 max-w-xl pt-4">
     <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
       <UFormGroup label="Naam" name="name" required size="lg">
         <UInput
