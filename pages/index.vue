@@ -34,7 +34,7 @@
       Klik Hier Om Te Reserveren
     </UButton>
     <p class="text-3xl pb-4 py-8 italic">Parmezaanbus @ CASA</p>
-    <p class="text-lg">
+    <p class="text-lg px-16">
       De Parmezaanbus brengt de restaurant-experience bij jouw thuis.
       <br />Naast gerechten die op te warmen zijn bereiden wij op jouw oprit à
       la minute Tagliolini al Tartufo - pasta gedraaid in een grote Parmzaanse

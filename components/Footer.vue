@@ -45,6 +45,7 @@
         <a href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank"> Hemelrijk 22 / 3500 Hasselt</a>  <br />
         <a href="tel:0472930869">0472 93 08 69</a> <br />
         <a href="mailto:info@entrepotdeltartufo.com">info@entrepotdeltartufo.com </a>
+        <p>BTW: OD BV BE0734.961.476 </p>
       </div>
       <div class="sm:max-md:mt-4 my-4 basis-1/3">
         <p class="text-2xl font-bold my-4">OPENINGSUREN</p>

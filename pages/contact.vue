@@ -10,9 +10,9 @@
       TT bevinden zich op 5m wandelafstand.
     </p>
   </UContainer>
-  <UContainer class="max-w-md pt-4">
+  <UContainer class="w-1/3 pt-4">
     <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
-      <UFormGroup label="Naam" name="name" required>
+      <UFormGroup label="Naam" name="name" required size="lg">
         <UInput
           v-model="state.name"
           :ui="{
@@ -29,6 +29,7 @@
         name="email"
         placeholder="you@example.com"
         required
+        size="lg"
       >
         <UInput
           v-model="state.email"
@@ -43,6 +44,9 @@
       </UFormGroup>
       <UFormGroup name="textarea" label="Opmerking" required>
         <UTextarea
+          :rows="5"
+          autoresize
+          size="lg"
           v-model="state.textarea"
           :ui="{
             color: {
@@ -56,7 +60,9 @@
 
       <UButton
         type="submit"
+        class="pl-2 dark:text-black-100"
         variant="link"
+        size="lg"
         :ui="{
           color: {
             primary: {
@@ -76,9 +82,9 @@ import { object, string, type InferType } from "yup";
 import type { FormSubmitEvent } from "#ui/types";
 
 const schema = object({
-  email: string().email("Invalid email").required("Required"),
-  name: string().required("Required"),
-  textarea: string(),
+  email: string().email("Invalid email").required("Verplicht!"),
+  name: string().required("Verplicht!"),
+  textarea: string().required("Verplicht!"),
 });
 
 type Schema = InferType<typeof schema>;
