@@ -22,6 +22,11 @@
       La semplicità è l'ultima sofisticazione <br />
       Simplicity is the ultimate sophistication <br />
     </UContainer>
+    <UDivider
+      class="px-16"
+      :avatar="{ src: 'https://avatars.githubusercontent.com/u/739984?v=4' }"
+    />
+
     <p class="text-3xl pb-1 pt-8 italic">DEN ENTREPOT</p>
     <p class="text-lg py-4 px-4 md:px-16 text-left">
       <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en
@@ -91,6 +96,10 @@
       L'entrepot del Tartufo e nato! <br />
       Benvenuti! Welkom!
     </p>
+    <UDivider
+      class="px-16"
+      :avatar="{ src: 'https://avatars.githubusercontent.com/u/739984?v=4' }"
+    />
   </UContainer>
 </template>
 
