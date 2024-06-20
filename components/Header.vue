@@ -51,7 +51,7 @@ const links = [
     },
     {
       label: "Parmezaanbus",
-      to: "/parmezan",
+      to: "/parmezaan-bus",
     },
   ],
   [],

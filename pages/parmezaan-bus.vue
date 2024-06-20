@@ -27,6 +27,7 @@
         <UFormGroup label="Naam" name="name" required size="lg">
           <UInput
             v-model="state.name"
+            placeholder="Voor- & achternaam"
             :ui="{
               color: {
                 white: {
@@ -36,15 +37,10 @@
             }"
           />
         </UFormGroup>
-        <UFormGroup
-          label="Email"
-          name="email"
-          placeholder="you@example.com"
-          required
-          size="lg"
-        >
+        <UFormGroup label="Email" name="email" required size="lg">
           <UInput
             v-model="state.email"
+            placeholder="voorbeeld@domein.be"
             :ui="{
               color: {
                 white: {
@@ -54,9 +50,51 @@
             }"
           />
         </UFormGroup>
-        <UFormGroup name="textarea" label="Opmerking" required size="lg">
+        <UFormGroup name="phone" label="Telefoon" required size="lg">
+          <UInput
+            v-model="state.phone"
+            placeholder="0497 12 34 56"
+            :ui="{
+              color: {
+                white: {
+                  outline: 'text-white dark:text-white-50',
+                },
+              },
+            }"
+          />
+        </UFormGroup>
+        <UFormGroup name="address" label="Adres" required size="lg">
           <UTextarea
-            v-model="state.textarea"
+            v-model="state.address"
+            placeholder="Straatnaam, nummer & toevoeging"
+            :ui="{
+              color: {
+                white: {
+                  outline: 'text-white dark:text-white-50',
+                },
+              },
+            }"
+          />
+        </UFormGroup>
+        <UFormGroup name="guest-count" label="Gasten" required size="lg">
+          <UInput
+            v-model="state.guestCount"
+            placeholder="Aantal"
+            type="number"
+            min="1"
+            :ui="{
+              color: {
+                white: {
+                  outline: 'text-white dark:text-white-50',
+                },
+              },
+            }"
+          />
+        </UFormGroup>
+        <UFormGroup name="day" label="Datum" required size="lg">
+          <UInput
+            v-model="state.day"
+            placeholder="DD-MM-JJJJ"
             :ui="{
               color: {
                 white: {
@@ -79,7 +117,7 @@
             },
           }"
         >
-          Verzend
+          Verzenden
         </UButton>
       </UForm>
     </UContainer>
@@ -98,13 +136,16 @@
   </UContainer>
 </template>
 <script setup lang="ts">
-import { object, string, type InferType } from "yup";
+import { number, object, string, date, type InferType } from "yup";
 import type { FormSubmitEvent } from "#ui/types";
 
 const schema = object({
-  email: string().email("Invalid email").required("Verplicht!"),
+  email: string().email("Ongeldig Email Adres").required("Verplicht!"),
   name: string().required("Verplicht!"),
-  textarea: string().required("Verplicht!"),
+  phone: string().required("Verplicht!"),
+  address: string().required("Verplicht!"),
+  guestCount: number().required("Verplicht!"),
+  day: date().required("Verplicht!"),
 });
 
 type Schema = InferType<typeof schema>;
@@ -112,7 +153,10 @@ type Schema = InferType<typeof schema>;
 const state = reactive({
   email: undefined,
   name: undefined,
-  textarea: undefined,
+  phone: undefined,
+  address: undefined,
+  guestCount: undefined,
+  day: undefined,
 });
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
@@ -131,7 +175,7 @@ const parmezanBusMenuItems = [
     title: "Arrosto di Vitello",
   },
   {
-    title: "Creme Caramel",
+    title: "Crème Caramel",
   },
 ];
 </script>
