@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout>
-    <!-- <div class="bg-white-50 min-h-screen"> -->
-    <NuxtPage />
-    <!-- </div> -->
+    <div class="bg-slate-950 min-h-screen">
+      <NuxtPage />
+    </div>
   </NuxtLayout>
 </template>

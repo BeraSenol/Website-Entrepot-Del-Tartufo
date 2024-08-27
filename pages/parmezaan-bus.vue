@@ -1,8 +1,6 @@
 <template>
-  <UContainer
-    class="place-items-center rounded-lg mt-8 text-center sm:max-xl:mx-6"
-  >
-    <p class="text-3xl pb-1 pt-8 italic">PARMEZAANBUS</p>
+  <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
+    <p class="text-3xl pb-1 italic">PARMEZAANBUS</p>
     <p class="text-lg py-4 px-4 md:px-16 text-left">
       De Parmezaanbus brengt de restaurant-experience bij jouw thuis. De
       Parmezaanbus is enkel te reserveren in een menu-formule. Naast gerechten
@@ -17,7 +15,7 @@
     </p>
   </UContainer>
   <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-    <UContainer class="w-4/5 max-w-xl mt-0 mb-8">
+    <UContainer class="w-4/5 max-w-xl mt-0 mb-8 order-2 md:order-1 md:w-5/6">
       <UForm
         :schema="schema"
         :state="state"
@@ -121,7 +119,7 @@
         </UButton>
       </UForm>
     </UContainer>
-    <UCard class="max-w-xl max-h-72">
+    <UCard class="max-w-lg md:max-w-xl max-h-72">
       <template #header>
         <p class="text-center text-xl font-bold tracking-wider">
           MENU ENTREPOT

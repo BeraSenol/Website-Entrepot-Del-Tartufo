@@ -1,8 +1,6 @@
 <template>
-  <UContainer
-    class="place-items-center rounded-lg mt-8 text-center sm:max-xl:mx-6"
-  >
-    <p class="text-3xl pb-1 pt-8 italic">CONTACT</p>
+  <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
+    <p class="text-3xl pb-1 italic">CONTACT</p>
     <p class="text-lg py-4 px-4 md:px-16 text-left">
       Entrepot del Tartufo ligt in hartje Hasselt, op slechts enkele meters van
       het <span class="font-bold">Dusartplein</span> en de

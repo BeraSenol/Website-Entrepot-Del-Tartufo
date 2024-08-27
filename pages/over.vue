@@ -1,8 +1,6 @@
 <template>
-  <UContainer
-    class="place-items-center rounded-lg mt-8 text-center sm:max-xl:mx-6"
-  >
-    <p class="text-3xl pb-1 pt-8 italic">OVER ONS</p>
+  <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
+    <p class="text-3xl pb-1 italic">OVER ONS</p>
     <p class="text-lg py-4 px-4 md:px-16 text-justify">
       Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse
       keuken naar hartje Hasselt. Nicolino Salvatore, alom gewaardeerd als chef

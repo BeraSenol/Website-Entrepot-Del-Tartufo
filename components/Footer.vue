@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-slate-950">
     <UContainer class="flex text-center justify-center flex-col md:flex-row">
       <div class="sm:max-md:mt-4 my-4 basis-1/3">
         <p class="text-2xl font-bold my-4">ENTREPOT DEL TARTUFO</p>

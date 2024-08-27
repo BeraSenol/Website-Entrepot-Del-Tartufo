@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden lg:block">
+  <div class="hidden lg:block bg-slate-950 max-w-full">
     <UHorizontalNavigation
       :links="links"
       class="border-b-2 border-white-300"
@@ -10,7 +10,7 @@
       }"
     />
   </div>
-  <div class="block lg:hidden">
+  <div class="block lg:hidden bg-slate-950">
     <UVerticalNavigation
       :links="links"
       :ui="{
@@ -28,7 +28,7 @@ const links = [
   [
     {
       label: "ENTREPOT DEL TARTUFO",
-      labelClass: "font-bold text-3xl font-color-white",
+      labelClass: "font-bold text-3xl font-color-white max-w-full",
       to: "/",
     },
   ],
@@ -39,7 +39,7 @@ const links = [
     },
     {
       label: "Over",
-      to: "/about",
+      to: "/over",
     },
     {
       label: "Contact",
@@ -47,7 +47,7 @@ const links = [
     },
     {
       label: "Reserveren",
-      to: "/reservation",
+      to: "/reserveren",
     },
     {
       label: "Parmezaanbus",

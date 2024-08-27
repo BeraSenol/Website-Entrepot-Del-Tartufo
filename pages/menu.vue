@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+  <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <UCard>
       <template #header>
         <p class="text-center text-xl font-bold tracking-wider">ANTIPASTI</p>
