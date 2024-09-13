@@ -1,4 +1,8 @@
 <template>
+  <div
+    class="bg-fixed bg-center min-h-screen min-w-prose"
+    style="background-image: url(landing-image-over.jpg)"
+  ></div>
   <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
     <p class="text-3xl pb-1 italic">OVER ONS</p>
     <p class="text-lg py-4 px-4 md:px-16 text-justify">

@@ -1,4 +1,8 @@
 <template>
+  <div
+    class="bg-fixed bg-center min-h-screen min-w-prose"
+    style="background-image: url(landing-image-contact.jpg)"
+  ></div>
   <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
     <p class="text-3xl pb-1 italic">CONTACT</p>
     <p class="text-lg py-4 px-4 md:px-16 text-left">
@@ -16,7 +20,7 @@
           :ui="{
             color: {
               white: {
-                outline: 'text-white dark:text-white-50',
+                outline: 'text-white-50 dark:text-white-50',
               },
             },
           }"
@@ -34,7 +38,7 @@
           :ui="{
             color: {
               white: {
-                outline: 'text-white dark:text-white-50',
+                outline: 'text-white-50 dark:text-white-50',
               },
             },
           }"
@@ -49,7 +53,7 @@
           :ui="{
             color: {
               white: {
-                outline: 'text-white dark:text-white-50',
+                outline: 'text-white-50 dark:text-white-50',
               },
             },
           }"
@@ -58,8 +62,8 @@
 
       <UButton
         type="submit"
-        class="pl-2 dark:text-black-100"
-        variant="link"
+        class="py-2 transition ease-in-out delay-100 duration-300"
+        variant="ghost"
         size="lg"
         :ui="{
           color: {

@@ -1,4 +1,8 @@
 <template>
+  <div
+    class="bg-fixed bg-center min-h-screen min-w-prose"
+    style="background-image: url(landing-image-menu.jpg)"
+  ></div>
   <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <UCard>
       <template #header>

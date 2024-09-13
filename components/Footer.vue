@@ -6,8 +6,9 @@
 
         <p class="my-4">Italian food with a touch of truffle</p>
         <UContainer class="flex justify-center">
-          <div class="mx-1">
-            <a href="https://www.facebook.com/share/k9shNpfCWvVqujP6/" target="_blank">
+          <div>
+                
+                <a href="https://www.facebook.com/share/k9shNpfCWvVqujP6/" target="_blank" >
               <svg
                 width="2em"
                 height="2em"
@@ -42,9 +43,9 @@
       </div>
       <div class="sm:max-md:mt-4 my-4 basis-1/3">
         <p class="text-2xl font-bold my-4">CONTACT</p>
-        <a href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank"> Hemelrijk 22 / 3500 Hasselt</a>  <br />
-        <a href="tel:0472930869">0472 93 08 69</a> <br />
-        <a href="mailto:info@entrepotdeltartufo.com">info@entrepotdeltartufo.com </a>
+        <a href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank" class="hover:text-primary-400 transition ease-in-out delay-100 duration-300"> Hemelrijk 22 / 3500 Hasselt</a>  <br />
+        <a href="tel:0472930869" class="hover:text-primary-400 transition ease-in-out delay-100 duration-300">0472 93 08 69</a> <br />
+        <a href="mailto:info@entrepotdeltartufo.com" class="hover:text-primary-400 transition ease-in-out delay-100 duration-300">info@entrepotdeltartufo.com </a>
         <p>BTW: OD BV BE0734.961.476 </p>
       </div>
       <div class="sm:max-md:mt-4 my-4 basis-1/3">

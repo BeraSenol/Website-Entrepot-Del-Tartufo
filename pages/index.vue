@@ -1,8 +1,10 @@
 <template>
-  <div class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
-    <NuxtImg src="/entrepot-inside.jpg" width="100vw" />
+  <div class="place-items-center rounded-lg text-center">
+    <div
+      class="bg-fixed bg-center min-h-screen min-w-prose"
+      style="background-image: url(landing-image-index.jpg)"
+    ></div>
 
-    <UContainer class="flex justify-center"> </UContainer>
     <p class="text-lg py-8 pt-12 px-16 bg-slate-50 text-slate-950">
       <NuxtImg
         src="logo.jpg"
@@ -23,7 +25,12 @@
       2 Gangen €30 <br />
       3 Gangen €40 <br />
     </p>
-    <UButton size="sm" variant="link" to="reservation" class="text-lg my-4">
+    <UButton
+      size="sm"
+      variant="ghost"
+      to="/"
+      class="text-lg my-4 transition ease-in-out delay-100 duration-300"
+    >
       Klik Hier Om Te Reserveren
     </UButton>
     <p class="text-3xl pb-4 py-8 italic">Parmezaanbus @ CASA</p>
@@ -37,12 +44,15 @@
     </p>
     <UButton
       size="xl"
-      variant="link"
-      to="parmezan"
-      class="text-lg my-4 mb-8 pb-4"
+      variant="ghost"
+      to="parmezaan-bus"
+      class="text-lg my-4 transition ease-in-out delay-100 duration-300"
     >
-      Reserveer de Parmezaanbus
+      Reserveer De Parmezaanbus
     </UButton>
+    <br />
+    <br />
+
     <div class="bg-slate-50 text-slate-950">
       <p class="text-3xl pb-4 py-8 italic">Get In Touch</p>
       <p class="text-lg pb-8">
