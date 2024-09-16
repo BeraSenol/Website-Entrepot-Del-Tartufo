@@ -1,6 +1,5 @@
 <template>
   <LandingImageContact />
+  <ContactDiscription />
   <ContactForm />
 </template>
-
-<style></style>

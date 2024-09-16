@@ -1,7 +1,7 @@
 <template>
-  <div class="place-items-center text-center">
-    <p class="text-3xl py-8 italic">Lunch @ Entrepot</p>
-    <p class="text-lg mx-16">
+  <UContainer class="place-items-center text-center">
+    <p class="text-4xl pb-4 pt-8 font-bold">LUNCH @ ENTREPOT</p>
+    <p class="text-lg font-light">
       Kom genieten van onze heerlijke lunch! Lunchmenu varieert van week tot
       week.
       <br />
@@ -11,13 +11,13 @@
     </p>
     <UButton
       size="md"
-      variant="ghost"
+      variant="link"
       to="/"
-      class="text-lg my-4 transition ease-in-out delay-100 duration-300"
+      class="text-lg my-4 transition ease-in-out delay-100 duration-300 font-light"
     >
       Klik Hier Om Te Reserveren
     </UButton>
-  </div>
+  </UContainer>
 </template>
 
 <script lang="ts" setup></script>

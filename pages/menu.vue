@@ -1,4 +1,5 @@
 <template>
   <LandingImageMenu />
-  <MenuGrid />
+  <MenuLunch />
+  <MenuDiner />
 </template>

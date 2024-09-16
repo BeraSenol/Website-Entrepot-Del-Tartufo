@@ -1,7 +1,7 @@
 <template>
-  <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
-    <p class="text-3xl pb-1 italic">OVER ONS</p>
-    <p class="text-lg py-4 px-4 md:px-16 text-justify">
+  <UContainer class="place-items-center text-center max-w-7xl">
+    <p class="text-4xl p-12 font-bold">OVER ONS</p>
+    <p class="text-lg text-left font-light">
       Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse
       keuken naar hartje Hasselt. Nicolino Salvatore, alom gewaardeerd als chef
       van de vroegere Mario's Trattoria bereidt klassieke en minder klassieke
@@ -21,8 +21,8 @@
       Simplicity is the ultimate sophistication <br />
     </UContainer>
     <UDivider
-      class="px-16"
-      :avatar="{ src: 'https://avatars.githubusercontent.com/u/739984?v=4' }"
+      :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }"
     />
   </UContainer>
 </template>

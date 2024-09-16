@@ -1,5 +1,10 @@
 <template>
-  <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <UContainer>
+    <h1 class="text-center text-4xl font-bold tracking-wider p-8">DINER</h1>
+  </UContainer>
+  <UContainer
+    class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 max-w-7xl"
+  >
     <UCard>
       <template #header>
         <p class="text-center text-xl font-bold tracking-wider">ANTIPASTI</p>

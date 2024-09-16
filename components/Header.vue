@@ -4,7 +4,7 @@
       :links="links"
       class="border-b-2 border-white-300"
       :ui="{
-        label: 'text-xl text-white-50 font-medium',
+        label: 'text-2xl text-white-50 font-medium',
         active: 'font-bold',
         after: 'after:h-[0px]',
       }"
@@ -29,7 +29,7 @@ const links = [
   [
     {
       label: "ENTREPOT DEL TARTUFO",
-      labelClass: "font-bold text-2xl font-color-white max-w-full",
+      labelClass: "font-bold text-3xl font-color-white max-w-full",
       to: "/",
     },
   ],

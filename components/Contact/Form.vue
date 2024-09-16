@@ -1,16 +1,7 @@
 <template>
-  <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
-    <p class="text-3xl pb-1 italic">CONTACT</p>
-    <p class="text-lg py-4 px-4 md:px-16 text-left">
-      Entrepot del Tartufo ligt in hartje Hasselt, op slechts enkele meters van
-      het <span class="font-bold">Dusartplein</span> en de
-      <span class="font-bold">Zuivelmarkt</span>! Parking Dusartplein en parking
-      TT bevinden zich op 5m wandelafstand.
-    </p>
-  </UContainer>
-  <UContainer class="w-4/5 max-w-xl pt-4">
+  <UContainer class="max-w-6xl py-8">
     <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
-      <UFormGroup label="Naam" name="name" required size="lg">
+      <UFormGroup label="Naam" name="name" required size="xl">
         <UInput
           v-model="state.name"
           :ui="{
@@ -27,7 +18,7 @@
         name="email"
         placeholder="you@example.com"
         required
-        size="lg"
+        size="xl"
       >
         <UInput
           v-model="state.email"
@@ -40,7 +31,7 @@
           }"
         />
       </UFormGroup>
-      <UFormGroup name="textarea" label="Opmerking" required>
+      <UFormGroup name="textarea" label="Opmerking" required size="xl">
         <UTextarea
           :rows="5"
           autoresize
@@ -58,16 +49,8 @@
 
       <UButton
         type="submit"
-        class="py-2 transition ease-in-out delay-100 duration-300"
+        class="text-md transition ease-in-out delay-100 duration-300 font-light"
         variant="ghost"
-        size="lg"
-        :ui="{
-          color: {
-            primary: {
-              solid: 'text-white dark:text-white',
-            },
-          },
-        }"
       >
         Verzend
       </UButton>

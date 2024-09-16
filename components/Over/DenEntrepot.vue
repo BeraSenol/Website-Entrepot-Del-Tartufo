@@ -1,7 +1,7 @@
 <template>
-  <UContainer class="place-items-center rounded-lg text-center sm:max-xl:mx-6">
-    <p class="text-3xl pb-1 pt-8 italic">DEN ENTREPOT</p>
-    <p class="text-lg py-4 px-4 md:px-16 text-left">
+  <UContainer class="place-items-center text-center max-w-7xl">
+    <p class="text-4xl p-12 font-bold">DEN ENTREPOT</p>
+    <p class="text-lg text-left font-light">
       <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en
       achter de gevel van elk huis en elk gebouw schuilt een verhaal… En waar
       past het karaktervolle gebouw Den Entrepot ergens in deze historie?
@@ -70,7 +70,6 @@
       Benvenuti! Welkom!
     </p>
     <UDivider
-      class="px-12"
       :avatar="{ src: 'logo-white.png', size: 'sm' }"
       :ui="{ border: { base: 'dark:border-white-100' } }"
     />
