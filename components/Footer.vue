@@ -4,7 +4,7 @@
       <div class="sm:max-md:mt-4 my-4 basis-1/3">
         <p class="text-2xl font-bold my-4">ENTREPOT DEL TARTUFO</p>
 
-        <p class="my-4">Italian food with a touch of truffle</p>
+        <p class="mt-2 m-4 italic font-light">Italian food with a touch of truffle</p>
         <UContainer class="flex justify-center">
           <div>
                 
