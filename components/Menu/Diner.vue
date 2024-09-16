@@ -1,6 +1,13 @@
 <template>
-  <UContainer>
-    <h1 class="text-center text-4xl font-bold tracking-wider p-8">DINER</h1>
+  <UContainer class="max-w-7xl">
+    <UDivider
+      class="py-16"
+      label="DINER"
+      :ui="{
+        border: { base: 'dark:border-white-100' },
+        label: 'text-4xl font-bold',
+      }"
+    />
   </UContainer>
   <UContainer
     class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 max-w-7xl"
@@ -65,6 +72,13 @@
         </UContainer>
       </template>
     </UCard>
+  </UContainer>
+  <UContainer class="max-w-7xl">
+    <UDivider
+      class="pt-12"
+      :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }"
+    />
   </UContainer>
 </template>
 

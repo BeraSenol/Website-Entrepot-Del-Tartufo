@@ -1,5 +1,10 @@
 <template>
   <UContainer class="max-w-6xl py-8">
+    <UDivider
+      class="pb-10"
+      :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }"
+    />
     <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
       <UFormGroup label="Naam" name="name" required size="xl">
         <UInput
@@ -55,6 +60,11 @@
         Verzend
       </UButton>
     </UForm>
+    <UDivider
+      class="pt-10"
+      :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }"
+    />
   </UContainer>
 </template>
 

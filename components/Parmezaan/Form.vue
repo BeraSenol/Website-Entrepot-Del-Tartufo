@@ -90,6 +90,11 @@
         Verzenden
       </UButton>
     </UForm>
+    <UDivider
+      class="pt-10"
+      :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }"
+    />
   </UContainer>
 </template>
 

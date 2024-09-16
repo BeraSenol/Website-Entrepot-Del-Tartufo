@@ -1,6 +1,13 @@
 <template>
-  <UContainer>
-    <h1 class="text-center text-4xl font-bold tracking-wider p-8">LUNCH</h1>
+  <UContainer class="max-w-7xl">
+    <UDivider
+      class="py-16"
+      label="LUNCH"
+      :ui="{
+        border: { base: 'dark:border-white-100' },
+        label: 'text-4xl font-bold',
+      }"
+    />
   </UContainer>
   <UContainer
     class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 max-w-7xl"

@@ -13,5 +13,10 @@
       bereiding duurt 30min. tussen 18h en 20h | 1 Menu | vanaf 6 personen | €65
       per persoon
     </p>
+    <UDivider
+      class="pt-8"
+      :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }"
+    />
   </UContainer>
 </template>

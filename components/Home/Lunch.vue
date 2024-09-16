@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="place-items-center text-center">
+  <UContainer class="place-items-center text-center max-w-7xl">
     <p class="text-4xl pb-4 pt-8 font-bold">LUNCH @ ENTREPOT</p>
     <p class="text-lg font-light">
       Kom genieten van onze heerlijke lunch! Lunchmenu varieert van week tot
@@ -17,6 +17,11 @@
     >
       Klik Hier Om Te Reserveren
     </UButton>
+    <UDivider
+      class="pb-8"
+      :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }"
+    />
   </UContainer>
 </template>
 

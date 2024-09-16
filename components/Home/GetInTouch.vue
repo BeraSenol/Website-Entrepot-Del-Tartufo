@@ -3,9 +3,10 @@
     <p class="text-4xl pb-4 pt-8 font-bold">GET IN TOUCH</p>
     <p class="text-lg pb-2 font-light">
       Heeft u nog verdere vragen? <br />
-      Aarzel niet om contact op te nemen:
+      Aarzel niet om contact op te nemen via:
+      <br />
       <a href="mailto:info@entrepotdeltartufo.com">
-        <UButton size="xl" variant="link" class="text-lg px-1 font-light">
+        <UButton size="xl" variant="link" class="text-lg px-1 pb-0 font-light">
           info@entrepotdeltartufo.com
         </UButton>
       </a>
