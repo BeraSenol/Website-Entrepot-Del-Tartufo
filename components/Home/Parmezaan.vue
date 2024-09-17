@@ -1,6 +1,6 @@
 <template>
   <UContainer class="place-items-center text-center max-w-7xl">
-    <p class="text-4xl py-4 pt-6 font-bold">PARMEZAANBUS @ CASA</p>
+    <p class="text-4xl py-4 pt-2 font-bold">PARMEZAANBUS @ CASA</p>
     <p class="text-lg font-light">
       De Parmezaanbus brengt de restaurant-experience bij jouw thuis.
       <br />Naast gerechten die op te warmen zijn bereiden wij op jouw oprit à

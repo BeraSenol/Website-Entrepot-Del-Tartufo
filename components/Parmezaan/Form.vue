@@ -86,6 +86,7 @@
         type="submit"
         class="text-md transition ease-in-out delay-100 duration-300 font-light"
         variant="ghost"
+        color="black"
       >
         Verzenden
       </UButton>

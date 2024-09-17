@@ -44,16 +44,6 @@
     >
       <template #header>
         <NuxtImg src="logo-white.png" width="30" class="mx-auto my-0 p-0" />
-        <UButton
-          color="black"
-          variant="ghost"
-          size="lg"
-          icon="i-heroicons-x-mark-20-solid"
-          class="flex sm:hidden absolute end-2 top-2 z-10"
-          square
-          padded
-          @click="isOpen = false"
-        />
       </template>
 
       <UContainer class="flex flex-col text-xl tracking-widest">
@@ -62,6 +52,7 @@
           color="white"
           class="text-xl font-light py-2"
           to="/menu"
+          @click="isOpen = false"
         >
           MENU
         </UButton>
@@ -70,6 +61,7 @@
           color="white"
           class="text-xl font-light py-2"
           to="/over"
+          @click="isOpen = false"
         >
           OVER
         </UButton>
@@ -78,6 +70,7 @@
           color="white"
           class="text-xl font-light py-2"
           to="/contact"
+          @click="isOpen = false"
         >
           CONTACT
         </UButton>
@@ -86,14 +79,11 @@
           color="white"
           class="text-xl font-light py-2"
           to="/parmezaan-bus"
+          @click="isOpen = false"
         >
           PARMEZAAN BUS
         </UButton>
       </UContainer>
-
-      <template #footer>
-        <Placeholder class="h-8" />
-      </template>
     </UCard>
   </USlideover>
 </template>
