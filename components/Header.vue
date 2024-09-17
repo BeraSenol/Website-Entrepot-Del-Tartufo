@@ -1,35 +1,112 @@
 <template>
-  <div class="hidden lg:block bg-slate-950 max-w-full">
+  <div class="hidden md:block bg-slate-950 max-w-full">
     <UHorizontalNavigation
       :links="links"
       class="border-b-2 border-white-300"
       :ui="{
-        label: 'text-2xl text-white-50 font-medium',
+        label: 'md:text-xl lg:text-2xl text-white-50 font-medium',
         active: 'font-bold',
         after: 'after:h-[0px]',
       }"
     />
   </div>
 
-  <div class="block lg:hidden bg-slate-950">
-    <UVerticalNavigation
-      :links="links2"
-      :ui="{
-        label: 'text-xl text-white-50 font-medium ml-4',
-        active: 'font-bold before:bg-grey-900 dark:before:bg-grey-900',
-        after: 'after:h-[0px]',
-      }"
+  <div
+    class="block md:hidden bg-slate-950 px-1 border-b-2 flex justify-between"
+    style="height: 58px"
+  >
+    <UButton
+      size="xl"
+      color="white"
+      variant="link"
+      label="ENTREPOT DEL TARTUFO"
+      class="text-2xl mx-2 font-bold"
+      to="/"
+    />
+    <UButton
+      size="xl"
+      icon="i-heroicons:bars-3-20-solid"
+      color="white"
+      variant="link"
+      class="text-2xl mx-2 my-2 font-bold"
+      @click="isOpen = true"
     />
   </div>
+  <USlideover v-model="isOpen">
+    <UCard
+      class="flex flex-col flex-1"
+      :ui="{
+        body: { base: 'flex-1' },
+        header: { padding: 'py-3' },
+        ring: '',
+        divide: 'divide-y divide-gray-100 dark:divide-gray-800',
+      }"
+    >
+      <template #header>
+        <NuxtImg src="logo-white.png" width="30" class="mx-auto my-0 p-0" />
+        <UButton
+          color="black"
+          variant="ghost"
+          size="lg"
+          icon="i-heroicons-x-mark-20-solid"
+          class="flex sm:hidden absolute end-2 top-2 z-10"
+          square
+          padded
+          @click="isOpen = false"
+        />
+      </template>
+
+      <UContainer class="flex flex-col text-xl tracking-widest">
+        <UButton
+          variant="link"
+          color="white"
+          class="text-xl font-light py-2"
+          to="/menu"
+        >
+          MENU
+        </UButton>
+        <UButton
+          variant="link"
+          color="white"
+          class="text-xl font-light py-2"
+          to="/over"
+        >
+          OVER
+        </UButton>
+        <UButton
+          variant="link"
+          color="white"
+          class="text-xl font-light py-2"
+          to="/contact"
+        >
+          CONTACT
+        </UButton>
+        <UButton
+          variant="link"
+          color="white"
+          class="text-xl font-light py-2"
+          to="/parmezaan-bus"
+        >
+          PARMEZAAN BUS
+        </UButton>
+      </UContainer>
+
+      <template #footer>
+        <Placeholder class="h-8" />
+      </template>
+    </UCard>
+  </USlideover>
 </template>
 
 <script setup lang="ts">
+const isOpen = ref(false);
 const links = [
   [],
   [
     {
       label: "ENTREPOT DEL TARTUFO",
-      labelClass: "font-bold text-3xl font-color-white max-w-full",
+      labelClass:
+        "font-bold md:text-2xl lg:text-3xl font-color-white max-w-full",
       to: "/",
     },
   ],
@@ -53,31 +130,21 @@ const links = [
   ],
   [],
 ];
-const links2 = [
-  [
-    {
-      label: "ENTREPOT DEL TARTUFO",
-      labelClass: "font-bold text-2xl font-color-white max-w-full",
-      to: "/",
-    },
-  ],
-  [
-    {
-      label: "Menu",
-      to: "/menu",
-    },
-    {
-      label: "Over",
-      to: "/over",
-    },
-    {
-      label: "Contact",
-      to: "/contact",
-    },
-    {
-      label: "Parmezaanbus",
-      to: "/parmezaan-bus",
-    },
-  ],
-];
+// const links2 = [
+//   [
+//     {
+//       label: "ENTREPOT DEL TARTUFO",
+//       labelClass: "font-bold text-2xl font-color-white max-w-full mx-2",
+//       to: "/",
+//     },
+//   ],
+//   [
+//     {
+//       label: "",
+//       icon: "i-heroicons:bars-3-20-solid",
+//       iconClass: "m-1",
+//       click: "isOpen",
+//     },
+//   ],
+// ];
 </script>
