@@ -92,7 +92,7 @@
       </UButton>
     </UForm>
     <UDivider
-      class="pt-10"
+      class="pt-14"
       :avatar="{ src: 'logo-white.png', size: 'sm' }"
       :ui="{ border: { base: 'dark:border-white-100' } }"
     />

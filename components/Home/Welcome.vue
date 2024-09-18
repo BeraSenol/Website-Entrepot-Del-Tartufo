@@ -1,6 +1,6 @@
 <template>
   <UContainer
-    class="text-lg py-8 pt-12 px-16 bg-slate-50 text-slate-950 place-items-center text-center"
+    class="bg-slate-50 text-slate-950 pt-12 place-items-center text-center"
   >
     <h1 class="text-5xl font-bold tracking-widest">ENTREPOT</h1>
 
