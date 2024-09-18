@@ -1,7 +1,7 @@
 <template>
   <div
-    class="bg-fixed bg-center bg-no-repeat min-w-prose shadow-2xl shadow-inner place-content-center place-items-center text-center border-b-2"
-    style="background-image: url(landing-image-contact.jpg); min-height: 94vh"
+    class="bg-fixed bg-center bg-no-repeat min-w-prose min-h-screen shadow-2xl shadow-inner place-content-center place-items-center text-center border-b-2"
+    style="background-image: url(landing-image-contact.jpg)"
   >
     <h1 class="text-7xl font-bold drop-shadow-md tracking-wider">
       CONTACTEER ONS
