@@ -1,6 +1,6 @@
 <template>
   <UContainer class="bg-slate-50 text-slate-950 place-items-center text-center">
-    <p class="text-4xl pb-4 pt-10 font-bold">GET IN TOUCH</p>
+    <p class="text-3xl md:text-4xl pb-4 pt-10 font-bold">GET IN TOUCH</p>
     <p class="text-lg pb-2 font-light">
       Heeft u nog verdere vragen? <br />
       Aarzel niet om contact op te nemen via:
