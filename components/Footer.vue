@@ -2,7 +2,7 @@
   <div class="bg-slate-950">
     <UContainer class="flex text-center justify-center flex-col md:flex-row max-w-7xl">
       <div class="sm:max-md:mt-4 my-4 basis-1/3">
-        <p class="text-2xl font-bold my-4">ENTREPOT DEL TARTUFO</p>
+        <p class="text-2xl font-bold mb-0 mt-4 md:my-4">ENTREPOT DEL TARTUFO</p>
 
         <p class="mt-2 m-4 italic font-light">Italian food with a touch of truffle</p>
         <UContainer class="flex justify-center">

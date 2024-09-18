@@ -44,9 +44,28 @@
     >
       <template #header>
         <NuxtImg src="logo-white.png" width="30" class="mx-auto my-0 p-0" />
+        <UButton
+          color="gray"
+          variant="ghost"
+          size="sm"
+          icon="i-heroicons-x-mark-20-solid"
+          class="flex sm:hidden absolute end-5 top-3 z-10"
+          square
+          padded
+          @click="isOpen = false"
+        />
       </template>
 
       <UContainer class="flex flex-col text-xl tracking-widest">
+        <UButton
+          variant="link"
+          color="white"
+          class="text-xl font-light py-2"
+          to="/"
+          @click="isOpen = false"
+        >
+          ENTREPOT DEL TARTUFO
+        </UButton>
         <UButton
           variant="link"
           color="white"
@@ -120,21 +139,4 @@ const links = [
   ],
   [],
 ];
-// const links2 = [
-//   [
-//     {
-//       label: "ENTREPOT DEL TARTUFO",
-//       labelClass: "font-bold text-2xl font-color-white max-w-full mx-2",
-//       to: "/",
-//     },
-//   ],
-//   [
-//     {
-//       label: "",
-//       icon: "i-heroicons:bars-3-20-solid",
-//       iconClass: "m-1",
-//       click: "isOpen",
-//     },
-//   ],
-// ];
 </script>

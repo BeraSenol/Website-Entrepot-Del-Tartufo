@@ -3,7 +3,7 @@
     class="bg-local md:bg-fixed bg-center bg-no-repeat min-w-prose min-h-96 md:min-h-screen max-w-full shadow-2xl shadow-inner place-content-center place-items-center text-center border-b-2"
     style="background-image: url(landing-image-parmezaan.jpg)"
   >
-    <h1 class="text-7xl font-bold drop-shadow-md tracking-wider">
+    <h1 class="text-5xl md:text-7xl font-bold drop-shadow-md tracking-wider">
       PARMEZAAN BUS
     </h1>
     <NuxtImg

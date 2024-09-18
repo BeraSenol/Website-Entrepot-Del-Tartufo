@@ -1,6 +1,6 @@
 <template>
   <UContainer class="place-items-center text-center max-w-7xl">
-    <p class="text-4xl pb-4 pt-8 font-bold">LUNCH @ ENTREPOT</p>
+    <p class="text-4xl pb-4 pt-12 font-bold">LUNCH @ ENTREPOT</p>
     <p class="text-lg font-light">
       Kom genieten van onze heerlijke lunch! Lunchmenu varieert van week tot
       week.
