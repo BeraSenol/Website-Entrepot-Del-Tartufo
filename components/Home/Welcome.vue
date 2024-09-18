@@ -7,7 +7,7 @@
     <NuxtImg src="logo-black.png" width="50" class="mx-auto my-2" />
     <h1 class="text-4xl font-light mb-6 tracking-widest">DEL TARTUFO</h1>
 
-    <p class="font-light">
+    <p class="text-lg font-light">
       Van harte welkom op onze website! Restaurant Entrepot del Tartufo is
       gevestigd in een oude opslagplaats in het gezellige hemelrijk straatje te
       Hasselt.<br />
