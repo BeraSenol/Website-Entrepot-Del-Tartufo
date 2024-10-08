@@ -1,8 +1,16 @@
-# Nuxt 3 Minimal Starter
+# Website for a local italian restaurant named Entrepot del Tartufo (Work in Progress)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+### Nuxt Modules:
+
+- Nuxt UI
+- Nuxt Color
+- Nuxt Image
+- TailwindCSS
+- Nuxt Content (To Do)
+
 
 ## Setup
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 Make sure to install the dependencies:
 
@@ -37,40 +45,3 @@ yarn dev
 # bun
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# EntrepotDelTartufo
