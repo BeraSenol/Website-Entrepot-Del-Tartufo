@@ -10,14 +10,14 @@ export default defineNuxtConfig({
   modules: ["@nuxt/ui", '@nuxt/image'],
 
   colorMode: {
-          preference: 'dark'
+    preference: 'dark'
   },
 
   ui: {
   },
 
   image: {
-          // Options
+    // Options
   },
 
   compatibilityDate: '2024-09-12'
