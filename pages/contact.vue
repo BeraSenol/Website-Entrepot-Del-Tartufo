@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingImageContact />
+    <ContactLandingImage />
     <ContactDiscription />
     <ContactForm />
   </div>

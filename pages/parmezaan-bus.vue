@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingImageParmezaan />
+    <ParmezaanLandingImage />
     <ParmezaanDiscription />
     <ParmezaanMenu />
     <ParmezaanForm />

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LandingImageMenu />
+    <MenuLandingImage />
     <MenuLunch />
     <MenuDiner />
   </div>
