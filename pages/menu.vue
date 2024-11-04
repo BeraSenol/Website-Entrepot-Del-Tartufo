@@ -1,5 +1,7 @@
 <template>
-  <LandingImageMenu />
-  <MenuLunch />
-  <MenuDiner />
+  <div>
+    <LandingImageMenu />
+    <MenuLunch />
+    <MenuDiner />
+  </div>
 </template>

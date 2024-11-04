@@ -1,7 +1,9 @@
 <template>
-  <LandingImageOver />
-  <OverOns />
-  <OverDenEntrepot />
+  <div>
+    <LandingImageOver />
+    <OverOns />
+    <OverDenEntrepot />
+  </div>
 </template>
 
 <script lang="ts" setup></script>

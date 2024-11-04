@@ -1,7 +1,9 @@
 <template>
-  <LandingImageHome />
-  <HomeWelcome />
-  <HomeLunch />
-  <HomeParmezaan />
-  <HomeGetInTouch />
+  <div>
+    <LandingImageHome />
+    <HomeWelcome />
+    <HomeLunch />
+    <HomeParmezaan />
+    <HomeGetInTouch />
+  </div>
 </template>

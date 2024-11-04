@@ -1,5 +1,7 @@
 <template>
-  <LandingImageContact />
-  <ContactDiscription />
-  <ContactForm />
+  <div>
+    <LandingImageContact />
+    <ContactDiscription />
+    <ContactForm />
+  </div>
 </template>
