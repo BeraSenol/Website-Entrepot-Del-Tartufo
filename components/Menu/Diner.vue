@@ -4,7 +4,7 @@
       <GeneralOpeningDays />
       <GeneralTextDivider text="DINER" />
     </UContainer>
-    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 max-w-7xl">
+    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <UCard>
         <template #header>
           <GeneralCardTitle title="ANTI PASTI" />

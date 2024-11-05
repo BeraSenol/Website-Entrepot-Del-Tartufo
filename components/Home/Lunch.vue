@@ -1,6 +1,6 @@
 <template>
   <UContainer class="w-full pb-8">
-    <UContainer class="flex flex-col text-center place-items-center px-0 sm:xl:px-0">
+    <UContainer class="flex flex-col text-center place-items-center">
       <GeneralLunchDays />
       <h1 class="text-5xl font-bold tracking-wide pb-8">LUNCH @ ENTREPOT</h1>
       <div class="text-xl font-light tracking-wide grid grid-cols-2 gap-x-28">
@@ -13,7 +13,7 @@
         Reserveer Hier
       </UButton>
     </UContainer>
-    <UContainer class="px-0 sm:xl:px-0">
+    <UContainer>
       <MenuLunch class="pb-12" />
       <UContainer>
         <GeneralTruffleDivider />

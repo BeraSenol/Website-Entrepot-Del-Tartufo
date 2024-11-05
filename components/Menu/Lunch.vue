@@ -4,7 +4,7 @@
       <GeneralLunchDays v-show="isOnMenuPage()" />
       <GeneralTextDivider text="LUNCH" />
     </UContainer>
-    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 px-2 sm:px-2">
+    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
       <UCard>
         <template #header>
           <GeneralCardTitle title="CARNE" />
