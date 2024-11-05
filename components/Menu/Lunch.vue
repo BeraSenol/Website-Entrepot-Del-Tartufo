@@ -1,7 +1,7 @@
 <template>
   <div>
     <UContainer class="text-center my-8 mt-12">
-      <GeneralLunchDays/>
+      <GeneralLunchDays v-show="isOnMenuPage()" />
       <GeneralTextDivider text="LUNCH" />
     </UContainer>
     <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
@@ -27,6 +27,14 @@
 </template>
 
 <script lang="ts" setup>
+const route = useRoute();
+function isOnMenuPage(): boolean {
+  if (route.fullPath === "/menu") {
+    return true;
+  } else {
+    return false
+  }
+};
 const lunchItemsCarne = [
   {
     title: "Vitello Tonnato",
