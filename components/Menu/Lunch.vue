@@ -1,37 +1,25 @@
 <template>
   <div>
-    <UContainer>
-      <UDivider class="py-12" label="LUNCH" :ui="{
-        border: { base: 'dark:border-white-100' },
-        label: 'text-4xl font-bold',
-      }" />
+    <UContainer class="text-center my-8 mt-12">
+      <GeneralLunchDays/>
+      <GeneralTextDivider text="LUNCH" />
     </UContainer>
-    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8 max-w-7xl">
+    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 xl:gap-8">
       <UCard>
         <template #header>
-          <p class="text-center text-xl font-bold tracking-wider">CARNE</p>
+          <GeneralCardTitle title="CARNE" />
         </template>
-        <template v-for="antiPasti in antiPastis">
-          <UContainer class="grid grid-rows-2 grid-flow-col gap-1 mb-6">
-            <p class="font-bold">{{ antiPasti.title }}</p>
-            <p class="italic">{{ antiPasti.discription }}</p>
-            <p class="text-right font-light">{{ antiPasti.price }}</p>
-            <br />
-          </UContainer>
+        <template v-for="lunchItem in lunchItemsCarne">
+          <GeneralCardItem :title="lunchItem.title" :description="lunchItem.description" :price="lunchItem.price" />
         </template>
       </UCard>
 
       <UCard>
         <template #header>
-          <p class="text-center text-xl font-bold tracking-wider">PESCE</p>
+          <GeneralCardTitle title="PESCE" />
         </template>
-        <template v-for="primiPiatti in primiPiattis">
-          <UContainer class="grid grid-rows-2 grid-flow-col gap-1 mb-6">
-            <p class="font-bold">{{ primiPiatti.title }}</p>
-            <p class="italic">{{ primiPiatti.discription }}</p>
-            <p class="text-right font-light">{{ primiPiatti.price }}</p>
-            <br />
-          </UContainer>
+        <template v-for="lunchItem in lunchItemsPesce">
+          <GeneralCardItem :title="lunchItem.title" :description="lunchItem.description" :price="lunchItem.price" />
         </template>
       </UCard>
     </UContainer>
@@ -39,48 +27,48 @@
 </template>
 
 <script lang="ts" setup>
-const antiPastis = [
+const lunchItemsCarne = [
   {
     title: "Vitello Tonnato",
-    discription: "Kalfsvlees | Tonijnmayo",
-    price: 18.5,
+    description: "Kalfsvlees | Tonijnmayo",
+    price: 18.5
   },
   {
     title: "Carpaccio di Manzo | Tartufo Estivo",
-    discription: "Rundscarpaccio | Zomer Truffel",
-    price: 29,
+    description: "Rundscarpaccio | Zomer Truffel",
+    price: 29
   },
   {
     title: "Melanzane | Parmigiana",
-    discription: "Aubergine | Parmezaan",
-    price: 17,
+    description: "Aubergine | Parmezaan",
+    price: 17
   },
   {
     title: "Moscardini | Aglio | Olio | Peperoncini",
-    discription: "Octopusjes | Pikant",
-    price: 19.5,
+    description: "Octopusjes | Pikant",
+    price: 19.5
   },
 ];
-const primiPiattis = [
+const lunchItemsPesce = [
   {
     title: "Gramigna | Modenese",
-    discription: "Gramigna | Venkelworst",
-    price: 17,
+    description: "Gramigna | Venkelworst",
+    price: 17
   },
   {
     title: "Papardelle | Ragu Vitello",
-    discription: "Papardelle | Kalfsragout",
-    price: 19.5,
+    description: "Papardelle | Kalfsragout",
+    price: 19.5
   },
   {
     title: "Tagliolini | Tartufo Estivo",
-    discription: "Tagliolini | Zomer Truffel",
-    price: 29,
+    description: "Tagliolini | Zomer Truffel",
+    price: 29
   },
   {
     title: "Linguine | Nero di Seppia | Seppioline",
-    discription: "Linguine | Inkt | Inktvis",
-    price: 21,
+    description: "Linguine | Inkt | Inktvis",
+    price: 21
   },
 ];
 </script>

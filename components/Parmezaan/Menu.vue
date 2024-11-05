@@ -2,11 +2,11 @@
   <UContainer class="justify-center max-w-6xl mx-auto py-12">
     <UCard>
       <template #header>
-        <p class="text-center text-xl font-bold tracking-wider">MENU @ CASA</p>
+        <GeneralCardTitle title="MENU @ CASA" />
       </template>
       <template v-for="parmezanBusItem in parmezanBusMenuItems">
         <UContainer class="text-center my-0 py-0">
-          <p class="font-light text-lg italic py-2" >{{ parmezanBusItem.title }}</p>
+          <p class="text-lg font-light tracking-wide italic py-2" >{{ parmezanBusItem.title }}</p>
         </UContainer>
       </template>
     </UCard>

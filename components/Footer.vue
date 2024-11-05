@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50 dark:bg-gray-950">
-    <TruffleDivider />
+    <GeneralTruffleDivider class="pt-12" />
     <UContainer class="flex flex-col md:flex-row justify-center text-center py-6">
       <!-- ENTREPOT DEL TARTUFO CONTAINER -->
       <UContainer class="flex flex-col pb-12 md:pb-0">

@@ -5,6 +5,7 @@
       <HomeWelcome />
       <HomeLunch />
       <HomeParmezaan />
+      <HomeGetInTouch/>
     </div>
   </div>
 </template>

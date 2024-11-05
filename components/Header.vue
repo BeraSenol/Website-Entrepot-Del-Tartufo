@@ -9,7 +9,7 @@
       </UContainer>
     </div>
     <!-- HEADER if Screensize < md -->
-    <div class="bg-gray-50 dark:bg-gray-950 block md:hidden border-b-2 flex">
+    <div class="bg-gray-50 dark:bg-gray-950 flex md:hidden border-b-2 ">
       <UButton size="xl" icon="i-heroicons:bars-3-20-solid" color="white" variant="link" class="mx-1 my-1.5 ml-auto"
         @click="isOpen = true" />
     </div>

@@ -8,8 +8,8 @@
 - TailwindCSS
 - Nuxt Content (To Do)
 
-
 ## Setup
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 Make sure to install the dependencies:
@@ -17,31 +17,22 @@ Make sure to install the dependencies:
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Starts the development server on `http://localhost:3000`:
 
 ```bash
 # npm
 npm run dev
+```
 
-# pnpm
-pnpm run dev
+## Production Server
 
-# yarn
-yarn dev
+Starts the production server on `http://localhost:3000`:
 
-# bun
-bun run dev
+```bash
+# npm
+npm run build
 ```
