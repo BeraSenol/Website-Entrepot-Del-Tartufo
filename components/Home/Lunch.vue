@@ -1,30 +1,21 @@
 <template>
-  <UContainer class="place-items-center text-center max-w-7xl">
-    <p class="text-3xl md:text-4xl pb-4 pt-12 font-bold">LUNCH @ ENTREPOT</p>
-    <p class="text-lg font-light">
-      Kom genieten van onze heerlijke lunch! Lunchmenu varieert van week tot
-      week.
-      <br />
-      Maandag | Donderdag | Vrijdag <br />
-      2 Gangen €30 <br />
-      3 Gangen €40 <br />
-    </p>
-    <UButton
-      size="md"
-      variant="link"
-      to="/"
-      class="text-lg my-4 transition ease-in-out delay-100 duration-300 font-light"
-    >
-      Klik Hier Om Te Reserveren
-    </UButton>
-    <UDivider
-      class="pb-8"
-      :avatar="{ src: 'logo-white.png', size: 'sm' }"
-      :ui="{ border: { base: 'dark:border-white-100' } }"
-    />
-  </UContainer>
+  <div>
+    <UContainer class="flex flex-col text-center place-items-center">
+      <p class="pb-2 tracking-widest font-light"> Ma / Do / Vr</p>
+      <p class="text-5xl font-bold pb-8">LUNCH @ ENTREPOT</p>
+      <div class="text-xl font-light">
+        <div class="grid grid-cols-2 gap-x-36">
+          <p class="text-left pb-2">Twee Gangen</p>
+          <p class="text-right italic">€30</p>
+          <p class="text-left pb-2">Drie Gangen</p>
+          <p class="text-right italic">€40</p>
+        </div>
+      </div>
+    </UContainer>
+    <UContainer>
+      <MenuLunch />
+    </UContainer>
+  </div>
 </template>
 
-<script lang="ts" setup></script>
 
-<style></style>

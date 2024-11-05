@@ -1,9 +1,11 @@
 <template>
   <div>
     <HomeLandingImage />
-    <HomeWelcome />
-    <HomeLunch />
-    <HomeParmezaan />
-    <HomeGetInTouch />
+    <div class="flex flex-col place-items-center">
+      <HomeWelcome />
+      <HomeLunch />
+      <HomeParmezaan />
+      <HomeGetInTouch />
+    </div>
   </div>
 </template>

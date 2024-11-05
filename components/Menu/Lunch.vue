@@ -1,7 +1,7 @@
 <template>
   <div>
-    <UContainer class="max-w-7xl">
-      <UDivider class="py-16" label="LUNCH" :ui="{
+    <UContainer>
+      <UDivider class="py-12" label="LUNCH" :ui="{
         border: { base: 'dark:border-white-100' },
         label: 'text-4xl font-bold',
       }" />
