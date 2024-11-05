@@ -68,10 +68,6 @@
         </template>
       </UCard>
     </UContainer>
-    <UContainer class="max-w-7xl">
-      <UDivider class="pt-12" :avatar="{ src: 'logo-white.png', size: 'sm' }"
-        :ui="{ border: { base: 'dark:border-white-100' } }" />
-    </UContainer>
   </div>
 </template>
 
