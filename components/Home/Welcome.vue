@@ -11,8 +11,8 @@
         keuken met een touch of truffle in combinatie met steengoede wijnen.
       </p>
     </UContainer>
-    <UButton size="xl" variant="soft" to="/over" class="bg-gray-200 dark:bg-gray-800 text-xl mt-8">
-      Kom Meer Te Weten!
+    <UButton size="xl" variant="soft" to="/over" class="bg-gray-200 dark:bg-gray-800 text-xl mt-8 px-5">
+      Ons Verhaal Hier
     </UButton>
   </UContainer>
 </template>

@@ -5,8 +5,8 @@
         <p class="text-center text-2xl font-bold tracking-wider">MENU @ CASA</p>
       </template>
       <template v-for="parmezanBusItem in parmezanBusMenuItems">
-        <UContainer class="text-center mt-0 mb-6">
-          <p class="font-light text-lg italic">{{ parmezanBusItem.title }}</p>
+        <UContainer class="text-center my-0 py-0">
+          <p class="font-light text-lg italic py-2" >{{ parmezanBusItem.title }}</p>
         </UContainer>
       </template>
     </UCard>
