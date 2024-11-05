@@ -31,28 +31,28 @@
       <!-- CONTACT CONTAINER -->
       <UContainer class="flex flex-col pb-12 md:pb-0">
         <NuxtLink to="/contact" class="text-2xl font-bold pb-2">CONTACT</NuxtLink>
-        <NuxtLink class="pb-1" href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank">
+        <NuxtLink class="pb-1 font-light" href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank">
           Hemelrijk 22 / 3500 Hasselt
         </NuxtLink>
-        <NuxtLink href="tel:0472930869" class="pb-1">
+        <NuxtLink href="tel:0472930869" class="pb-1 font-light">
           0472 93 08 69
         </NuxtLink>
-        <NuxtLink href="mailto:info@entrepotdeltartufo.com" class="pb-1">
+        <NuxtLink href="mailto:info@entrepotdeltartufo.com" class="pb-1 font-light">
           info@entrepotdeltartufo.com
         </NuxtLink>
-        <UContainer>
+        <UContainer class="font-light">
           BTW: OD BV BE0734.961.476
         </UContainer>
       </UContainer>
       <!-- OPENINGSUREN CONTAINER -->
       <UContainer class="flex flex-col">
         <UContainer class="text-2xl font-bold pb-2">OPENINGSUREN</UContainer>
-        <UContainer class="grid grid-cols-2 gap-x-10">
-          <div class="text-right pb-1">Ma / Do / Vr</div>
+        <UContainer class="grid grid-cols-2 gap-x-10 font-light">
+          <div class="tracking-widest text-right pb-1">Ma / Do / Vr</div>
           <div class="text-left pb-2">12h - 14h<br>18h - 22h</div>
-          <div class="text-right">Za / Zo</div>
+          <div class="tracking-widest text-right">Za / Zo</div>
           <div class="text-left pb-1">18h - 22h</div>
-          <div class="text-right">Di / Wo</div>
+          <div class="tracking-widest text-right">Di / Wo</div>
           <div class="text-left">Gesloten</div>
         </UContainer>
       </UContainer>

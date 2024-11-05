@@ -2,7 +2,7 @@
   <UContainer class="justify-center max-w-6xl mx-auto py-12">
     <UCard>
       <template #header>
-        <p class="text-center text-2xl font-bold tracking-wider">MENU @ CASA</p>
+        <p class="text-center text-xl font-bold tracking-wider">MENU @ CASA</p>
       </template>
       <template v-for="parmezanBusItem in parmezanBusMenuItems">
         <UContainer class="text-center my-0 py-0">
@@ -10,11 +10,6 @@
         </UContainer>
       </template>
     </UCard>
-    <UDivider
-      class="pt-12"
-      :avatar="{ src: 'logo-white.png', size: 'sm' }"
-      :ui="{ border: { base: 'dark:border-white-100' } }"
-    />
   </UContainer>
 </template>
 
