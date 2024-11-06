@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HomeLandingImage />
+    <HomeLandingImage image="landing-image-index.jpg" />
     <HomeWelcome />
     <HomeLunch />
     <HomeParmezaan />

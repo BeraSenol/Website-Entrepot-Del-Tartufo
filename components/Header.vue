@@ -23,11 +23,25 @@
       }">
         <template #header>
           <NuxtImg src="logo-white.png" width="30" class="mx-auto" />
-          <UButton color="white" variant="link" size="xl" icon="i-heroicons-x-mark-20-solid"
-            class="md:hidden absolute end-1 top-2 z-10" square padded @click="isOpen = false" />
+          <UButton color="white" size="xl" icon="i-heroicons-x-mark-20-solid"
+            class="md:hidden absolute end-1 top-2 z-50" square padded @click="isOpen = false" />
         </template>
         <UContainer class="flex flex-col tracking-wider">
-          <UVerticalNavigation :links="links" />
+          <UButton class="text-xl font-bold tracking-wide py-2" to="/" @click="isOpen = false">
+            ENTREPOT DEL TARTUFO
+          </UButton>
+          <UButton class="text-xl font-bold tracking-wide py-2" to="/menu" @click="isOpen = false">
+            MENU
+          </UButton>
+          <UButton class="text-xl font-bold tracking-wide py-2" to="/over" @click="isOpen = false">
+            OVER
+          </UButton>
+          <UButton class="text-xl font-bold tracking-wide py-2" to="/contact" @click="isOpen = false">
+            CONTACT
+          </UButton>
+          <UButton class="text-xl font-bold tracking-wide py-2" to="/parmezaan-bus" @click="isOpen = false">
+            PARMEZAAN BUS
+          </UButton>
         </UContainer>
       </UCard>
     </USlideover>
@@ -41,7 +55,7 @@ const links = [
     {
       label: "ENTREPOT DEL TARTUFO",
       to: "/",
-      labelClass: "text-gray-950 dark:text-gray-50 font-bold text-2xl",
+      labelClass: "text-gray-950 dark:text-gray-50 font-bold text-2xl xl:text-3xl",
     },
   ],
   [

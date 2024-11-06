@@ -8,13 +8,17 @@
         <UContainer class="flex flex-col text-xl font-light tracking-wide">
           <p>Heeft u nog verdere vragen? Aarzel niet om contact op te nemen via:</p>
         </UContainer>
-        <UContainer class="flex justify-center gap-6 pt-8">
-          <UButton to="/contact" class="bg-gray-200 dark:bg-gray-800 text-xl px-5">
-            Het Contact Formulier
-          </UButton>
-          <UButton to="mailto:info@entrepotdeltartufo.com" class="bg-gray-200 dark:bg-gray-800 text-xl px-5">
-            Ons Een Mail Te Sturen
-          </UButton>
+        <UContainer class="flex flex-col md:flex-row p-8 gap-6 md:gap-0">
+          <UContainer>
+            <UButton to="/contact" class="bg-gray-200 dark:bg-gray-800 text-xl">
+              Het Contact Formulier
+            </UButton>
+          </UContainer>
+          <UContainer>
+            <UButton to="mailto:info@entrepotdeltartufo.com" class="bg-gray-200 dark:bg-gray-800 text-xl">
+              Ons Een Mail Te Sturen
+            </UButton>
+          </UContainer>
         </UContainer>
       </UContainer>
     </UContainer>
