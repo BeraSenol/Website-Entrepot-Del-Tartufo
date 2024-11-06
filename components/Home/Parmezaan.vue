@@ -5,7 +5,7 @@
       <GeneralText5XL title="PARMIGIANO @ CASA" class="pb-8" />
       <UContainer class="flex flex-col text-xl font-light tracking-wide">
         <UContainer>
-          <div class="text-xl font-light tracking-wide grid grid-cols-2 gap-x-28">
+          <div class="text-xl font-light tracking-wide grid grid-cols-2 gap-x-20">
             <p class="text-left pb-2">Regio Limburg</p>
             <p class="text-right italic">18h00 - 20h00</p>
             <p class="text-left pb-2">6+ Personen</p>
