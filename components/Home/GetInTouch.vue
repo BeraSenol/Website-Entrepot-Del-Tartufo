@@ -8,7 +8,7 @@
         <UContainer class="flex flex-col text-xl font-light tracking-wide">
           <p>Heeft u nog verdere vragen? Aarzel niet om contact op te nemen via:</p>
         </UContainer>
-        <UContainer class="flex flex-col md:flex-row p-8 gap-6 md:gap-0">
+        <UContainer class="flex flex-col lg:flex-row p-8 gap-6 lg:gap-0 lg:mx-40">
           <UContainer>
             <UButton to="/contact" class="bg-gray-200 dark:bg-gray-800 text-xl">
               Het Contact Formulier
