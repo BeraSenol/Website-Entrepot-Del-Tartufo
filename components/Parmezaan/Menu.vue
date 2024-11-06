@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="justify-center mx-auto py-12">
+  <UContainer class="justify-center py-12 max-w-2xl">
     <UCard>
       <template #header>
         <GeneralCardTitle title="MENU @ CASA" />

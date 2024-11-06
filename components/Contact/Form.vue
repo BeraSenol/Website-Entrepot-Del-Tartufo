@@ -1,71 +1,41 @@
 <template>
   <UContainer class="max-w-6xl py-8">
-    <UDivider
-      class="pb-10"
-      :avatar="{ src: 'logo-white.png', size: 'sm' }"
-      :ui="{ border: { base: 'dark:border-white-100' } }"
-    />
+    <UDivider class="pb-10" :avatar="{ src: 'logo-white.png', size: 'sm' }"
+      :ui="{ border: { base: 'dark:border-white-100' } }" />
     <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
       <UFormGroup label="Naam" name="name" required size="xl">
-        <UInput
-          v-model="state.name"
-          :ui="{
-            color: {
-              white: {
-                outline: 'text-white-50 dark:text-white-50',
-              },
+        <UInput v-model="state.name" :ui="{
+          color: {
+            white: {
+              outline: 'text-white-50 dark:text-white-50',
             },
-          }"
-        />
+          },
+        }" />
       </UFormGroup>
-      <UFormGroup
-        label="Email"
-        name="email"
-        placeholder="you@example.com"
-        required
-        size="xl"
-      >
-        <UInput
-          v-model="state.email"
-          :ui="{
-            color: {
-              white: {
-                outline: 'text-white-50 dark:text-white-50',
-              },
+      <UFormGroup label="Email" name="email" placeholder="you@example.com" required size="xl">
+        <UInput v-model="state.email" :ui="{
+          color: {
+            white: {
+              outline: 'text-white-50 dark:text-white-50',
             },
-          }"
-        />
+          },
+        }" />
       </UFormGroup>
       <UFormGroup name="textarea" label="Opmerking" required size="xl">
-        <UTextarea
-          :rows="5"
-          autoresize
-          size="lg"
-          v-model="state.textarea"
-          :ui="{
-            color: {
-              white: {
-                outline: 'text-white-50 dark:text-white-50',
-              },
+        <UTextarea :rows="5" autoresize size="lg" v-model="state.textarea" :ui="{
+          color: {
+            white: {
+              outline: 'text-white-50 dark:text-white-50',
             },
-          }"
-        />
+          },
+        }" />
       </UFormGroup>
 
-      <UButton
-        type="submit"
-        class="text-md transition ease-in-out delay-100 duration-300 font-light"
-        variant="ghost"
-        color="black"
-      >
+      <UButton type="submit" class="text-md transition ease-in-out delay-100 duration-300 font-light" variant="ghost"
+        color="black">
         Verzend
       </UButton>
     </UForm>
-    <UDivider
-      class="pt-10"
-      :avatar="{ src: 'logo-white.png', size: 'sm' }"
-      :ui="{ border: { base: 'dark:border-white-100' } }"
-    />
   </UContainer>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
-  <UContainer class="place-items-center text-center">
-    <h1 class="text-5xl font-bold tracking-wide py-12">DEN ENTREPOT</h1>
+  <UContainer class="place-items-center text-center bg-gray-100 dark:bg-gray-900 rounded-xl mt-12">
+   <GeneralText5XL title="DEN ENTREPOT" class="py-12"/>
     <div class="text-xl font-light tracking-wide text-left flex flex-col gap-y-8">
       <p>
         <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en
@@ -68,11 +68,11 @@
         tweede truffelstreek ter wereld.
       </p>
     </div>
-    <p class="mt-12">
-      En zo is de cirkel rond : <br />
-      De Entrepot del Tartufo is geboren! <br />
-      L'entrepot del Tartufo e nato! <br />
-      Benvenuti! Welkom!
-    </p>
+    <UContainer class="py-12 text-md font-light tracking-wide">
+      <p>En zo is de cirkel rond:</p>
+      <p>De Entrepot del Tartufo is geboren!</p>
+      <p>L'entrepot del Tartufo e nato!</p>
+      <p>Benvenuti! Welkom!</p>
+    </UContainer>
   </UContainer>
 </template>
