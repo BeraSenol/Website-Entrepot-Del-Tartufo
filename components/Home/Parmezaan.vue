@@ -13,7 +13,7 @@
           </div>
         </UContainer>
       </UContainer>
-      <UButton to="/parmezaan-bus" class="bg-gray-200 dark:bg-gray-800 text-xl px-5 mt-8">
+      <UButton to="/parmezaan-bus" class="bg-gray-200 dark:bg-gray-800 text-xl px-5 my-8">
         Reserveer De Bus
       </UButton>
       <ParmezaanMenu />

@@ -1,64 +1,50 @@
 <template>
-  <UContainer class="max-w-6xl py-6">
+  <UContainer class="py-6">
     <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
-      <UFormGroup label="Naam" name="name" required size="xl">
-        <UInput v-model="state.name" placeholder="Voor- & achternaam" :ui="{
-          color: {
-            white: {
-              outline: 'text-white dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup label="Naam" name="name" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UInput v-model="state.name" placeholder="Voor- & achternaam" />
       </UFormGroup>
-      <UFormGroup label="Email" name="email" required size="xl">
-        <UInput v-model="state.email" placeholder="voorbeeld@domein.be" :ui="{
-          color: {
-            white: {
-              outline: 'text-white dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup label="Email" name="email" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UInput v-model="state.email" placeholder="voorbeeld@domein.be" />
       </UFormGroup>
-      <UFormGroup name="phone" label="Telefoon" required size="xl">
-        <UInput v-model="state.phone" placeholder="0497 12 34 56" :ui="{
-          color: {
-            white: {
-              outline: 'text-white dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup name="phone" label="Telefoon" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UInput v-model="state.phone" placeholder="0497 12 34 56" />
       </UFormGroup>
-      <UFormGroup name="address" label="Adres" required size="xl">
-        <UTextarea v-model="state.address" placeholder="Straatnaam, nummer & toevoeging" :ui="{
-          color: {
-            white: {
-              outline: 'text-white dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup name="address" label="Adres" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UTextarea v-model="state.address" placeholder="Straatnaam, nummer & toevoeging" />
       </UFormGroup>
-      <UFormGroup name="guest-count" label="Gasten" required size="xl">
-        <UInput v-model="state.guestCount" placeholder="Aantal" type="number" min="1" :ui="{
-          color: {
-            white: {
-              outline: 'text-white dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup name="guest-count" label="Gasten" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UInput v-model="state.guestCount" placeholder="Aantal" type="number" min="1" />
       </UFormGroup>
-      <UFormGroup name="day" label="Datum" required size="xl">
-        <UInput v-model="state.day" placeholder="DD-MM-JJJJ" :ui="{
-          color: {
-            white: {
-              outline: 'text-white dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup name="day" label="Datum" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UInput v-model="state.day" placeholder="DD-MM-JJJJ" />
       </UFormGroup>
-
-      <UButton type="submit" class="text-md transition ease-in-out delay-100 duration-300 font-light" variant="ghost"
-        color="black">
-        Verzenden
+      <UButton type="submit" class="bg-gray-200 dark:bg-gray-800 text-xl px-5">
+        Verzend
       </UButton>
     </UForm>
 
