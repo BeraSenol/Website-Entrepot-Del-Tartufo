@@ -1,38 +1,28 @@
 <template>
-  <UContainer class="max-w-6xl py-8">
-    <UDivider class="pb-10" :avatar="{ src: 'logo-white.png', size: 'sm' }"
-      :ui="{ border: { base: 'dark:border-white-100' } }" />
-    <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
-      <UFormGroup label="Naam" name="name" required size="xl">
-        <UInput v-model="state.name" :ui="{
-          color: {
-            white: {
-              outline: 'text-white-50 dark:text-white-50',
-            },
-          },
-        }" />
+  <UContainer class="pt-8">
+    <UForm :schema="schema" :state="state" class="space-y-8" @submit="onSubmit">
+      <UFormGroup label="Naam" name="name" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UInput v-model="state.name" />
       </UFormGroup>
-      <UFormGroup label="Email" name="email" placeholder="you@example.com" required size="xl">
-        <UInput v-model="state.email" :ui="{
-          color: {
-            white: {
-              outline: 'text-white-50 dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup label="Email" name="email" placeholder="you@example.com" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UInput v-model="state.email" />
       </UFormGroup>
-      <UFormGroup name="textarea" label="Opmerking" required size="xl">
-        <UTextarea :rows="5" autoresize size="lg" v-model="state.textarea" :ui="{
-          color: {
-            white: {
-              outline: 'text-white-50 dark:text-white-50',
-            },
-          },
-        }" />
+      <UFormGroup name="textarea" label="Opmerking" required size="xl" :ui="{
+        label: {
+          base: 'text-lg',
+        },
+      }">
+        <UTextarea :rows="5" autoresize size="lg" v-model="state.textarea" />
       </UFormGroup>
-
-      <UButton type="submit" class="text-md transition ease-in-out delay-100 duration-300 font-light" variant="ghost"
-        color="black">
+      <UButton type="submit" class="bg-gray-200 dark:bg-gray-800 text-xl px-5">
         Verzend
       </UButton>
     </UForm>
@@ -44,7 +34,7 @@ import { object, string, type InferType } from "yup";
 import type { FormSubmitEvent } from "#ui/types";
 
 const schema = object({
-  email: string().email("Invalid email").required("Verplicht!"),
+  email: string().email("Ongeldige Email").required("Verplicht!"),
   name: string().required("Verplicht!"),
   textarea: string().required("Verplicht!"),
 });
@@ -58,7 +48,6 @@ const state = reactive({
 });
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-  // Do something with event.data
   console.log(event.data);
 }
 </script>
