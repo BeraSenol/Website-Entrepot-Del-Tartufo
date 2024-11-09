@@ -1,9 +1,9 @@
 <template>
   <div>
-    <UContainer class="flex flex-col text-center place-items-center w-full pb-8">
+    <div class="flex flex-col text-center place-items-center w-full pb-8">
       <GeneralLunchDays />
       <GeneralText5XL title="LUNCH @ ENTREPOT" class="pb-8" />
-      <div class="text-xl font-light tracking-wide grid grid-cols-2 gap-x-28">
+      <div class="text-xl font-light tracking-wide grid grid-cols-2 gap-x-10 md:gap-x-28">
         <p class="text-left pb-2">Twee Gangen</p>
         <p class="text-right italic">€30</p>
         <p class="text-left pb-2">Drie Gangen</p>
@@ -17,10 +17,10 @@
           Reserveer Hier
         </UButton>
       </UContainer>
-    </UContainer>
-    <UContainer>
+    </div>
+    <div>
       <MenuLunch class="pb-12" />
       <GeneralTruffleDivider />
-    </UContainer>
+    </div>
   </div>
 </template>
