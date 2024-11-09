@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { resolve } from "path";
 export default defineNuxtConfig({
   devtools: {
     enabled: true,
@@ -17,7 +18,8 @@ export default defineNuxtConfig({
   },
 
   image: {
-    // Options
+    inject: true,
+    dir: "assets"
   },
 
   compatibilityDate: '2024-09-12'

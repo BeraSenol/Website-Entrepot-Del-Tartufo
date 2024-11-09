@@ -1,6 +1,8 @@
 <template>
   <UContainer>
-    <UDivider :avatar="{ src: 'logo-white.png', size: 'sm' }"
-      :ui="{ border: { base: 'border-gray-950 dark:border-gray-50 ' } }" />
+    <UDivider 
+      :ui="{ border: { base: 'border-gray-950 dark:border-gray-50 ' } }" >
+      <NuxtImg src="white.png" width="100"/>
+    </UDivider>
   </UContainer>
 </template>

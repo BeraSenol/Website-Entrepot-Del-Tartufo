@@ -22,7 +22,7 @@
         divide: 'divide-gray-950 dark:divide-gray-50 divide-y ',
       }">
         <template #header>
-          <NuxtImg src="logo-white.png" width="30" class="mx-auto" />
+          <NuxtImg src="~/assets/logo/white.png" width="30" class="mx-auto" />
           <UButton color="white" size="xl" icon="i-heroicons-x-mark-20-solid"
             class="md:hidden absolute end-1 top-2 z-50" square padded @click="isOpen = false" />
         </template>
@@ -49,6 +49,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const isOpen = ref(false);
 const links = [
   [
