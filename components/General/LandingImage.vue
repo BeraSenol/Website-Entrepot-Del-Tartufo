@@ -1,7 +1,7 @@
 <template>
   <div class="relative border-b-2">
     <NuxtImg :src="image" class="w-full" />
-    <div class="absolute inset-0 inset-y-1/3">
+    <div class="absolute inset-0" style="top: 40%; bottom: 40%;">
       <UContainer class="flex flex-col place-items-center text-center">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider">
           {{ title }}

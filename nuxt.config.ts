@@ -17,7 +17,8 @@ export default defineNuxtConfig({
   },
 
   image: {
-    inject: true
+    inject: true,
+    dir: "assets"
   },
 
   compatibilityDate: '2024-09-12'
