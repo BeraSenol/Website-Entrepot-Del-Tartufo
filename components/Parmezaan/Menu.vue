@@ -1,17 +1,13 @@
 <template>
-  <div class="justify-center">
-    <UCard>
-      <template #header>
-        <CardTitle title="MENU @ CASA" />
-      </template>
-      <template v-for="parmezanBusItem in parmezanBusMenuItems">
-        <UContainer class="text-center my-0 py-0">
-          <p class="text-lg font-bold tracking-wide pt-3">{{ parmezanBusItem.title }}</p>
-          <p class="text-lg font-light tracking-wide italic pb-3">{{ parmezanBusItem.description }}</p>
-        </UContainer>
-      </template>
-    </UCard>
-  </div>
+  <UCard>
+    <template #header>
+      <CardTitle title="MENU @ CASA" />
+    </template>
+    <template v-for="parmezanBusItem in parmezanBusMenuItems" class="text-center">
+      <p class="text-center font-bold">{{ parmezanBusItem.title }}</p>
+      <p class="text-center italic mb-6">{{ parmezanBusItem.description }}</p>
+    </template>
+  </UCard>
 </template>
 
 <script lang="ts" setup>

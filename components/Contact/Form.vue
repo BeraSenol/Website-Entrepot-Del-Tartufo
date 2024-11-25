@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="pt-8">
+  <div>
     <UForm :schema="schema" :state="state" class="space-y-8" @submit="onSubmit">
       <UFormGroup label="Naam" name="name" required size="xl" :ui="{
         label: {
@@ -26,12 +26,13 @@
         Verzend
       </UButton>
     </UForm>
-  </UContainer>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { object, string, type InferType } from "yup";
 import type { FormSubmitEvent } from "#ui/types";
+import { reactive } from "vue";
 
 const schema = object({
   email: string().email("Ongeldige Email").required("Verplicht!"),

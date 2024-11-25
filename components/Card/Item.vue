@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="grid grid-rows-2 grid-flow-col my-8">
+  <UContainer class="grid grid-rows-2 grid-flow-col mb-6">
     <p class="font-semibold">{{ title }}</p>
     <p class="italic">{{ description }}</p>
     <p class="italic text-right ml-4">{{ price }}</p>

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50 dark:bg-gray-950">
-    <UContainer class="flex flex-col md:flex-row justify-center text-center py-6">
+    <UContainer class="flex flex-col md:flex-row justify-center text-center py-8">
       <!-- ENTREPOT DEL TARTUFO CONTAINER -->
       <UContainer class="flex flex-col pb-12 md:pb-0">
         <NuxtLink to="/" class="text-2xl font-bold pb-2">ENTREPOT DEL TARTUFO</NuxtLink>

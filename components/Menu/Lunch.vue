@@ -44,7 +44,7 @@ const lunchItemsCarne = [
   },
   {
     title: "Carpaccio di Manzo | Tartufo Estivo",
-    description: "Rundscarpaccio | Zomer Truffel",
+    description: "Rundscarpaccio | Truffel",
     price: 29
   },
   {

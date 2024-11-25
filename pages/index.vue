@@ -7,7 +7,7 @@
       <HomeLunchAtEntrepot class="mt-12" />
       <MenuLunch class="mt-12" />
       <TruffleDivider class="mt-12"/>
-      <ParmigianoAtCasa class="mt-12" />
+      <HomeParmigianoAtCasa class="mt-12" />
       <ParmezaanMenu class="mt-12" />
       <TruffleDivider class="mt-12"/>
       <HomeGetInTouch class="mt-12" />
@@ -15,3 +15,8 @@
     </UContainer>
   </div>
 </template>
+
+<script setup lang="ts">
+import ParmigianoAtCasa from '../components/Home/ParmigianoAtCasa.vue';
+</script>
+

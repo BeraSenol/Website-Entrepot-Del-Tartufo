@@ -44,7 +44,7 @@ h6 {
 p {
   font-size: 1.125rem; /* text-lg */
   line-height: 1.75rem; /* text-lg */
-  font-weight: 200; /* font-extralight */
+  font-weight: 300; /* font-light */
   letter-spacing: 0.05em; /* tracking-wider */
 }
 
