@@ -1,26 +1,15 @@
 <template>
-  <div>
-    <TruffleDivider />
-    <UContainer>
-      <UContainer
-        class="bg-gray-100 dark:bg-gray-900 text-gray-950 dark:text-gray-50 p-8 py-12 mt-12 w-full rounded-xl place-items-center text-center">
-        <TitleLarge title="GET IN TOUCH!"/>
-        <UContainer class="flex flex-col text-xl font-light tracking-wide">
-          <p>Heeft u nog verdere vragen? Aarzel niet om contact op te nemen via:</p>
-        </UContainer>
-        <UContainer class="flex flex-col lg:flex-row p-8 gap-6 lg:gap-0 lg:mx-40">
-          <UContainer>
-            <UButton to="/contact" class="bg-gray-200 dark:bg-gray-800 text-xl">
-              Het Contact Formulier
-            </UButton>
-          </UContainer>
-          <UContainer>
-            <UButton to="mailto:info@entrepotdeltartufo.com" class="bg-gray-200 dark:bg-gray-800 text-xl">
-              Ons Een Mail Te Sturen
-            </UButton>
-          </UContainer>
-        </UContainer>
-      </UContainer>
+  <UContainer class="bg-gray-100 dark:bg-gray-900 text-gray-950 dark:text-gray-50 flex flex-col user-rounded-xl">
+    <TitleLarge class="py-8" title="GET IN TOUCH!" />
+    <p class="text-center">Heeft u nog verdere vragen? Aarzel niet om contact op te nemen via:</p>
+    <UContainer class="grid grid-cols-7 py-8">
+      <UButton to="/contact" class="bg-gray-200 dark:bg-gray-800 col-span-3 user-button">
+        Het Contact Formulier
+      </UButton>
+      <UButton to="mailto:info@entrepotdeltartufo.com"
+        class="bg-gray-200 dark:bg-gray-800 col-span-3 col-start-5 user-button">
+        Ons Een Mail Te Sturen
+      </UButton>
     </UContainer>
-  </div>
+  </UContainer>
 </template>

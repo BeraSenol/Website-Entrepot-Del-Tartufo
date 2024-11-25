@@ -8,12 +8,14 @@ import ParmigianoAtCasa from '../components/Home/ParmigianoAtCasa.vue';
       subtitle="Italian food with a touch of truffle" />
     <UContainer>
       <HomeWelcome class="mt-12" />
-      <HomeLunchAtEntrepot class="my-12" />
-      <MenuLunch class="my-12" />
-      <TruffleDivider />
-      <ParmigianoAtCasa class="my-12"/>
-      <ParmezaanMenu />
-      <HomeGetInTouch />
+      <HomeLunchAtEntrepot class="mt-12" />
+      <MenuLunch class="mt-12" />
+      <TruffleDivider class="mt-12"/>
+      <ParmigianoAtCasa class="mt-12" />
+      <ParmezaanMenu class="mt-12" />
+      <TruffleDivider class="mt-12"/>
+      <HomeGetInTouch class="mt-12" />
+      <TruffleDivider class="mt-12"/>
     </UContainer>
   </div>
 </template>

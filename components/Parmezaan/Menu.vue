@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="justify-center pb-12">
+  <div class="justify-center">
     <UCard>
       <template #header>
         <CardTitle title="MENU @ CASA" />
@@ -11,7 +11,7 @@
         </UContainer>
       </template>
     </UCard>
-  </UContainer>
+  </div>
 </template>
 
 <script lang="ts" setup>
