@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import ParmigianoAtCasa from '../components/Home/ParmigianoAtCasa.vue';
-</script>
-
 <template>
   <div>
     <LandingImage image="landing-images/index.jpg" title="ENTREPOT DEL TARTUFO"

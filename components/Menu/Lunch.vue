@@ -27,7 +27,6 @@
 
 <script lang="ts" setup>
 import { useRoute } from 'nuxt/app';
-import AvailableDays from '../AvailableDays.vue';
 
 const route = useRoute();
 function isOnMenuPage(): boolean {

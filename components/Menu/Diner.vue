@@ -1,10 +1,10 @@
 <template>
   <div>
-    <UContainer class="text-center my-8 mt-12">
+    <div class="text-center">
       <AvailableDays days="Ma / Do / Vr / Za / Zo" />
       <TextDivider text="DINER" />
-    </UContainer>
-    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <UCard>
         <template #header>
           <CardTitle title="ANTI PASTI" />
@@ -13,7 +13,6 @@
           <CardItem :title="antiPasti.title" :description="antiPasti.description" :price="antiPasti.price" />
         </template>
       </UCard>
-
       <UCard>
         <template #header>
           <CardTitle title="PRIMI PIATTI" />
@@ -22,27 +21,25 @@
           <CardItem :title="primiPiatti.title" :description="primiPiatti.description" :price="primiPiatti.price" />
         </template>
       </UCard>
-
       <UCard>
         <template #header>
           <CardTitle title="SECONDI PIATTI" />
-          <p class="text-xl font-light tracking-wide text-center">CARNE</p>
+          <h6 class="font-light text-center">CARNE</h6>
         </template>
         <template v-for="secondiCarne in secondiCarnes">
           <CardItem :title="secondiCarne.title" :description="secondiCarne.description" :price="secondiCarne.price" />
         </template>
       </UCard>
-
       <UCard>
         <template #header>
           <CardTitle title="SECONDI PIATTI" />
-          <p class="text-xl font-light tracking-wide text-center">PESCE</p>
+          <h6 class="font-light text-center">PESCE</h6>
         </template>
         <template v-for="secondiPesce in secondiPesces">
           <CardItem :title="secondiPesce.title" :description="secondiPesce.description" :price="secondiPesce.price" />
         </template>
       </UCard>
-    </UContainer>
+    </div>
   </div>
 </template>
 
