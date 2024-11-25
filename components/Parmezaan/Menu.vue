@@ -2,7 +2,7 @@
   <UContainer class="justify-center pb-12">
     <UCard>
       <template #header>
-        <GeneralCardTitle title="MENU @ CASA" />
+        <CardTitle title="MENU @ CASA" />
       </template>
       <template v-for="parmezanBusItem in parmezanBusMenuItems">
         <UContainer class="text-center my-0 py-0">

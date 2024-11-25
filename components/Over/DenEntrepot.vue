@@ -1,7 +1,7 @@
 <template>
   <UContainer>
     <UContainer class="place-items-center text-center bg-gray-100 dark:bg-gray-900 rounded-xl mt-12">
-      <GeneralText5XL title="DEN ENTREPOT" class="py-12" />
+      <TitleLarge title="DEN ENTREPOT"/>
       <UContainer class="text-xl font-light tracking-wide text-left flex flex-col gap-y-8">
         <p>
           <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en

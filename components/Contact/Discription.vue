@@ -2,7 +2,7 @@
   <div>
     <UContainer>
       <UContainer class="text-center bg-gray-100 dark:bg-gray-900 rounded-xl my-12">
-        <GeneralText5XL title="CONTACT" class="pt-8" />
+        <TitleLarge title="CONTACT"/>
         <div class="text-xl font-light tracking-wide py-8">
           <p class="pb-4">
             Entrepot del Tartufo ligt in hartje Hasselt, op slechts enkele meters van
@@ -16,6 +16,6 @@
         </div>
       </UContainer>
     </UContainer>
-    <GeneralTruffleDivider />
+    <TruffleDivider />
   </div>
 </template>

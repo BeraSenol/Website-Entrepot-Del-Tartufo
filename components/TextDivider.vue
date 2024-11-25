@@ -1,5 +1,5 @@
 <template>
-  <UDivider :label="text" :ui="{
+  <UDivider class="pb-8" :label="text" :ui="{
     border: { base: 'border-gray-950 dark:border-gray-50 ' },
     label: 'text-4xl font-bold tracking-wide',
   }" />
@@ -10,5 +10,3 @@ export default {
   props: ["text"]
 }
 </script>
-
-<style></style>

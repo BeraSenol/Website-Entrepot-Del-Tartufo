@@ -1,15 +1,15 @@
 <template>
   <div class="relative border-b-2">
     <NuxtImg :src="image" class="w-full" />
-    <div class="absolute inset-0" style="top: 40%; bottom: 40%;">
+    <div class="absolute inset-0" style="top: 37%; bottom: 37%;">
       <UContainer class="flex flex-col place-items-center text-center">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider">
+        <h3 class="md:text-5xl lg:text-6xl xl:text-7xl">
           {{ title }}
-        </h1>
-        <NuxtImg src="logo/white.png" class="py-2" sizes="30 md:40 lg:50" />
-        <h2 class="text-lg md:text-xl lg:text-2xl font-light italic">
+        </h3>
+        <TruffleLogo class="my-2"/>
+        <p class="lg:text-xl xl:text-2xl italic">
           {{ subtitle }}
-        </h2>
+        </p>
       </UContainer>
     </div>
   </div>

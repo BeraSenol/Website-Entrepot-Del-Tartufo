@@ -1,31 +1,34 @@
 <template>
   <div>
-    <UContainer class="text-center my-8 mt-12">
-      <GeneralLunchDays v-show="isOnMenuPage()" />
-      <GeneralTextDivider text="LUNCH" />
-    </UContainer>
-    <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="text-center">
+      <AvailableDays days="Ma / Do / Vr" v-show="isOnMenuPage()" />
+      <TextDivider text="LUNCH" />
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <UCard>
         <template #header>
-          <GeneralCardTitle title="CARNE" />
+          <CardTitle title="CARNE" />
         </template>
         <template v-for="lunchItem in lunchItemsCarne">
-          <GeneralCardItem :title="lunchItem.title" :description="lunchItem.description" :price="lunchItem.price" />
+          <CardItem :title="lunchItem.title" :description="lunchItem.description" :price="lunchItem.price" />
         </template>
       </UCard>
       <UCard>
         <template #header>
-          <GeneralCardTitle title="PESCE" />
+          <CardTitle title="PESCE" />
         </template>
         <template v-for="lunchItem in lunchItemsPesce">
-          <GeneralCardItem :title="lunchItem.title" :description="lunchItem.description" :price="lunchItem.price" />
+          <CardItem :title="lunchItem.title" :description="lunchItem.description" :price="lunchItem.price" />
         </template>
       </UCard>
-    </UContainer>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useRoute } from 'nuxt/app';
+import AvailableDays from '../AvailableDays.vue';
+
 const route = useRoute();
 function isOnMenuPage(): boolean {
   if (route.fullPath === "/menu") {

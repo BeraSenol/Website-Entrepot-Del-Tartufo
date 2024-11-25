@@ -1,0 +1,64 @@
+/* GENERAL */
+h1 {
+  font-size: 3rem; /* text-6xl */
+  line-height: 1; /* text-6xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: 0.025em; /* tracking-wide */
+}
+
+h2 {
+  font-size: 3rem; /* text-5xl */
+  line-height: 1; /* text-5xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: 0.025em; /* tracking-wide */
+}
+
+h3 {
+  font-size: 2.25rem; /* text-4xl */
+  line-height: 2.5rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: 0.025em; /* tracking-wide */
+}
+
+h4 {
+  font-size: 1.875rem; /* text-3xl */
+  line-height: 2.25rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: 0.025em; /* tracking-wide */
+}
+
+h5 {
+  font-size: 1.5rem; /* text-2xl */
+  line-height: 2rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: 0.025em; /* tracking-wide */
+}
+
+h6 {
+  font-size: 1.25rem; /* text-xl */
+  line-height: 1.75rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+  letter-spacing: 0.025em; /* tracking-wide */
+}
+
+p {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75rem; /* text-lg */
+  font-weight: 200; /* font-extralight */
+  letter-spacing: 0.05em; /* tracking-wider */
+}
+
+/* CUSTOM */
+.user-button {
+  font-size: 1.25rem; /* text-xl */
+  line-height: 1.75rem; /* text-xl */
+  font-weight: 400; /* font-extralight */
+}
+
+.user-rounded-xl {
+  border-radius: 0.75rem; /* rounded-xl */
+}
+
+.user-leading-8 {
+  line-height: 2rem; /* 32px */
+}

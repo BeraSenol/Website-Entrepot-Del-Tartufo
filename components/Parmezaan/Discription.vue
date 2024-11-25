@@ -2,7 +2,7 @@
   <UContainer>
     <UContainer class="place-items-center text-center bg-gray-100 dark:bg-gray-900 my-8 rounded-xl">
       <GeneralOpeningDays class="pt-8" />
-      <GeneralText5XL title="PARMIGIANO @ CASA" class="pb-8" />
+      <TitleLarge title="PARMIGIANO @ CASA"/>
       <div class="text-xl font-light tracking-wide flex flex-col gap-6 pb-12">
         <p>
           De Parmezaanbus brengt de restaurant-experience bij jouw thuis. De

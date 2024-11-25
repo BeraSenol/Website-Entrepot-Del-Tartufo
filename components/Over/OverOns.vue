@@ -2,7 +2,7 @@
   <div>
     <UContainer>
       <UContainer class="place-items-center text-center bg-gray-100 dark:bg-gray-900 rounded-xl my-12">
-        <GeneralText5XL title="OVER ONS" class="py-12" />
+        <TitleLarge title="OVER ONS"/>
         <UContainer class="text-xl font-light tracking-wide text-left flex flex-col gap-6">
           <p>
             Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse
@@ -25,6 +25,6 @@
         </UContainer>
       </UContainer>
     </UContainer>
-    <GeneralTruffleDivider />
+    <TruffleDivider />
   </div>
 </template>

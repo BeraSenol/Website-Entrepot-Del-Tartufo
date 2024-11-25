@@ -1,48 +1,45 @@
 <template>
   <div>
     <UContainer class="text-center my-8 mt-12">
-      <GeneralOpeningDays />
-      <GeneralTextDivider text="DINER" />
+      <AvailableDays days="Ma / Do / Vr / Za / Zo" />
+      <TextDivider text="DINER" />
     </UContainer>
     <UContainer class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <UCard>
         <template #header>
-          <GeneralCardTitle title="ANTI PASTI" />
+          <CardTitle title="ANTI PASTI" />
         </template>
         <template v-for="antiPasti in antiPastis">
-          <GeneralCardItem :title="antiPasti.title" :description="antiPasti.description" :price="antiPasti.price" />
+          <CardItem :title="antiPasti.title" :description="antiPasti.description" :price="antiPasti.price" />
         </template>
       </UCard>
 
       <UCard>
         <template #header>
-          <GeneralCardTitle title="PRIMI PIATTI" />
+          <CardTitle title="PRIMI PIATTI" />
         </template>
         <template v-for="primiPiatti in primiPiattis">
-          <GeneralCardItem :title="primiPiatti.title" :description="primiPiatti.description"
-            :price="primiPiatti.price" />
+          <CardItem :title="primiPiatti.title" :description="primiPiatti.description" :price="primiPiatti.price" />
         </template>
       </UCard>
 
       <UCard>
         <template #header>
-          <GeneralCardTitle title="SECONDI PIATTI" />
+          <CardTitle title="SECONDI PIATTI" />
           <p class="text-xl font-light tracking-wide text-center">CARNE</p>
         </template>
         <template v-for="secondiCarne in secondiCarnes">
-          <GeneralCardItem :title="secondiCarne.title" :description="secondiCarne.description"
-            :price="secondiCarne.price" />
+          <CardItem :title="secondiCarne.title" :description="secondiCarne.description" :price="secondiCarne.price" />
         </template>
       </UCard>
 
       <UCard>
         <template #header>
-          <GeneralCardTitle title="SECONDI PIATTI" />
+          <CardTitle title="SECONDI PIATTI" />
           <p class="text-xl font-light tracking-wide text-center">PESCE</p>
         </template>
         <template v-for="secondiPesce in secondiPesces">
-          <GeneralCardItem :title="secondiPesce.title" :description="secondiPesce.description"
-            :price="secondiPesce.price" />
+          <CardItem :title="secondiPesce.title" :description="secondiPesce.description" :price="secondiPesce.price" />
         </template>
       </UCard>
     </UContainer>

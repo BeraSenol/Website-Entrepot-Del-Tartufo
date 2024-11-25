@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-4xl xl:text-5xl font-bold tracking-wide">{{ title }}</h1>
+  <h4 class="text-center">{{ title }}</h4>
 </template>
 
 <script lang="ts">
