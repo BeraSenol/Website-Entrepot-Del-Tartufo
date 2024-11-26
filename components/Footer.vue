@@ -6,14 +6,14 @@
         <NuxtLink to="/">
           <h5>ENTREPOT DEL TARTUFO</h5>
         </NuxtLink>
-        <p class="italic font-extralight">Italian food with a touch of truffle</p>
+        <p class="italic">Italian food with a touch of truffle</p>
         <div class="flex justify-center">
           <LogoFacebook />
           <LogoInstagram />
         </div>
       </UContainer>
       <!-- CONTACT CONTAINER -->
-      <UContainer class="flex flex-col gap-y-1 font-extralight">
+      <UContainer class="flex flex-col gap-y-1">
         <NuxtLink to="/contact">
           <h5>CONTACT</h5>
         </NuxtLink>
@@ -31,7 +31,7 @@
       <!-- OPENINGSUREN CONTAINER -->
       <UContainer class="flex flex-col">
         <h5 class="mb-2">OPENINGSUREN</h5>
-        <div class="grid grid-cols-2 gap-x-10 gap-y-2 font-extralight tracking-wider">
+        <div class="grid grid-cols-2 gap-x-10 gap-y-2 tracking-widest">
           <p class="text-right">Ma / Do / Vr</p>
           <p class="text-left">12h - 14h<br>18h - 22h</p>
           <p class="text-right">Za / Zo</p>
