@@ -15,8 +15,3 @@
     </UContainer>
   </div>
 </template>
-
-<script setup lang="ts">
-import ParmigianoAtCasa from '../components/Home/ParmigianoAtCasa.vue';
-</script>
-
