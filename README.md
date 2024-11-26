@@ -2,7 +2,7 @@
 
 Photos aren't available at the moment, it's caused by a know issues within the assest directory, works fine in dev env but not after building/generating.
 
-![Screenshot_Home](https://github.com/BeraSenol/Website-Entrepot-Del-Tartufo/blob/readme/screenshot_home.png)
+![Screenshot_Home](https://github.com/BeraSenol/Website-Entrepot-Del-Tartufo/blob/807f8f06560b98ceebedbe6f2ffa219f1909eb12/readme/screenshot_home.png)
 
 ### Nuxt Modules:
 
