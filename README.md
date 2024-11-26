@@ -1,5 +1,9 @@
 # Website for a local italian restaurant named Entrepot del Tartufo (Work in Progress)
 
+Photos aren't available at the moment, it's caused by a know issues within the assest directory, works fine in dev env but not after building/generating.
+
+![Screenshot_Home](https://github.com/BeraSenol/Chess-Game-Java-2.0/blob/main/res/readme/chess-board-pieces.png)
+
 ### Nuxt Modules:
 
 - Nuxt UI
