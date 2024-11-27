@@ -8,7 +8,7 @@
       <p class="text-left">Drie Gangen</p>
       <p class="text-right italic">€40</p>
     </UContainer>
-    <UContainer class="grid grid-cols-5 pt-8 w-full max-w-2xl">
+    <UContainer class="grid grid-cols-5 pt-6 w-full max-w-2xl">
       <UButton to="/menu" class="bg-gray-100 dark:bg-gray-900 col-span-2 block user-button">
         Bekijk Diner Menu
       </UButton>

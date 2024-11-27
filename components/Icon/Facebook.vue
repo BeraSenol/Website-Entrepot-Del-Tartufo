@@ -9,9 +9,3 @@
     </a href="">
   </div>
 </template>
-
-<script lang="ts">
-export default {
-  name: "MdiFacebookBox"
-};
-</script>

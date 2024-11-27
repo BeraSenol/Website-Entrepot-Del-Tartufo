@@ -9,7 +9,7 @@
         keuken met een touch of truffle in combinatie met steengoede wijnen.
       </p>
     </UContainer>
-    <UButton to="/over" class="bg-gray-200 dark:bg-gray-800 mx-auto user-button px-6">
+    <UButton to="/over" class="bg-gray-200 dark:bg-gray-800 mx-auto transition ease-in-out user-button">
       Ons Verhaal Hier
     </UButton>
   </div>
