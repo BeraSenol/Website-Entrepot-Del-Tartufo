@@ -16,10 +16,10 @@
         eten in een ongestoorde gezellige sfeer. Onder het motto
       </p>
     </UContainer>
-    <UContainer class="text-center font-extralight">
-      <p>Eenvoud is de ultieme verfijning</p>
-      <p>La semplicità è l'ultima sofisticazione</p>
-      <p>Simplicity is the ultimate sophistication</p>
+    <UContainer class="text-center">
+      <p class="text-base">Eenvoud is de ultieme verfijning</p>
+      <p class="text-base">La semplicità è l'ultima sofisticazione</p>
+      <p class="text-base">Simplicity is the ultimate sophistication</p>
     </UContainer>
   </UContainer>
 </template>

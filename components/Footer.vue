@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50 dark:bg-gray-950">
-    <UContainer class="flex flex-col md:flex-row text-center gap-y-12 py-8">
+    <UContainer class="grid grid-cols-1 md:grid-cols-3 text-center gap-y-12 py-8">
       <!-- ENTREPOT DEL TARTUFO CONTAINER -->
       <UContainer class="flex flex-col gap-y-1">
         <NuxtLink to="/">
@@ -8,8 +8,8 @@
         </NuxtLink>
         <p class="italic">Italian food with a touch of truffle</p>
         <div class="flex justify-center">
-          <LogoFacebook />
-          <LogoInstagram />
+          <IconFacebook />
+          <IconInstagram />
         </div>
       </UContainer>
       <!-- CONTACT CONTAINER -->

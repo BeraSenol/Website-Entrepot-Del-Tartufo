@@ -68,11 +68,11 @@
         tweede truffelstreek ter wereld.
       </p>
     </UContainer>
-    <UContainer class="text-center font-extralight">
-      <p>En zo is de cirkel rond:</p>
-      <p>De Entrepot del Tartufo is geboren!</p>
-      <p>L'entrepot del Tartufo e nato!</p>
-      <p>Benvenuti! Welkom!</p>
-    </UContainer>
+    <div class="text-center">
+      <p class="text-base">En zo is de cirkel rond:</p>
+      <p class="text-base">De Entrepot del Tartufo is geboren!</p>
+      <p class="text-base">L'entrepot del Tartufo e nato!</p>
+      <p class="text-base">Benvenuti! Welkom!</p>
+    </div>
   </UContainer>
 </template>
