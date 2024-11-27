@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="flex flex-col text-center place-items-center">
+  <div class="flex flex-col text-center place-items-center">
     <AvailableDays days="Ma / Do / Vr" />
     <TitleLarge title="LUNCH @ ENTREPOT" />
     <UContainer class="grid grid-cols-2 px-8 w-full max-w-xl">
@@ -16,5 +16,5 @@
         Reserveer Hier
       </UButton>
     </UContainer>
-  </UContainer>
+  </div>
 </template>

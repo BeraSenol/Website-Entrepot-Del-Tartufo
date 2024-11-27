@@ -1,7 +1,7 @@
 <template>
-  <UContainer class="bg-gray-100 dark:bg-gray-900 user-rounded-xl py-12">
+  <div class="bg-gray-100 dark:bg-gray-900 user-rounded-xl py-12">
     <TitleLarge title="CONTACT" />
-    <UContainer class="user-leading-8">
+    <UContainer class="user-leading-8 mx-8">
       <p>
         Entrepot del Tartufo ligt in hartje Hasselt, op slechts enkele meters van
         het <span class="font-bold">Dusartplein</span> en de
@@ -12,5 +12,5 @@
         TT bevinden zich op 5m wandelafstand.
       </p>
     </UContainer>
-  </UContainer>
+  </div>
 </template>

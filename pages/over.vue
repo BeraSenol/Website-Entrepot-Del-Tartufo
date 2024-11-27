@@ -1,11 +1,9 @@
 <template>
-  <div>
+  <UContainer class="flex flex-col gap-y-12">
     <LandingImage image="landing-images/over.jpg" title="OVER ONS" subtitle="Italian food with a touch of truffle" />
-    <UContainer>
-      <OverOns class="mt-12" />
-      <TruffleDivider class="mt-12" />
-      <OverDenEntrepot class="mt-12" />
-      <TruffleDivider class="py-12" />
-    </UContainer>
-  </div>
+    <OverOns />
+    <TruffleDivider />
+    <OverDenEntrepot />
+    <TruffleDivider />
+  </UContainer>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="flex flex-col">
+  <div class="flex flex-col">
     <AvailableDays days="Ma / Do / Vr / Za / Zo" />
     <TitleLarge title="PARMIGIANO @ CASA" />
     <UContainer class="grid grid-cols-2 px-8 w-full max-w-xl">
@@ -11,7 +11,7 @@
     <UButton to="/parmezaan-bus" v-show="!isOnParmezanPage()" class="bg-gray-100 dark:bg-gray-900 mx-auto mt-8 user-button px-6">
       Reserveer De Bus
     </UButton>
-  </UContainer>
+  </div>
 </template>
 
 <script lang="ts" setup>
