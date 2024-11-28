@@ -18,13 +18,13 @@
           <h5>CONTACT</h5>
         </NuxtLink>
         <NuxtLink href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank">
-          <p>Hemelrijk 22 / 3500 Hasselt</p>
+          <p class="hover:underline underline-offset-2 decoration-1">Hemelrijk 22 / 3500 Hasselt</p>
         </NuxtLink>
-        <NuxtLink>
-          <p>0472 93 08 69</p>
+        <NuxtLink href="tel:0472930869">
+          <p class="hover:underline underline-offset-2 decoration-1">0472 93 08 69</p>
         </NuxtLink>
         <NuxtLink href="mailto:info@entrepotdeltartufo.com">
-          <p>info@entrepotdeltartufo.com</p>
+          <p class="hover:underline underline-offset-2 decoration-1">info@entrepotdeltartufo.com</p>
         </NuxtLink>
         <p>BTW: OD BV BE0734.961.476</p>
       </UContainer>

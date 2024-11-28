@@ -42,7 +42,7 @@
     }">
       <UInput v-model="state.day" placeholder="DD-MM-JJJJ" />
     </UFormGroup>
-    <UButton type="submit" class="bg-gray-200 dark:bg-gray-800 text-xl px-5">
+    <UButton type="submit" class="bg-gray-200 dark:bg-gray-800 user-button">
       Verzend
     </UButton>
   </UForm>

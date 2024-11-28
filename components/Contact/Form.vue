@@ -21,7 +21,7 @@
     }">
       <UTextarea :rows="5" autoresize size="lg" v-model="state.textarea" />
     </UFormGroup>
-    <UButton type="submit" class="bg-gray-200 dark:bg-gray-800 text-xl px-5">
+    <UButton type="submit" class="bg-gray-200 dark:bg-gray-800 user-button">
       Verzend
     </UButton>
   </UForm>
