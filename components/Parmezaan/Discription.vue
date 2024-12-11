@@ -1,5 +1,4 @@
 <template>
-
   <UContainer class="bg-gray-100 dark:bg-gray-900 py-12 user-rounded-xl">
     <div>
       <AvailableDays days="Ma / Do / Vr / Za / Zo" />

@@ -3,10 +3,7 @@
     <TitleLarge title="OVER ONS" />
     <UContainer class="flex flex-col text-left gap-y-8 pb-12 .user-leading-8">
       <p>
-        Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse
-        keuken naar hartje Hasselt. Nicolino Salvatore, alom gewaardeerd als chef
-        van de vroegere Mario's Trattoria bereidt klassieke en minder klassieke
-        Italiaanse gerechten met een touch of truffle.
+       {{ description }}
       </p>
       <p>
         Olivier laat u vervolgens een keuze maken tussen steengoede
@@ -23,3 +20,9 @@
     </UContainer>
   </UContainer>
 </template>
+
+<script lang="ts">
+export default {
+  props: ["description"]
+}
+</script>
