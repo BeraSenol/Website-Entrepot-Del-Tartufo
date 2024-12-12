@@ -13,6 +13,7 @@ Photos aren't available at the moment, it's caused by a know issues within the a
 - [x] Layouts
 - [x] Pages / File Based Routing
 - [x] Reuable Components
+- [x] Mobile Friendly
 - [x] Error Page
 - [x] General Styling
 - [x] Assets Processed by Vite
@@ -30,6 +31,7 @@ Photos aren't available at the moment, it's caused by a know issues within the a
 - Nuxt Color
 - Nuxt Image
 - TailwindCSS
+- Yup Form Validation
 
 <br>
 
