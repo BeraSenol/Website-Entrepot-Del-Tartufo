@@ -1,7 +1,7 @@
 <template>
   <UContainer class="flex flex-col gap-y-12">
     <LandingImage :image="contactImage" :title="contactTitle" :subtitle="contactSubTitle" />
-    <ContactDiscription :description="contactDescription" />
+    <ContactDiscription />
     <TruffleDivider />
     <ContactForm />
     <TruffleDivider />
@@ -9,16 +9,21 @@
 </template>
 
 <script setup>
+const route = useRoute()
 const contactTitle = ref('Contacteer Ons');
-const contactSubTitle = ref('Italian food with a touch of truffle');
-const contactDescription = ref('Entrepot del Tartufo ligt in hartje Hasselt, op slechts enkele meters van het Dusartplein en de Zuivelmarkt! Parking Dusartplein en parking TT bevinden zich op 5m wandelafstand.')
+const contactSubTitle = ref('Voor verdere vragen of specifieke wensen');
 const contactImage = ref('landing-images/contact.jpg');
+const contactUrl = ref(`entrepotdeltartufo.netlify.app${route.path}`)
 
 useSeoMeta({
-  title: () => `${contactTitle.value} - ${contactSubTitle.value}`,
-  description: () => `${contactDescription.value}`,
-  ogTitle: () => `${contactTitle.value} - ${contactSubTitle.value}`,
-  ogDescription: () => `${contactDescription.value}`,
+  title: () => `${contactTitle.value}`,
+  description: () => `${contactSubTitle.value}`,
+  ogTitle: () => `${contactTitle.value}`,
+  ogDescription: () => `${contactSubTitle.value}`,
+  ogUrl: () => `${contactUrl.value}`,
   ogImage: () => `${contactImage.value}`,
+  twitterTitle: () => `${contactTitle.value}`,
+  twitterDescription: () => `${contactSubTitle.value}`,
+  twitterImage: () => `${contactImage.value}`,
 });
 </script>

@@ -11,16 +11,21 @@
 </template>
 
 <script setup>
+const route = useRoute()
 const parmezanTitle = ref('Parmezaan Bus');
-const parmezanSubTitle = ref('Italian food with a touch of truffle');
-const parmezanDescription = ref('Parmigiano @ Casa.')
+const parmezanSubTitle = ref('Ervaar de restaurant ervaring aan je deur');
 const parmezanImage = ref('landing-images/parmezan.jpg');
+const parmezanUrl = ref(`entrepotdeltartufo.netlify.app${route.path}`)
 
 useSeoMeta({
-  title: () => `${parmezanTitle.value} - ${parmezanSubTitle.value}`,
-  description: () => `${parmezanDescription.value}`,
-  ogTitle: () => `${parmezanTitle.value} - ${parmezanSubTitle.value}`,
-  ogDescription: () => `${parmezanDescription.value}`,
+  title: () => `${parmezanTitle.value}`,
+  description: () => `${parmezanSubTitle.value}`,
+  ogTitle: () => `${parmezanTitle.value}`,
+  ogDescription: () => `${parmezanSubTitle.value}`,
+  ogUrl: () => `${parmezanUrl.value}`,
   ogImage: () => `${parmezanImage.value}`,
+  twitterTitle: () => `${parmezanTitle.value}`,
+  twitterDescription: () => `${parmezanSubTitle.value}`,
+  twitterImage: () => `${parmezanImage.value}`,
 });
 </script>

@@ -3,7 +3,9 @@
     <TruffleLogoNamed />
     <UContainer class="py-8 mx-8 user-leading-8">
       <p>
-       {{ description }}
+        Van harte welkom op onze website! Restaurant Entrepot del Tartufo is gevestigd in een oude opslagplaats in het
+        gezellige hemelrijk straatje te Hasselt. In een ongedwongen sfeer kan u genieten van de puurheid van de
+        Italiaanse keuken met een touch of truffle in combinatie met steengoede wijnen.
       </p>
     </UContainer>
     <UButton to="/over" class="bg-gray-200 dark:bg-gray-800 mx-auto px-12 transition ease-in-out user-button">
@@ -11,9 +13,3 @@
     </UButton>
   </div>
 </template>
-
-<script lang="ts">
-export default {
-  props: ["description"]
-}
-</script>

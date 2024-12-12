@@ -1,18 +1,39 @@
-# Website for a local italian restaurant named Entrepot del Tartufo (Work in Progress)
+# Introduction
+
+A Website for a local italian restaurant named Entrepot del Tartufo (Work in Progress).
 
 Photos aren't available at the moment, it's caused by a know issues within the assest directory, works fine in dev env but not after building/generating.
 
 ![Screenshot_Home](https://github.com/BeraSenol/Website-Entrepot-Del-Tartufo/blob/807f8f06560b98ceebedbe6f2ffa219f1909eb12/readme/screenshot_home.png)
 
-### Nuxt Modules:
+<br>
+
+# Features
+
+- [x] Layouts
+- [x] Pages / File Based Routing
+- [x] Reuable Components
+- [x] Error Page
+- [x] General Styling
+- [x] Assets Processed by Vite
+- [x] Dynamic SEO
+- [ ] Middleware
+- [ ] Data Fetching
+- [ ] State Management
+- [ ] Error Handling
+
+<br>
+
+# Nuxt Modules:
 
 - Nuxt UI
 - Nuxt Color
 - Nuxt Image
 - TailwindCSS
-- Nuxt Content (To Do)
 
-## Setup
+<br>
+
+# Setup
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 

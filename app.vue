@@ -8,10 +8,7 @@
 </template>
 
 <script setup>
-import { useSeoMeta } from 'nuxt/app';
-
 useSeoMeta({
-  ogUrl: 'https://entrepotdeltartufo.netlify.app',
   twitterCard: 'summary'
 })
 
