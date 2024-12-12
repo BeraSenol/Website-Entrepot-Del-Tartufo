@@ -4,7 +4,7 @@ A Website for a local italian restaurant named Entrepot del Tartufo (Work in Pro
 
 Photos aren't available at the moment, it's caused by a know issues within the assest directory, works fine in dev env but not after building/generating.
 
-![Screenshot_Home](https://github.com/BeraSenol/Website-Entrepot-Del-Tartufo/blob/readme/screenshot_home.png)
+![Screenshot_Home](https://github.com/BeraSenol/Website-Entrepot-Del-Tartufo/blob/1c1ff126b9dcec9714b05cce1b5de798b518dd1b/readme/screenshot_home.png)
 
 <br>
 
