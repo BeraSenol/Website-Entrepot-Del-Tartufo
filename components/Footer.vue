@@ -37,7 +37,7 @@
           <p class="text-right">Za / Zo</p>
           <p class="text-left">18h - 22h</p>
           <p class="text-right">Di / Wo</p>
-          <p class="text-left italic">Gesloten</p>
+          <p class="text-left italic ml-1">Gesloten</p>
         </div>
       </UContainer>
     </UContainer>

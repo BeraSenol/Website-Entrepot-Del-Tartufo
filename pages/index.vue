@@ -25,5 +25,8 @@ useSeoMeta({
   ogTitle: () => `${homeTitle.value} - ${homeSubTitle.value}`,
   ogDescription: () => `${homeDescription.value}`,
   ogImage: () => `${homeImage.value}`,
+  twitterTitle: () => `${homeTitle.value} - ${homeSubTitle.value}`,
+  twitterDescription: () => `${homeDescription.value}`,
+  twitterImage: () => `${homeImage.value}`,
 });
 </script>
