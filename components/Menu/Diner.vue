@@ -5,40 +5,10 @@
       <TitleDivider text="DINER" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <UCard>
-        <template #header>
-          <CardTitle title="ANTI PASTI" />
-        </template>
-        <template v-for="item in antiPastis">
-          <CardItem :title="item.name" :description="item.description" :price="item.price" />
-        </template>
-      </UCard>
-      <UCard>
-        <template #header>
-          <CardTitle title="PRIMI PIATTI" />
-        </template>
-        <template v-for="item in primiPiattis">
-          <CardItem :title="item.name" :description="item.description" :price="item.price" />
-        </template>
-      </UCard>
-      <UCard>
-        <template #header>
-          <CardTitle title="SECONDI PIATTI" />
-          <h6 class="font-light text-center">CARNE</h6>
-        </template>
-        <template v-for="item in secondiCarnes">
-          <CardItem :title="item.name" :description="item.description" :price="item.price" />
-        </template>
-      </UCard>
-      <UCard>
-        <template #header>
-          <CardTitle title="SECONDI PIATTI" />
-          <h6 class="font-light text-center">PESCE</h6>
-        </template>
-        <template v-for="item in secondiPesces">
-          <CardItem :title="item.name" :description="item.description" :price="item.price" />
-        </template>
-      </UCard>
+      <MenuCard :header="antiPastiHeader" :subheader="antiPastiSubheader" :items="antiPastis" />
+      <MenuCard :header="primiPiattiHeader" :subheader="primiPiattiSubheader" :items="primiPiattis" />
+      <MenuCard :header="secondiPesceHeader" :subheader="secondiPesceSubheader" :items="secondiPesces" />
+      <MenuCard :header="secondiCarneHeader" :subheader="secondiCarneSubheader" :items="secondiCarnes" />
     </div>
   </div>
 </template>
@@ -48,8 +18,18 @@ import { useFetch } from 'nuxt/app';
 
 const { data } = await useFetch('/api/menu')
 
-const antiPastis = data.value.dinner.anti_pasti
-const primiPiattis = data.value.dinner.primi_piatti
-const secondiCarnes = data.value.dinner.secondi_pesce
-const secondiPesces = data.value.dinner.secondi_carne
+const antiPastiHeader = data.value.dinner.anti_pasti.header
+const primiPiattiHeader = data.value.dinner.primi_piatti.header
+const secondiCarneHeader = data.value.dinner.secondi_pesce.header
+const secondiPesceHeader = data.value.dinner.secondi_carne.header
+
+const antiPastiSubheader = data.value.dinner.anti_pasti.subheader
+const primiPiattiSubheader = data.value.dinner.primi_piatti.subheader
+const secondiCarneSubheader = data.value.dinner.secondi_pesce.subheader
+const secondiPesceSubheader = data.value.dinner.secondi_carne.subheader
+
+const antiPastis = data.value.dinner.anti_pasti.items
+const primiPiattis = data.value.dinner.primi_piatti.items
+const secondiCarnes = data.value.dinner.secondi_pesce.items
+const secondiPesces = data.value.dinner.secondi_carne.items
 </script>

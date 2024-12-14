@@ -5,22 +5,8 @@
       <TitleDivider text="LUNCH" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <UCard>
-        <template #header>
-          <CardTitle title="CARNE" />
-        </template>
-        <template v-for="item in lunchItemsCarne">
-          <CardItem :title="item.name" :description="item.description" :price="item.price" />
-        </template>
-      </UCard>
-      <UCard>
-        <template #header>
-          <CardTitle title="PESCE" />
-        </template>
-        <template v-for="item in lunchItemsPesce">
-          <CardItem :title="item.name" :description="item.description" :price="item.price" />
-        </template>
-      </UCard>
+      <MenuCard :header="headerPesce" :items="lunchItemsPesce" />
+      <MenuCard :header="headerCarne" :items="lunchItemsCarne" />
     </div>
   </div>
 </template>
@@ -28,12 +14,14 @@
 <script lang="ts" setup>
 import { useFetch, useRoute } from 'nuxt/app';
 
-const route = useRoute();
 const { data } = await useFetch('/api/menu')
-const lunchItemsPesce = data.value.lunch.pesce
-const lunchItemsCarne = data.value.lunch.carne
+const headerPesce = data.value.lunch.pesce.header
+const headerCarne = data.value.lunch.carne.header
+const lunchItemsPesce = data.value.lunch.pesce.items
+const lunchItemsCarne = data.value.lunch.carne.items
 
 function isOnMenuPage(): boolean {
+  const route = useRoute();
   return route.fullPath === "/menu" ? true : false
 };
 </script>
