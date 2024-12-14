@@ -25,7 +25,7 @@ Photos aren't available at the moment, it's caused by a know issues within the a
 
 <br>
 
-# Nuxt Modules:
+# Nuxt Modules
 
 - Nuxt UI
 - Nuxt Color

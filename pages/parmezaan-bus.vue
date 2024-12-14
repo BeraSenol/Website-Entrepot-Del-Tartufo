@@ -1,6 +1,6 @@
 <template>
   <UContainer class="flex flex-col gap-y-12">
-    <LandingImage :image="parmezanImage" :title="parmezanTitle" :subtitle="parmezanSubTitle" />
+    <LandingImage :image="data.parmezan.image" :title="data.parmezan.title" :subtitle="data.parmezan.subtitle" />
     <HomeParmigianoAtCasa />
     <TruffleDivider />
     <ParmezaanMenu />
@@ -12,20 +12,17 @@
 
 <script setup>
 const route = useRoute()
-const parmezanTitle = ref('Parmezaan Bus');
-const parmezanSubTitle = ref('Ervaar de restaurant ervaring aan je deur');
-const parmezanImage = ref('landing-images/parmezan.jpg');
-const parmezanUrl = ref(`entrepotdeltartufo.netlify.app${route.path}`)
+const { data } = await useFetch('/api/seo')
 
 useSeoMeta({
-  title: () => `${parmezanTitle.value}`,
-  description: () => `${parmezanSubTitle.value}`,
-  ogTitle: () => `${parmezanTitle.value}`,
-  ogDescription: () => `${parmezanSubTitle.value}`,
-  ogUrl: () => `${parmezanUrl.value}`,
-  ogImage: () => `${parmezanImage.value}`,
-  twitterTitle: () => `${parmezanTitle.value}`,
-  twitterDescription: () => `${parmezanSubTitle.value}`,
-  twitterImage: () => `${parmezanImage.value}`,
+  title: () => `${data.value.parmezan.title}`,
+  description: () => `${data.value.parmezan.subtitle}`,
+  ogTitle: () => `${data.value.parmezan.title}`,
+  ogDescription: () => `${data.value.parmezan.subtitle}`,
+  ogUrl: () => `${data.value.url}${route.path}`,
+  ogImage: () => `${data.value.parmezan.image}`,
+  twitterTitle: () => `${data.value.parmezan.title}`,
+  twitterDescription: () => `${data.value.parmezan.subtitle}`,
+  twitterImage: () => `${data.value.parmezan.image}`,
 });
 </script>

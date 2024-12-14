@@ -1,6 +1,6 @@
 <template>
   <UContainer class="flex flex-col gap-y-12">
-    <LandingImage :image="contactImage" :title="contactTitle" :subtitle="contactSubTitle" />
+    <LandingImage :image="data.contact.image" :title="data.contact.title" :subtitle="data.contact.subtitle" />
     <ContactDiscription />
     <TruffleDivider />
     <ContactForm />
@@ -10,20 +10,17 @@
 
 <script setup>
 const route = useRoute()
-const contactTitle = ref('Contacteer Ons');
-const contactSubTitle = ref('Voor verdere vragen of specifieke wensen');
-const contactImage = ref('landing-images/contact.jpg');
-const contactUrl = ref(`entrepotdeltartufo.netlify.app${route.path}`)
+const { data } = await useFetch('/api/seo')
 
 useSeoMeta({
-  title: () => `${contactTitle.value}`,
-  description: () => `${contactSubTitle.value}`,
-  ogTitle: () => `${contactTitle.value}`,
-  ogDescription: () => `${contactSubTitle.value}`,
-  ogUrl: () => `${contactUrl.value}`,
-  ogImage: () => `${contactImage.value}`,
-  twitterTitle: () => `${contactTitle.value}`,
-  twitterDescription: () => `${contactSubTitle.value}`,
-  twitterImage: () => `${contactImage.value}`,
+  title: () => `${data.value.contact.title}`,
+  description: () => `${data.value.contact.subtitle}`,
+  ogTitle: () => `${data.value.contact.title}`,
+  ogDescription: () => `${data.value.contact.subtitle}`,
+  ogUrl: () => `${data.value.url}${route.path}`,
+  ogImage: () => `${data.value.contact.image}`,
+  twitterTitle: () => `${data.value.contact.title}`,
+  twitterDescription: () => `${data.value.contact.subtitle}`,
+  twitterImage: () => `${data.value.contact.image}`,
 });
 </script>
