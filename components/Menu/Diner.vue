@@ -2,7 +2,7 @@
   <div>
     <div class="text-center">
       <AvailableDays days="Ma / Do / Vr / Za / Zo" />
-      <TextDivider text="DINER" />
+      <TitleDivider text="DINER" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <UCard>

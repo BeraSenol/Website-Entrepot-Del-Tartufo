@@ -3,7 +3,6 @@
     <Header />
     <NuxtPage />
     <Footer />
-    <MadeWithNuxt />
   </div>
 </template>
 
