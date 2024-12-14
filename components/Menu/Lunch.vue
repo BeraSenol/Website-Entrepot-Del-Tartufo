@@ -1,12 +1,14 @@
 <template>
   <div>
     <div class="text-center">
-      <AvailableDays days="Ma / Do / Vr" v-show="isOnMenuPage()" />
+      <AvailableDays days="Ma / Do / Vr" v-if="isOnMenuPage()" />
       <TitleDivider text="LUNCH" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <MenuCard :header="headerPesce" :items="lunchItemsPesce" />
-      <MenuCard :header="headerCarne" :items="lunchItemsCarne" />
+      <MenuCard :header="data.lunch.pesce.header" :subheader="data.lunch.pesce.subheader"
+        :items="data.lunch.pesce.items" />
+      <MenuCard :header="data.lunch.carne.header" :subheader="data.lunch.carne.subheader"
+        :items="data.lunch.carne.items" />
     </div>
   </div>
 </template>
@@ -15,10 +17,6 @@
 import { useFetch, useRoute } from 'nuxt/app';
 
 const { data } = await useFetch('/api/menu')
-const headerPesce = data.value.lunch.pesce.header
-const headerCarne = data.value.lunch.carne.header
-const lunchItemsPesce = data.value.lunch.pesce.items
-const lunchItemsCarne = data.value.lunch.carne.items
 
 function isOnMenuPage(): boolean {
   const route = useRoute();
