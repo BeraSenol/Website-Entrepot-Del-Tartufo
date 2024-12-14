@@ -18,10 +18,11 @@ Photos aren't available at the moment, it's caused by a know issues within the a
 - [x] General Styling
 - [x] Assets Processed by Vite
 - [x] Dynamic SEO
-- [ ] Middleware
-- [ ] Data Fetching
+- [x] Data Fetching
+- [ ] Transitions
 - [ ] State Management
 - [ ] Error Handling
+- [ ] CMS
 
 <br>
 
