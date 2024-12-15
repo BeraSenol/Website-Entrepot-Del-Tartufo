@@ -16,8 +16,5 @@ export default defineNuxtConfig({
   colorMode: {
     preference: "dark",
   },
-  image: {
-    provider: "netlify",
-  },
   compatibilityDate: "2024-09-12",
 });

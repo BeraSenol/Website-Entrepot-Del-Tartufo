@@ -1,9 +1,9 @@
 <template>
-  <div class="relative border-2 user-rounded-xl mt-6">
-    <NuxtImg :src="image" alt="landing_image" width="1200" height="630" class="w-full user-rounded-xl h-1/2"
+  <div class="relative border-2 inline-block user-rounded-xl mt-6">
+    <NuxtImg :src="image" alt="landing_image" width="1200" height="630" class="user-rounded-xl h-1/2"
       :placeholder="[1200, 630]" />
-    <div class="absolute inset-0" style="top: 37%; bottom: 37%;">
-      <UContainer class="flex flex-col place-items-center text-center">
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class="flex flex-col place-items-center text-center">
         <h4 class="md:text-4xl lg:text-5xl xl:text-6xl uppercase">
           {{ title }}
         </h4>
@@ -11,7 +11,7 @@
         <p class="lg:text-xl xl:text-2xl italic">
           {{ subtitle }}
         </p>
-      </UContainer>
+      </div>
     </div>
   </div>
 </template>
