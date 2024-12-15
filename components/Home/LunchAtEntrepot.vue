@@ -8,12 +8,12 @@
       <p class="text-left">Drie Gangen</p>
       <p class="text-right italic">€40</p>
     </UContainer>
-    <UContainer class="grid grid-cols-5 pt-6 w-full max-w-2xl">
+    <UContainer class="grid grid-rows-2 md:grid-cols-5 gap-2 pt-6 w-full max-w-2xl">
       <UButton to="/menu" class="bg-gray-100 dark:bg-gray-900 col-span-2 block user-button">
-        Bekijk Diner Menu
+        Diner Menu
       </UButton>
-      <UButton to="/contact" class="bg-gray-100 dark:bg-gray-900 col-span-2 block col-start-4 user-button">
-        Reserveer Hier
+      <UButton to="/contact" class="bg-gray-100 dark:bg-gray-900 col-span-2 col-start-4 block user-button">
+        Reserveer
       </UButton>
     </UContainer>
   </div>

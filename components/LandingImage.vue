@@ -4,11 +4,11 @@
       :placeholder="[1200, 630]" />
     <div class="absolute inset-0 flex items-center justify-center">
       <div class="flex flex-col place-items-center text-center">
-        <h4 class="md:text-4xl lg:text-5xl xl:text-6xl uppercase">
+        <h6 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase">
           {{ title }}
-        </h4>
+        </h6>
         <TruffleLogo class="my-2" />
-        <p class="lg:text-xl xl:text-2xl italic">
+        <p class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl italic">
           {{ subtitle }}
         </p>
       </div>
