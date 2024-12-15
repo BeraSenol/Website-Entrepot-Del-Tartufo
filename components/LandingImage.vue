@@ -7,7 +7,7 @@
         <h6 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase">
           {{ title }}
         </h6>
-        <TruffleLogo class="my-2" />
+        <TruffleLogo class="my-1" />
         <p class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl italic">
           {{ subtitle }}
         </p>
