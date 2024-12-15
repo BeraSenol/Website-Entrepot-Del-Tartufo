@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "slide-left", mode: "out-in" },
   },
-
   devtools: {
     enabled: true,
 
@@ -14,14 +13,8 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.css"],
   modules: ["@nuxt/ui", "@nuxt/image"],
-
   colorMode: {
     preference: "dark",
-  },
-
-  image: {
-    inject: true,
-    dir: "assets",
   },
   compatibilityDate: "2024-09-12",
 });
