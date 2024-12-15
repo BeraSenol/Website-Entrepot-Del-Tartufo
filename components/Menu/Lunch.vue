@@ -5,10 +5,10 @@
       <TitleDivider text="LUNCH" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <MenuCard :header="data.lunch.pesce.header" :subheader="data.lunch.pesce.subheader"
-        :items="data.lunch.pesce.items" />
-      <MenuCard :header="data.lunch.carne.header" :subheader="data.lunch.carne.subheader"
-        :items="data.lunch.carne.items" />
+      <MenuCard :header="data.pesce.header" :subheader="data.pesce.subheader"
+        :items="data.pesce.items" />
+      <MenuCard :header="data.carne.header" :subheader="data.carne.subheader"
+        :items="data.carne.items" />
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@
 <script lang="ts" setup>
 import { useFetch, useRoute } from 'nuxt/app';
 
-const { data } = await useFetch('/api/menu')
+const { data } = await useFetch('/api/menu/lunch')
 
 function isOnMenuPage(): boolean {
   const route = useRoute();
