@@ -6,7 +6,7 @@
     <MenuLunch />
     <TruffleDivider />
     <HomeParmigianoAtCasa />
-    <ParmezaanMenu />
+    <ParmezanMenu />
     <TruffleDivider />
     <HomeGetInTouch />
     <TruffleDivider />

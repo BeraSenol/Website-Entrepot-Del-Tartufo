@@ -3,9 +3,9 @@
     <LandingImage :image="data.parmezan.image" :title="data.parmezan.title" :subtitle="data.parmezan.subtitle" />
     <HomeParmigianoAtCasa />
     <TruffleDivider />
-    <ParmezaanMenu />
+    <ParmezanMenu />
     <TruffleDivider />
-    <ParmezaanForm />
+    <ParmezanForm />
     <TruffleDivider />
   </UContainer>
 </template>
