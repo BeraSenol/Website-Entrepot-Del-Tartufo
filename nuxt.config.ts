@@ -1,23 +1,27 @@
 import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: "slide-left", mode: "out-in" },
+  },
+
   devtools: {
     enabled: true,
 
     timeline: {
-      enabled: true
-    }
+      enabled: true,
+    },
   },
   css: ["~/assets/css/main.css"],
   modules: ["@nuxt/ui", "@nuxt/image"],
 
   colorMode: {
-    preference: "dark"
+    preference: "dark",
   },
 
   image: {
     inject: true,
-    dir: "assets"
+    dir: "assets",
   },
-  compatibilityDate: "2024-09-12"
-})
+  compatibilityDate: "2024-09-12",
+});

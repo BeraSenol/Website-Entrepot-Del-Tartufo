@@ -19,7 +19,7 @@ Photos aren't available at the moment, it's caused by a know issues within the a
 - [x] Assets Processed by Vite
 - [x] Dynamic SEO
 - [x] Data Fetching
-- [ ] Transitions
+- [x] Transitions
 - [ ] State Management
 - [ ] Error Handling
 - [ ] CMS

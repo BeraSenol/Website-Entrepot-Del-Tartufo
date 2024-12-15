@@ -24,3 +24,20 @@ useHead({
   ]
 })
 </script>
+
+<style>
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: all 0.15s;
+}
+
+.slide-left-enter-from {
+  opacity: 0;
+  transform: translate(100px, 0);
+}
+
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translate(-100px, 0);
+}
+</style>
