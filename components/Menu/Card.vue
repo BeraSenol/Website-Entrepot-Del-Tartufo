@@ -5,7 +5,7 @@
       <h6 class="font-light text-center" v-if="subheader">{{ subheader }}</h6>
     </template>
     <template v-for="item in items">
-      <div class="flex flex-col py-4 mx-2">
+      <div class="flex flex-col py-4 mx-3">
         <div class="flex">
           <p class="font-semibold basis-11/12">{{ item.name }}</p>
           <p class="italic text-right ml-3">{{ item.price }}</p>

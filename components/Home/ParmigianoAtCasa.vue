@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <AvailableDays days="Ma / Do / Vr / Za / Zo" />
     <TitleLarge title="PARMIGIANO @ CASA" />
-    <UContainer class="grid grid-cols-2 px-8 w-full max-w-xl">
+    <UContainer class="grid grid-cols-2 px-4 w-full max-w-xl">
       <p class="text-left">Regio Limburg</p>
       <p class="text-right italic">18h - 20h</p>
       <p class="text-left">6+ Personen</p>

@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
         },
         {
           name: "Carpaccio di Manzo | Tartufo Estivo",
-          description: "Rundscarpaccio | Truffel",
+          description: "Rundscarpaccio | Zomer Truffel",
           price: 29,
         },
         {

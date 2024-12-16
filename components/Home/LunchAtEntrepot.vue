@@ -2,7 +2,7 @@
   <div class="flex flex-col text-center place-items-center">
     <AvailableDays days="Ma / Do / Vr" />
     <TitleLarge title="LUNCH @ ENTREPOT" />
-    <UContainer class="grid grid-cols-2 px-8 w-full max-w-xl">
+    <UContainer class="grid grid-cols-2 px-4 w-full max-w-xl">
       <p class="text-left">Twee Gangen</p>
       <p class="text-right italic">€30</p>
       <p class="text-left">Drie Gangen</p>
