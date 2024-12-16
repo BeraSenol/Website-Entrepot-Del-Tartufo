@@ -1,5 +1,5 @@
 <template>
-  <UContainer class="bg-gray-100 dark:bg-gray-900 py-12 user-rounded-xl">
+  <UContainer class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 border-2 py-12 user-rounded-xl">
     <TitleLarge title="DEN ENTREPOT" />
     <UContainer class="flex flex-col text-left gap-y-8 pb-12 user-leading-8">
       <p>

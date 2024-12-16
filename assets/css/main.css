@@ -54,6 +54,7 @@ p {
   line-height: 1.75rem; /* text-lg */
   font-weight: 300; /* font-light */
   text-align: center; /* text-center */
+  border-width: 2px; /* border-2 */
   transition-property: all; /* transition */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* transition */
   transition-duration: 150ms; /* transition */

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 dark:bg-gray-900 user-rounded-xl py-12">
+  <div class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 border-2 user-rounded-xl py-12">
     <TitleLarge title="CONTACT" />
     <UContainer class="user-leading-8 mx-8 flex flex-col gap-y-6">
       <p>
