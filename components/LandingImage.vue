@@ -1,5 +1,5 @@
 <template>
-  <div class="relative border-2 inline-block user-rounded-xl mt-6">
+  <div class="relative border-2 user-rounded-xl mt-6">
     <NuxtImg :src="image" alt="landing_image" width="1200" height="630" class="user-rounded-xl h-1/2"
       :placeholder="[1200, 630]" />
     <div class="absolute inset-0 flex items-center justify-center">

@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-50 dark:bg-gray-950 min-h-screen">
-    <Header />
-    <NuxtPage />
+    <Header/>
+    <NuxtPage class="pt-16" />
     <Footer />
   </div>
 </template>

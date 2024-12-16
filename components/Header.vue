@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="z-50 fixed h-16 w-screen">
     <!-- HORIZONTAL NAVIGATION if Screensize > md -->
-    <div class="bg-gray-50 dark:bg-gray-950 hidden md:block border-b-2">
+    <div class="bg-gray-50 dark:bg-gray-950 hidden md:block border-b-2 ">
       <UContainer>
         <UHorizontalNavigation :links="links" class=" " :ui="{
           label: 'text-gray-950 dark:text-gray-50'
@@ -21,7 +21,7 @@
         divide: 'divide-gray-950 dark:divide-gray-50 divide-y',
       }">
         <template #header>
-          <NuxtImg src="logo/white.png" width="29" class="mx-auto" />
+          <NuxtImg src="logo/white.png" height="33" class="mx-auto" />
           <UButton color="white" size="xl" icon="i-heroicons-x-mark-20-solid"
             class="md:hidden absolute end-1 top-2 z-50" square padded @click="isOpen = false" />
         </template>
