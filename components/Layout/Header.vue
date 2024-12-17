@@ -1,7 +1,7 @@
 <template>
   <div class="z-50 fixed h-16 w-screen">
     <!-- HORIZONTAL NAVIGATION if Screensize > md -->
-    <div class="bg-gray-50 dark:bg-gray-950 border-gray-300 dark:border-gray-700 hidden md:block border-b-2 ">
+    <div class="bg-gray-50 dark:bg-gray-950 hidden md:block border-b-2 ">
       <UContainer>
         <UHorizontalNavigation :links="links" class=" " :ui="{
           label: 'text-gray-950 dark:text-gray-50'

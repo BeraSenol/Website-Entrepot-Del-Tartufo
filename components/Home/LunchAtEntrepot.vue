@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col text-center place-items-center">
-    <AvailableDays days="Ma / Do / Vr" />
+    <TitleAvailability days="Ma / Do / Vr" />
     <TitleLarge title="LUNCH @ ENTREPOT" />
     <UContainer class="grid grid-cols-2 px-4 w-full max-w-xl">
       <p class="text-left">Twee Gangen</p>

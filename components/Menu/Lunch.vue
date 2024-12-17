@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-center">
-      <AvailableDays days="Ma / Do / Vr" v-if="isOnMenuPage()" />
+      <TitleAvailability days="Ma / Do / Vr" v-if="isOnMenuPage()" />
       <TitleDivider text="LUNCH" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -1,8 +1,8 @@
 <template>
     <div class="bg-gray-50 dark:bg-gray-950 text-center min-h-screen">
-        <Header />
-        <Error :errorCode="error?.statusCode" :errorMessage="error?.statusMessage" />
-        <Footer />
+        <NuxtLayout>
+            <Error :errorCode="error?.statusCode" :errorMessage="error?.statusMessage" />
+        </NuxtLayout>
     </div>
 </template>
 

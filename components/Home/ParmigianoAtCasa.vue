@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <AvailableDays days="Ma / Do / Vr / Za / Zo" />
+    <TitleAvailability days="Ma / Do / Vr / Za / Zo" />
     <TitleLarge title="PARMIGIANO @ CASA" />
     <UContainer class="grid grid-cols-2 px-4 w-full max-w-xl">
       <p class="text-left">Regio Limburg</p>
