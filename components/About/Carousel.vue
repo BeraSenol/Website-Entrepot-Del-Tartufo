@@ -1,5 +1,5 @@
 <template>
-	<UCarousel class="mx-auto" :items="items" arrows :ui="{
+	<UCarousel class="mx-auto" ref="carouselAutoPlay" :items="items" arrows :ui="{
 		item: 'basis-1/3',
 		container: 'rounded-lg'
 	}">
