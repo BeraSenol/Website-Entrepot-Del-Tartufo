@@ -5,6 +5,9 @@
     <TruffleDivider />
     <AboutDenEntrepot />
     <TruffleDivider />
+    <AboutCarousel/>
+    <TruffleDivider />
+
   </UContainer>
 </template>
 
