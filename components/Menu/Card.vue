@@ -7,7 +7,9 @@
     <template v-for="item in items">
       <div class="flex flex-col py-4 mx-3">
         <div class="flex">
-          <p class="font-semibold basis-11/12">{{ item.name }}</p>
+          <p class="font-semibold basis-11/12">{{ item.name }}
+            <UBadge v-if="item.double" class="pb-1" color="white" label="2 Pers" size="md" variant="solid" />
+          </p>
           <p class="italic text-right ml-3">{{ item.price }}</p>
         </div>
         <p class="italic mr-4">{{ item.description }}</p>

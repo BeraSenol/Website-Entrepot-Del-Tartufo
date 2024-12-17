@@ -1,9 +1,9 @@
 <template>
   <UContainer class="flex flex-col gap-y-12">
     <LandingImage :image="data.about.image" :title="data.about.title" :subtitle="data.about.subtitle" />
-    <OverOns />
+    <AboutUs />
     <TruffleDivider />
-    <OverDenEntrepot />
+    <AboutDenEntrepot />
     <TruffleDivider />
   </UContainer>
 </template>
