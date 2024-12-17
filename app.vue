@@ -1,8 +1,8 @@
 <template>
   <div class="bg-gray-50 dark:bg-gray-950 min-h-screen appearance-none">
-    <NuxtLayout>
-      <NuxtPage class="pt-16" />
-    </NuxtLayout>
+    <LayoutHeader />
+    <NuxtPage class="pt-16" />
+    <LayoutFooter />
   </div>
 </template>
 
