@@ -1,5 +1,5 @@
 <template>
-  <UForm :schema="schema" :state="state" class="space-y-8" name="contact-form" data-netlify="true">
+  <UForm :schema="schema" :state="state" class="space-y-8" name="contact-form" netlify data-netlify="true">
     <UFormGroup label="Naam" name="name" required size="xl" :ui="{
       label: {
         base: 'text-lg',
