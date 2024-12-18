@@ -1,10 +1,10 @@
 <template>
   <div class="z-50 fixed h-16 w-screen">
-    <div class="bg-gray-50 dark:bg-gray-950 hidden md:block border-b-2 ">
+    <div class="bg-gray-50 dark:bg-gray-950 hidden md:block border-b-2">
       <UContainer>
         <UHorizontalNavigation :links="links">
           <template #default="{ link }">
-            <span class="group-hover:text-primary text-lg md:text-xl lg:text-2xl font-semibold relative">{{ link.label }}</span>
+            <span class="group-hover:text-primary text-lg md:text-xl lg:text-2xl px-0.5 font-semibold relative transition-all">{{ link.label }}</span>
           </template>
         </UHorizontalNavigation>
       </UContainer>
