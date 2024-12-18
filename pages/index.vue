@@ -4,6 +4,7 @@
     <HomeWelcome />
     <HomeLunchAtEntrepot />
     <MenuLunch />
+    <MenuVegetarian/>
     <TruffleDivider />
     <HomeParmigianoAtCasa />
     <ParmezanMenu />
