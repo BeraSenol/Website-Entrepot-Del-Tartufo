@@ -12,7 +12,7 @@ export default defineEventHandler((event) => {
     },
     contact: {
       title: "Contacteer Ons",
-      subtitle: "Ondek een stukje Italië in uw buurt",
+      subtitle: "We zijn er voor al uw vragen",
       image: "landing-images/contact.jpg",
     },
     about: {

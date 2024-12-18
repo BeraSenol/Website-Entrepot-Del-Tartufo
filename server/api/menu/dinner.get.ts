@@ -73,14 +73,14 @@ export default defineEventHandler(async (event) => {
       subheader: "PESCE",
       items: [
         {
-          name: "Branzino | Ligure |",
+          name: "Branzino | Ligure",
           description: "Zeebaars | Puntpaprika | Olijf | Kapper",
           price: 75,
           vegetarian: false,
           double: true,
         },
         {
-          name: "Orata | Soto Sale |",
+          name: "Orata | Soto Sale",
           description: "Dorade | Zoutkorst",
           price: 80,
           vegetarian: false,
