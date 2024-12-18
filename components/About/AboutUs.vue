@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col xl:flex-row">
+  <div class="flex flex-col lg:flex-row">
     <UContainer
-      class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none border-2 py-12">
+      class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 flex flex-col justify-evenly rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none border-2 py-12">
       <TitleLarge title="OVER ONS" />
-      <UContainer class="flex flex-col text-left gap-y-8 pb-12 .user-leading-8">
+      <div class="flex flex-col md:px-6 text-left gap-y-8 pb-12 .user-leading-8">
         <p>
           Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse keuken naar hartje Hasselt. Nicolino
           Salvatore, alom gewaardeerd als chef van de vroegere Mario's Trattoria bereidt klassieke en minder klassieke
@@ -16,17 +16,17 @@
           oud pakhuis in het rustige hemelrijk. Kortom, bij ons gaat het om lekker
           eten in een ongestoorde gezellige sfeer. Onder het motto
         </p>
-      </UContainer>
-      <UContainer class="text-center">
+      </div>
+      <div class="text-center">
         <p class="text-base">Eenvoud is de ultieme verfijning</p>
         <p class="text-base">La semplicità è l'ultima sofisticazione</p>
         <p class="text-base">Simplicity is the ultimate sophistication</p>
-      </UContainer>
+      </div>
     </UContainer>
     <div>
-      <NuxtImg class="rounded-b-xl xl:hidden" src="about_us/bar.jpg" height="400px" sizes="sm:100vw"
-        alt="bar.jpg" densities="x1 x2" />
-      <NuxtImg class="rounded-r-xl hidden xl:block" src="about_us/bar.jpg" width="50vw" sizes="sm:100vw"
+      <NuxtImg class="rounded-b-xl lg:hidden" fit="cover" src="about_us/bar.jpg" width="772" height="579" alt="bar.jpg"
+        densities="x1 x2" />
+      <NuxtImg class="rounded-r-xl hidden lg:block" fit="cover" src="about_us/bar.jpg" height="1800" width="1350"
         alt="bar.jpg" densities="x1 x2" />
     </div>
   </div>

@@ -1,3 +1,3 @@
 <template>
-    <NuxtImg src="logo/white.png" alt="truffle_logo" sizes="20 md:30 lg:40 xl:50" placeholder />
+    <NuxtImg src="logo/white.png" alt="truffle_logo" sizes="25 md:35 lg:45 xl:50" densities="x1 x2" placeholder preload />
 </template>

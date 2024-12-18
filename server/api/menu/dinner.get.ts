@@ -111,7 +111,7 @@ export default defineEventHandler(async (event) => {
         },
         {
           name: "Saltimbocca | Romana",
-          description: "Kalfslapie | Parma | Salie",
+          description: "Kalfslapje | Parma | Salie",
           price: 35,
         },
       ],
