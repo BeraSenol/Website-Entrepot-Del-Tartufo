@@ -22,7 +22,7 @@
         <template #header>
           <UButton color="white" size="xl" icon="i-heroicons-x-mark-20-solid"
             class="md:hidden absolute end-1 top-2 z-50" square padded @click="isOpen = false" />
-          <NuxtImg src="logo/white.png" height="33" class="mx-auto" />
+          <NuxtImg src="logo/white.png" height="33" class="mx-auto" preload />
         </template>
         <UContainer class="flex flex-col">
           <UVerticalNavigation :links="links" :ui="{
@@ -30,7 +30,8 @@
               wrapper: {
                 base: 'hidden'
               }
-            }
+            },
+            active: 'text-gray-950 dark:text-gray-50 before:bg-gray-100 dark:before:bg-gray-900',
           }">
             <template #default="{ link }">
               <span class="text-xl relative" @click="isOpen = false">{{ link.label }}</span>
