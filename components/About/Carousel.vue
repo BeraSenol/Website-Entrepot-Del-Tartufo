@@ -37,7 +37,6 @@ const items = [
 	'about_us/carousel/carousel_8.jpg',
 	'about_us/carousel/carousel_9.jpg',
 	'about_us/carousel/carousel_10.jpg',
-	'about_us/carousel/carousel_11.jpg',
 ]
 
 const carouselAutoPlay = ref()
