@@ -8,7 +8,7 @@
           {{ title }}
         </h6>
         <TruffleLogo class="my-1" />
-        <p class="text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl italic">
+        <p class="font-light text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl italic">
           {{ subtitle }}
         </p>
       </div>

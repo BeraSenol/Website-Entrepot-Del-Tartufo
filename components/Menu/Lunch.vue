@@ -5,10 +5,8 @@
       <TitleDivider text="LUNCH" />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <MenuCard :header="data.pesce.header" :subheader="data.pesce.subheader"
-        :items="data.pesce.items" />
-      <MenuCard :header="data.carne.header" :subheader="data.carne.subheader"
-        :items="data.carne.items" />
+      <MenuCard :header="data.pesce.header" :subheader="data.pesce.subheader" :items="data.pesce.items" />
+      <MenuCard :header="data.carne.header" :subheader="data.carne.subheader" :items="data.carne.items" />
     </div>
   </div>
 </template>

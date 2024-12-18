@@ -9,13 +9,14 @@ A Website for a local italian restaurant named Entrepot del Tartufo (Work in Pro
 - [x] Layouts
 - [x] Pages / File Based Routing
 - [x] Reuable Components
-- [x] Mobile Friendly
+- [x] Mobile First
 - [x] Error Page
-- [x] General Styling
-- [x] Assets Processed by Vite
-- [x] Dynamic SEO
+- [x] Generalized Stylesheet
+- [x] Assets Processed by Webpack/Vite
+- [x] SEO
 - [x] Data Fetching
-- [x] Transitions
+- [x] Page Transitions
+- [x] Form Validation
 - [ ] State Management
 - [ ] Error Handling
 - [ ] CMS

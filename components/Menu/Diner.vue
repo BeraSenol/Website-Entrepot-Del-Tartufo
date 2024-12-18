@@ -14,6 +14,11 @@
       <MenuCard :header="data.secondi_carne.header" :subheader="data.secondi_carne.subheader"
         :items="data.secondi_carne.items" />
     </div>
+    <UContainer class="flex justify-center mt-8">
+      <UChip color="emerald" inset>
+        <p class="italic mr-2">Vegetarisch</p>
+      </UChip>
+    </UContainer>
   </div>
 </template>
 

@@ -34,7 +34,7 @@
             active: 'text-gray-950 dark:text-gray-50 before:bg-gray-100 dark:before:bg-gray-900',
           }">
             <template #default="{ link }">
-              <span class="text-xl relative" @click="isOpen = false">{{ link.label }}</span>
+              <span class="text-xl relative font-bold" @click="isOpen = false">{{ link.label }}</span>
             </template>
           </UVerticalNavigation>
         </UContainer>
