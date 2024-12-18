@@ -4,7 +4,7 @@
       <UContainer>
         <UHorizontalNavigation :links="links">
           <template #default="{ link }">
-            <span class="group-hover:text-primary text-xl md:text-2xl font-semibold relative">{{ link.label }}</span>
+            <span class="group-hover:text-primary text-lg md:text-xl lg:text-2xl font-semibold relative">{{ link.label }}</span>
           </template>
         </UHorizontalNavigation>
       </UContainer>
@@ -34,7 +34,9 @@
             active: 'text-gray-950 dark:text-gray-50 before:bg-gray-100 dark:before:bg-gray-900',
           }">
             <template #default="{ link }">
-              <span class="text-2xl relative font-semibold" @click="isOpen = false">{{ link.label }}</span>
+              <span class="relative font-light" @click="isOpen = false">
+                <h6>{{ link.label }}</h6>
+              </span>
             </template>
           </UVerticalNavigation>
         </UContainer>

@@ -6,11 +6,11 @@
       alt="landing_image" :src="image" :placeholder="[500, 400]" preload />
     <div class="absolute inset-0 flex items-center justify-center">
       <div class="flex flex-col place-items-center text-center">
-        <h6 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase">
+        <h5 class="md:text-3xl lg:text-4xl xl:text-5xl uppercase">
           {{ title }}
-        </h6>
+        </h5>
         <TruffleLogo class="my-1" />
-        <p class="font-light text-sm sm:text-md md:text-lg lg:text-xl xl:text-2xl italic">
+        <p class="font-light text-base md:text-lg lg:text-xl xl:text-2xl italic">
           {{ subtitle }}
         </p>
       </div>

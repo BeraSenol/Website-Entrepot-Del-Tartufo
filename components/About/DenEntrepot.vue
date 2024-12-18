@@ -27,12 +27,12 @@
                     uitbaatten.
                 </p>
             </UContainer>
-            <UContainer class="text-center">
-                <p class="text-base">En zo is de cirkel rond:</p>
-                <p class="text-base">De Entrepot del Tartufo is geboren!</p>
-                <p class="text-base">L'entrepot del Tartufo e nato!</p>
-                <p class="text-base">Benvenuti! Welkom!</p>
-            </UContainer>
+            <div class="text-center italic">
+                <p class="text-sm md:text-base">En zo is de cirkel rond:</p>
+                <p class="text-sm md:text-base">De Entrepot del Tartufo is geboren!</p>
+                <p class="text-sm md:text-base">L'entrepot del Tartufo e nato!</p>
+                <p class="text-sm md:text-base">Benvenuti! Welkom!</p>
+            </div>
         </UContainer>
         <div class="lg:hidden">
             <NuxtImg class="rounded-b-xl" src="about_us/outside.jpg" fit="cover" width="772" height="579" alt="bar.jpg"

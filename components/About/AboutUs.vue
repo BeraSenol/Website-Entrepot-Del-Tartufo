@@ -17,11 +17,11 @@
           eten in een ongestoorde gezellige sfeer. Onder het motto
         </p>
       </UContainer>
-      <UContainer class="text-center">
-        <p class="text-base">Eenvoud is de ultieme verfijning</p>
-        <p class="text-base">La semplicità è l'ultima sofisticazione</p>
-        <p class="text-base">Simplicity is the ultimate sophistication</p>
-      </UContainer>
+      <div class="text-center italic">
+        <p class="text-sm md:text-base">Eenvoud is de ultieme verfijning</p>
+        <p class="text-sm md:text-base">La semplicità è l'ultima sofisticazione</p>
+        <p class="text-sm md:text-base">Simplicity is the ultimate sophistication</p>
+      </div>
     </UContainer>
     <div>
       <NuxtImg class="rounded-b-xl lg:hidden" fit="cover" src="about_us/bar.jpg" width="772" height="579" alt="bar.jpg"

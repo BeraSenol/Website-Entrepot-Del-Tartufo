@@ -10,7 +10,7 @@
           <p class="font-semibold basis-11/12">
             {{ item.name }}
             <UBadge v-if="item.double" class="py-0.5" color="white" label="2 Pers" size="md" variant="solid" />
-            <UChip v-if="item.vegetarian" color="emerald" inset>&nbsp;</UChip>
+            <UChip v-if="item.vegetarian" class="text-right" color="emerald" inset>&nbsp;</UChip>
           </p>
           <p class="italic text-right ml-3">{{ item.price }}</p>
         </div>
