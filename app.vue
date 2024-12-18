@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 dark:bg-gray-950 min-h-screen appearance-none">
+  <div class="bg-gray-50 dark:bg-gray-950 min-h-screen appearance-none scroll-smooth select-text ">
     <LayoutHeader />
     <NuxtPage class="pt-16" />
     <LayoutFooter />
