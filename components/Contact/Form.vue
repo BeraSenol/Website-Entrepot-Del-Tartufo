@@ -1,18 +1,19 @@
 <template>
-  <UForm :schema="schema" :state="state" class="space-y-8">
+  <UForm :schema="schema" :state="state" class="space-y-8" netlify>
     <UFormGroup label="Naam" name="name" required size="xl" :ui="{
       label: {
         base: 'text-lg',
       },
     }">
-      <UInput v-model="state.name" />
+      <UInput v-model="state.name" type="text" />
     </UFormGroup>
     <UFormGroup label="Email" name="email" placeholder="you@example.com" required size="xl" :ui="{
       label: {
         base: 'text-lg',
       },
     }">
-      <UInput v-model="state.email" />
+      <UInput v-model="state.email" name="email" type="email" />
+
     </UFormGroup>
     <UFormGroup name="textarea" label="Opmerking" required size="xl" :ui="{
       label: {
@@ -29,11 +30,13 @@
 
 <script setup lang="ts">
 import { object, string, type InferType } from "yup";
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
+import type { FormSubmitEvent } from '#ui/types'
+
 
 const schema = object({
-  email: string().email("Ongeldige Email").required("Verplicht!"),
   name: string().required("Verplicht!"),
+  email: string().email("Ongeldige Email").required("Verplicht!"),
   textarea: string().required("Verplicht!"),
 });
 
@@ -44,4 +47,9 @@ const state = reactive({
   name: undefined,
   textarea: undefined,
 });
+
+async function onSubmit(event: FormSubmitEvent<Schema>) {
+  // Do something with event.data
+  console.log(event.data)
+}
 </script>
