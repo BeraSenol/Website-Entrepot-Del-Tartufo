@@ -1,18 +1,18 @@
 <template>
-  <UForm :schema="schema" :state="state" class="space-y-8" name="contact-form" netlify data-netlify="true">
+  <UForm :schema="schema" :state="state" class="space-y-8" name="contact-form">
     <UFormGroup label="Naam" name="name" required size="xl" :ui="{
       label: {
         base: 'text-lg',
       },
     }">
-      <UInput v-model="state.name" type="text" />
+      <UInput v-model="state.name" type="text" placeholder="Voor- & achternaam" />
     </UFormGroup>
     <UFormGroup label="Email" name="email" placeholder="you@example.com" required size="xl" :ui="{
       label: {
         base: 'text-lg',
       },
     }">
-      <UInput v-model="state.email" name="email" type="email" />
+      <UInput v-model="state.email" name="email" type="email" placeholder="voorbeeld@domein.be"/>
 
     </UFormGroup>
     <UFormGroup name="textarea" label="Opmerking" required size="xl" :ui="{
@@ -20,7 +20,7 @@
         base: 'text-lg',
       },
     }">
-      <UTextarea :rows="5" autoresize size="lg" v-model="state.textarea" />
+      <UTextarea :rows="5" autoresize v-model="state.textarea" placeholder="Bijkomende vraag, opmerking, etc." />
     </UFormGroup>
     <UButton type="submit" class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 user-button">
       Verzend

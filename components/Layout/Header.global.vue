@@ -70,7 +70,7 @@ const links = [
       to: "/contact",
     },
     {
-      label: "Parmezaanbus",
+      label: "Parmezaan Bus",
       to: "/parmezaan-bus",
     },
   ],

@@ -1,5 +1,12 @@
 <template>
-  <UForm :schema="schema" :state="state" class="space-y-4" @submit="onSubmit">
+  <UForm class="space-y-4" name="contact" data-netlify="true" netlify-honeypot="bot-field" netlify :schema="schema"
+    :state="state" @submit="onSubmit">
+    <input type="hidden" name="form-name" value="contact" />
+    <div style="display:none;">
+      <label>
+        Don’t fill this out: <input name="bot-field" />
+      </label>
+    </div>
     <UFormGroup label="Naam" name="name" required size="xl" :ui="{
       label: {
         base: 'text-lg',
@@ -19,7 +26,7 @@
         base: 'text-lg',
       },
     }">
-      <UInput v-model="state.phone" placeholder="0497 12 34 56" />
+      <UInput v-model="state.phone" placeholder="04XX/XX XX XX" />
     </UFormGroup>
     <UFormGroup name="address" label="Adres" required size="xl" :ui="{
       label: {
@@ -41,6 +48,14 @@
       },
     }">
       <UInput v-model="state.day" placeholder="DD-MM-JJJJ" />
+
+    </UFormGroup>
+    <UFormGroup name="textarea" label="Opmerking" size="xl" :ui="{
+      label: {
+        base: 'text-lg',
+      },
+    }">
+      <UTextarea :rows="5" autoresize v-model="state.textarea" placeholder="Reservering, vraag, commentaar, etc." />
     </UFormGroup>
     <UButton type="submit" class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 user-button">
       Verzend
@@ -60,6 +75,7 @@ const schema = object({
   address: string().required("Verplicht!"),
   guestCount: number().required("Verplicht!"),
   day: date().required("Verplicht!"),
+  textarea: string()
 });
 
 type Schema = InferType<typeof schema>;
@@ -71,6 +87,7 @@ const state = reactive({
   address: undefined,
   guestCount: undefined,
   day: undefined,
+  textarea: undefined
 });
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
