@@ -1,5 +1,5 @@
 <template>
-    <div class="flex lg:flex-row flex-col">
+    <UContainer class="flex lg:flex-row flex-col">
         <NuxtImg class="lg:block hidden xl:hidden rounded-l-xl" src="about_us/outside.jpg" height="2400" width="1350"
             alt="bar.jpg" />
         <NuxtImg class="xl:block hidden rounded-l-xl" src="about_us/outside.jpg" height="1800" width="1350"
@@ -31,5 +31,5 @@
             </div>
         </UContainer>
         <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/outside.jpg" width="772" height="579" alt="bar.jpg" />
-    </div>
+    </UContainer>
 </template>

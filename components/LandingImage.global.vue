@@ -3,7 +3,7 @@
     <NuxtImg class="md:block hidden u-rounded" width="1212" height="520" alt="landing_image" :src="image"
       :placeholder="[1212, 520]" preload />
     <NuxtImg class="md:hidden u-rounded" width="800" height="600" alt="landing_image" :src="image"
-      :placeholder="[800, 400]" preload />
+      :placeholder="[800, 600]" preload />
     <div class="absolute inset-0 flex justify-center items-center">
       <div class="flex flex-col place-items-center text-center">
         <h5 class="drop-shadow-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase">

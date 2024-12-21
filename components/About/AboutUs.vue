@@ -1,5 +1,5 @@
 <template>
-  <div class="flex lg:flex-row flex-col">
+  <UContainer class="flex lg:flex-row flex-col">
     <UContainer
       class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none">
       <TitleLarge title="OVER ONS" />
@@ -27,5 +27,5 @@
     <NuxtImg class="lg:block hidden xl:hidden rounded-r-xl" src="about_us/bar.jpg" height="2300" width="1350"
       alt="bar.jpg" />
     <NuxtImg class="xl:block hidden rounded-r-xl" src="about_us/bar.jpg" height="1800" width="1350" />
-  </div>
+  </UContainer>
 </template>
