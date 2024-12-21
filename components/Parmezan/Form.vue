@@ -1,12 +1,5 @@
 <template>
-  <UForm class="space-y-4" name="parmezan" data-netlify="true" netlify-honeypot="bot-field" netlify :schema="schema"
-    :state="state" @submit="onSubmit">
-    <input type="hidden" name="form-name" value="parmezan" />
-    <div style="display:none;">
-      <label>
-        Don’t fill this out: <input name="bot-field" />
-      </label>
-    </div>
+  <UForm class="space-y-4" data-netlify="true" netlify :schema="schema" :state="state" @submit="onSubmit">
     <UFormGroup label="Naam" name="name" required size="xl" :ui="{
       label: {
         base: 'text-lg',
@@ -69,13 +62,14 @@ import type { FormSubmitEvent } from "#ui/types";
 import { reactive } from "vue";
 
 const schema = object({
-  email: string().email("Ongeldig Email Adres").required("Verplicht!"),
   name: string().required("Verplicht!"),
+  email: string().email("Ongeldig Email Adres").required("Verplicht!"),
   phone: string().required("Verplicht!"),
   address: string().required("Verplicht!"),
-  guestCount: number().required("Verplicht!"),
-  day: date().required("Verplicht!"),
-  textarea: string()
+  guestCount: number().positive().integer().required("Verplicht!"),
+  day: date().min(new Date()).required("Verplicht!"),
+  textarea: string().nullable(),
+  formSubmittedOn: date().default(() => new Date())
 });
 
 type Schema = InferType<typeof schema>;
@@ -87,7 +81,8 @@ const state = reactive({
   address: undefined,
   guestCount: undefined,
   day: undefined,
-  textarea: undefined
+  textarea: undefined,
+  formSubmittedOn: undefined
 });
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {

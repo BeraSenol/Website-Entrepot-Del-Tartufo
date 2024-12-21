@@ -1,14 +1,5 @@
 <template>
-  <form :schema="schema" :state="state" class="space-y-8" name="contact-form" data-netlify="true"
-    netlify-honeypot="bot-field">
-    <!-- Netlify requires this hidden input for SSR -->
-    <input type="hidden" name="form-name" value="contact" />
-    <!-- Hidden anti-spam bot field -->
-    <div style="display:none;">
-      <label>
-        Don’t fill this out: <input name="bot-field" />
-      </label>
-    </div>
+  <UForm :schema="schema" :state="state" class="space-y-8" name="contact-form" @submit="onSubmit">
     <UFormGroup label="Naam" name="name" required size="xl" :ui="{
       label: {
         base: 'text-lg',
@@ -34,12 +25,13 @@
     <UButton type="submit" class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 user-button">
       Verzend
     </UButton>
-  </form>
+  </UForm>
 </template>
 
 <script setup lang="ts">
-import { object, string } from "yup";
-import { reactive } from "vue";
+import { object, string, type InferType } from "yup";
+import { reactive, ref } from "vue";
+import type { FormSubmitEvent } from '#ui/types'
 
 
 const schema = object({
@@ -48,10 +40,15 @@ const schema = object({
   textarea: string().required("Verplicht!"),
 });
 
+type Schema = InferType<typeof schema>;
 
 const state = reactive({
-  email: String,
-  name: String,
-  textarea: String,
+  email: undefined,
+  name: undefined,
+  textarea: undefined,
 });
+
+async function onSubmit(event: FormSubmitEvent<Schema>) {
+  console.log(event.data)
+}
 </script>
