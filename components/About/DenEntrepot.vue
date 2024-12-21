@@ -1,11 +1,13 @@
 <template>
-    <UContainer class="flex lg:flex-row flex-col">
-        <NuxtImg class="lg:block hidden xl:hidden rounded-l-xl" src="about_us/outside.jpg" height="2400" width="1350"
-            alt="bar.jpg" />
-        <NuxtImg class="xl:block hidden rounded-l-xl" src="about_us/outside.jpg" height="1800" width="1350"
-            alt="bar.jpg" />
+    <div class="flex lg:flex-row flex-col">
+        <div>
+            <NuxtImg class="lg:block hidden xl:hidden rounded-l-xl" src="about_us/outside.jpg" height="2400"
+                width="1350" alt="bar.jpg" />
+            <NuxtImg class="xl:block hidden rounded-l-xl" src="about_us/outside.jpg" height="1800" width="1350"
+                alt="bar.jpg" />
+        </div>
         <UContainer
-            class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl xl:rounded-r-xl xl:rounded-tl-none">
+            class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl lg:rounded-r-xl lg:rounded-tl-none">
             <TitleLarge title="DEN ENTREPOT" />
             <UContainer class="flex flex-col gap-y-8 py-8 text-left u-leading">
                 <p>
@@ -30,6 +32,8 @@
                 <p class="text-sm md:text-base">Benvenuti! Welkom!</p>
             </div>
         </UContainer>
-        <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/outside.jpg" width="772" height="579" alt="bar.jpg" />
-    </UContainer>
+        <div>
+            <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/outside.jpg" width="772" height="579" alt="bar.jpg" />
+        </div>
+    </div>
 </template>

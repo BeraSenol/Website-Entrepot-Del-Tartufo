@@ -1,7 +1,7 @@
 <template>
-  <UContainer class="flex lg:flex-row flex-col">
+  <div class="flex lg:flex-row flex-col">
     <UContainer
-      class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none">
+      class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
       <TitleLarge title="OVER ONS" />
       <UContainer class="flex flex-col gap-y-8 md:px-6 py-8 text-left u-leading">
         <p>
@@ -23,9 +23,11 @@
         <p class="text-sm md:text-base">Simplicity is the ultimate sophistication</p>
       </div>
     </UContainer>
-    <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/bar.jpg" width="772" height="579" alt="bar.jpg" />
-    <NuxtImg class="lg:block hidden xl:hidden rounded-r-xl" src="about_us/bar.jpg" height="2300" width="1350"
-      alt="bar.jpg" />
-    <NuxtImg class="xl:block hidden rounded-r-xl" src="about_us/bar.jpg" height="1800" width="1350" />
-  </UContainer>
+    <div>
+      <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/bar.jpg" width="772" height="579" alt="bar.jpg" />
+      <NuxtImg class="lg:block hidden xl:hidden rounded-r-xl" src="about_us/bar.jpg" height="2300" width="1350"
+        alt="bar.jpg" />
+      <NuxtImg class="xl:block hidden rounded-r-xl" src="about_us/bar.jpg" height="1800" width="1350" />
+    </div>
+  </div>
 </template>
