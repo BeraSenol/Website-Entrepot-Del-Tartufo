@@ -1,24 +1,24 @@
 <template>
-	<UCarousel class="mx-auto" ref="carouselAutoPlay" :items="data.images" arrows :ui="{
+	<UCarousel class="mx-auto" ref="carouselAutoPlay" arrows :items="data.images" :ui="{
 		item: 'basis-full md:basis-1/3',
 		container: 'rounded-lg'
 	}">
 		<template #default="{ item }">
-			<img :src="item" height="400" draggable="false">
+			<img height="400" draggable="false" :src="item">
 		</template>
 
 		<template #prev="{ onClick, disabled }">
-			<UButton class="mt-4 px-3 bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 user-button"
-				:disabled="disabled" @click="onClick">
+			<UButton class="bg-gray-50 dark:bg-gray-950 border-gray-200 dark:border-gray-800 mt-4 px-2 u-button"
+				@click="onClick" :disabled="disabled">
 				<IconArrowLeft />
-			</UButton class="user-button">
+			</UButton>
 		</template>
 
 		<template #next="{ onClick, disabled }">
-			<UButton class="mt-4 px-3 bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 user-button"
-				:disabled="disabled" @click="onClick">
+			<UButton class="bg-gray-50 dark:bg-gray-950 border-gray-200 dark:border-gray-800 mt-4 px-2 u-button"
+				@click="onClick" :disabled="disabled">
 				<IconArrowRight />
-			</UButton class="user-button">
+			</UButton>
 		</template>
 	</UCarousel>
 </template>
