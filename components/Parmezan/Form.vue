@@ -50,7 +50,7 @@
     }">
       <UTextarea :rows="5" autoresize v-model="state.textarea" placeholder="Reservering, vraag, commentaar, etc." />
     </UFormGroup>
-    <UButton type="submit" class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 user-button">
+    <UButton type="submit" class="u-border-gray-200 u-bg-gray-100 u-button">
       Verzend
     </UButton>
   </UForm>

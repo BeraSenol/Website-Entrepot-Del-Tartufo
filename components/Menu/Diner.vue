@@ -4,7 +4,7 @@
       <TitleAvailability days="Ma / Do / Vr / Za / Zo" />
       <TitleDivider text="DINER" />
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+    <div class="gap-6 grid grid-cols-1 md:grid-cols-2 mb-8">
       <MenuCard :header="data.anti_pasti.header" :subheader="data.anti_pasti.subheader"
         :items="data.anti_pasti.items" />
       <MenuCard :header="data.primi_piatti.header" :subheader="data.primi_piatti.subheader"

@@ -1,7 +1,34 @@
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
+/* Hover Underline Animation  */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(200, 200, 200);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 2px;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+
+
+/* Tailwind Abtraction  */
 @layer components {
   h1,h2,h3,h4,h5,h6 {
     @apply font-bold tracking-wide;
@@ -36,7 +63,7 @@
   }
 
   .u-button {
-    @apply text-lg font-light text-center border-2 transition ease-in-out block px-12 py-1.5 hover:border-gray-400 dark:hover:border-gray-500;
+    @apply text-center font-semibold border-2 transition ease-in-out block px-12 tracking-wide py-1.5 hover:border-gray-400 dark:hover:border-gray-500;
   }
 
   .u-rounded {
@@ -68,9 +95,11 @@
   .u-border-gray-100 {
     @apply border-gray-100 dark:border-gray-900;
   }
+
   .u-border-gray-200 {
     @apply border-gray-200 dark:border-gray-800;
   }
+
   .u-border-gray-300 {
     @apply border-gray-300 dark:border-gray-700;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 dark:bg-gray-950 min-h-screen appearance-none scroll-smooth select-text ">
+  <div class="bg-gray-50 dark:bg-gray-950 min-h-screen select-text appearance-none scroll-smooth">
     <LayoutHeader />
     <NuxtPage class="pt-16" keepalive/>
     <LayoutFooter />
@@ -28,7 +28,7 @@ useHead({
 <style>
 .slide-left-enter-active,
 .slide-left-leave-active {
-  transition: all 0.15s;
+  transition: all 0.2s;
 }
 
 .slide-left-enter-from {
