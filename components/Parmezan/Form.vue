@@ -1,7 +1,7 @@
 <template>
-  <UForm class="space-y-4" name="contact" data-netlify="true" netlify-honeypot="bot-field" netlify :schema="schema"
+  <UForm class="space-y-4" name="parmezan" data-netlify="true" netlify-honeypot="bot-field" netlify :schema="schema"
     :state="state" @submit="onSubmit">
-    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="form-name" value="parmezan" />
     <div style="display:none;">
       <label>
         Don’t fill this out: <input name="bot-field" />
