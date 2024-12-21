@@ -39,9 +39,9 @@
 			</div>
 		</UContainer>
 		<UContainer class="flex justify-center">
-			<p class="text-sm">Made by Bera Senol Using Nuxt.js&nbsp;</p>
+			<p class="text-sm">Made by <NuxtLink href="https://github.com/BeraSenol/">Bera Senol</NuxtLink> Using
+				Nuxt.js&nbsp;</p>
 			<IconNuxt />
 		</UContainer>
 	</div>
 </template>
-

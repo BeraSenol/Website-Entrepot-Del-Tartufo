@@ -1,10 +1,10 @@
 <template>
-    <div class="flex lg:flex-row flex-col">
+    <div class="flex lg:flex-row flex-col ltr">
         <div>
             <NuxtImg class="lg:block hidden xl:hidden rounded-l-xl" src="about_us/outside.jpg" height="2400"
-                width="1350" alt="bar.jpg" />
+                width="1350" alt="outside.jpg" />
             <NuxtImg class="xl:block hidden rounded-l-xl" src="about_us/outside.jpg" height="1800" width="1350"
-                alt="bar.jpg" />
+                alt="outside.jpg" />
         </div>
         <UContainer
             class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl lg:rounded-r-xl lg:rounded-tl-none">
@@ -33,7 +33,8 @@
             </div>
         </UContainer>
         <div>
-            <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/outside.jpg" width="772" height="579" alt="bar.jpg" />
+            <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/outside.jpg" width="772" height="579"
+                alt="outside.jpg" />
         </div>
     </div>
 </template>

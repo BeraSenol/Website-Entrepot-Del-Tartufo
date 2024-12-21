@@ -1,5 +1,5 @@
 <template>
-  <UCard class="u-border-2 u-border-gray-200">
+  <UCard class="u-border-gray-200 u-border">
     <template #header>
       <h5 class="text-center">{{ header }}</h5>
       <h6 class="font-light text-center" v-if="subheader">{{ subheader }}</h6>
