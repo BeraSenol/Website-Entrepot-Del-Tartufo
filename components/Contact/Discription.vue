@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 border-2 user-rounded-xl py-12">
+  <div class="u-border-gray-200 u-bg-gray-100 py-12 u-border u-rounded">
     <TitleLarge title="CONTACT" />
-    <UContainer class="user-leading-8 mx-8 flex flex-col gap-y-6">
+    <UContainer class="flex flex-col gap-y-6 mx-8 u-leading">
       <p>
         Entrepot del Tartufo ligt in hartje Hasselt, op slechts enkele meters van het Dusartplein en de Zuivelmarkt!
         Parking Dusartplein en parking TT bevinden zich op 5m wandelafstand.

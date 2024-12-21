@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col lg:flex-row">
+  <div class="flex lg:flex-row flex-col">
     <UContainer
-      class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none flex flex-col justify-evenly border-2 py-12">
+      class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-12 u-border rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none">
       <TitleLarge title="OVER ONS" />
-      <UContainer class="md:px-6 flex flex-col text-left gap-y-8 pb-12 u-leading">
+      <UContainer class="flex flex-col gap-y-8 md:px-6 pb-12 text-left u-leading">
         <p>
           Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse keuken naar hartje Hasselt. Nicolino
           Salvatore, alom gewaardeerd als chef van de vroegere Mario's Trattoria bereidt klassieke en minder klassieke
@@ -24,8 +24,8 @@
       </div>
     </UContainer>
     <NuxtImg class="lg:hidden rounded-b-xl" src="about_us/bar.jpg" width="772" height="579" alt="bar.jpg" />
-    <NuxtImg class="hidden lg:block xl:hidden rounded-r-xl" src="about_us/bar.jpg" height="2300" width="1350"
+    <NuxtImg class="lg:block hidden xl:hidden rounded-r-xl" src="about_us/bar.jpg" height="2300" width="1350"
       alt="bar.jpg" />
-    <NuxtImg class="hidden xl:block rounded-r-xl" src="about_us/bar.jpg" height="1800" width="1350" />
+    <NuxtImg class="xl:block hidden rounded-r-xl" src="about_us/bar.jpg" height="1800" width="1350" />
   </div>
 </template>

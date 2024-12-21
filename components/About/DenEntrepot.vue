@@ -1,13 +1,13 @@
 <template>
-    <div class="flex flex-col lg:flex-row">
-        <NuxtImg class="hidden lg:block xl:hidden rounded-l-xl" src="about_us/outside.jpg" height="2400" width="1350"
+    <div class="flex lg:flex-row flex-col">
+        <NuxtImg class="lg:block hidden xl:hidden rounded-l-xl" src="about_us/outside.jpg" height="2400" width="1350"
             alt="bar.jpg" />
-        <NuxtImg class="hidden xl:block rounded-l-xl" src="about_us/outside.jpg" height="1800" width="1350"
+        <NuxtImg class="xl:block hidden rounded-l-xl" src="about_us/outside.jpg" height="1800" width="1350"
             alt="bar.jpg" />
         <UContainer
-            class="bg-gray-100 dark:bg-gray-900 border-gray-200 dark:border-gray-800 rounded-t-xl xl:rounded-r-xl xl:rounded-tl-none border-2 flex flex-col justify-evenly py-12">
+            class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-12 u-border rounded-t-xl xl:rounded-r-xl xl:rounded-tl-none">
             <TitleLarge title="DEN ENTREPOT" />
-            <UContainer class="flex flex-col text-left gap-y-8 pb-12 u-leading">
+            <UContainer class="flex flex-col gap-y-8 pb-12 text-left u-leading">
                 <p>
                     <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en
                     achter de gevel van elk huis en elk gebouw schuilt een verhaal… En waar
