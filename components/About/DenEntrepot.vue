@@ -5,9 +5,9 @@
         <NuxtImg class="xl:block hidden rounded-l-xl" src="about_us/outside.jpg" height="1800" width="1350"
             alt="bar.jpg" />
         <UContainer
-            class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-12 u-border rounded-t-xl xl:rounded-r-xl xl:rounded-tl-none">
+            class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl xl:rounded-r-xl xl:rounded-tl-none">
             <TitleLarge title="DEN ENTREPOT" />
-            <UContainer class="flex flex-col gap-y-8 pb-12 text-left u-leading">
+            <UContainer class="flex flex-col gap-y-8 py-8 text-left u-leading">
                 <p>
                     <span class="font-bold">Hasselt</span> heeft een rijke geschiedenis en
                     achter de gevel van elk huis en elk gebouw schuilt een verhaal… En waar

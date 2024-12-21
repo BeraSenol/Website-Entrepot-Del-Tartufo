@@ -1,9 +1,9 @@
 <template>
   <div class="flex lg:flex-row flex-col">
     <UContainer
-      class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-12 u-border rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none">
+      class="flex flex-col justify-evenly u-border-gray-200 u-bg-gray-100 py-8 u-border rounded-t-xl xl:rounded-l-xl xl:rounded-tr-none">
       <TitleLarge title="OVER ONS" />
-      <UContainer class="flex flex-col gap-y-8 md:px-6 pb-12 text-left u-leading">
+      <UContainer class="flex flex-col gap-y-8 md:px-6 py-8 text-left u-leading">
         <p>
           Restaurant Entrepot del Tartufo brengt de puurheid van de Italiaanse keuken naar hartje Hasselt. Nicolino
           Salvatore, alom gewaardeerd als chef van de vroegere Mario's Trattoria bereidt klassieke en minder klassieke

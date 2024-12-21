@@ -3,7 +3,7 @@
 		<UContainer class="flex md:flex-row flex-col gap-y-12 py-8 text-center">
 			<div class="flex flex-col gap-y-1 px-2 basis-1/3">
 				<NuxtLink to="/">
-					<h5>ENTREPOT DEL TARTUFO</h5>
+					<h5 class="hover-underline-animation">ENTREPOT DEL TARTUFO</h5>
 				</NuxtLink>
 				<p class="italic">Italian food with a touch of truffle</p>
 				<div class="flex justify-center">
@@ -13,7 +13,7 @@
 			</div>
 			<div class="flex flex-col gap-y-1 px-2 basis-1/3">
 				<NuxtLink to="/contact">
-					<h5>CONTACT</h5>
+					<h5 class="hover-underline-animation">CONTACT</h5>
 				</NuxtLink>
 				<NuxtLink href="https://maps.app.goo.gl/i2vfzT5QpC8Rm1QT8" target="_blank">
 					<p class="hover-underline-animation">Hemelrijk 22 / 3500 Hasselt</p>
