@@ -6,7 +6,6 @@
         Entrepot del Tartufo ligt in hartje Hasselt, op slechts enkele meters van het Dusartplein en de Zuivelmarkt!
         Parking Dusartplein en parking TT bevinden zich op 5m wandelafstand.
       </p>
-      <ContactFAQ/>
     </UContainer>
   </UContainer>
 </template>

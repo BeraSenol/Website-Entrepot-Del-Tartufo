@@ -2,6 +2,7 @@
   <UContainer class="flex flex-col gap-y-12">
     <LandingImage :image="data.contact.image" :title="data.contact.title" :subtitle="data.contact.subtitle" />
     <ContactDiscription />
+    <ContactFAQ/>
     <TruffleDivider />
     <ContactForm />
     <TruffleDivider />
