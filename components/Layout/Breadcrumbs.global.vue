@@ -1,7 +1,7 @@
 <template>
   <UBreadcrumb :links="visitedLinks" class="py-2 truncate" :ui="{ active: 'text-gray-950 dark:text-gray-50' }" >
     <template #default="{ link, isActive, index }">
-      <p class="text-xs sm:text-lg font-normal transition-all tracking-wider italic" :color="isActive ? 'primary' : 'gray'">
+      <p class="text-sm md:text-base font-normal transition-all tracking-wider italic" :color="isActive ? 'primary' : 'gray'">
         {{ link.label }}
       </p>
     </template>
