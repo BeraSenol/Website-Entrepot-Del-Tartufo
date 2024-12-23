@@ -1,7 +1,7 @@
 <template>
   <div>
     <LayoutBreadcrumbs/>
-    <div class="relative u-border-gray-200 mt-0 md:mt-6 u-border u-rounded">
+    <div class="relative u-border-gray-200 u-border u-rounded">
       <NuxtImg class="md:block hidden u-rounded" width="1212" height="520" alt="landing_image" :src="image"
         :placeholder="[1212, 520]" preload />
       <NuxtImg class="md:hidden u-rounded" width="800" height="700" alt="landing_image" :src="image"

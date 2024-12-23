@@ -1,5 +1,11 @@
 <template>
-  <UBreadcrumb :links="visitedLinks" class="py-2 block md:hidden" :ui="{ active: 'text-gray-950 dark:text-gray-50' }" />
+  <UBreadcrumb :links="visitedLinks" class="py-2" :ui="{ active: 'text-gray-950 dark:text-gray-50' }" >
+    <template #default="{ link, isActive, index }">
+      <p class="text-base sm:text-lg font-normal transition-all tracking-wider italic" :color="isActive ? 'primary' : 'gray'">
+        {{ link.label }}
+      </p>
+    </template>
+  </UBreadcrumb>
 </template>
 
 <script lang="ts" setup>
@@ -22,7 +28,7 @@ watch(
     const currentPath = route.path;
     const paths = route.path.split("/").filter(Boolean);
     const currentBreadcrumb: Breadcrumb = {
-      label: decodeURIComponent(paths.at(-1) || "Home").replace(/-/g, " ")
+      label: decodeURIComponent(paths.at(-1) || "Entrepot").replace(/-/g, " ")
         .replace(/\b\w/g, (char) => char.toUpperCase()),
       to: currentPath,
     };
