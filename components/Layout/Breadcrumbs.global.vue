@@ -1,7 +1,7 @@
 <template>
-  <DevOnly>
-    <UBreadcrumb :links="visitedLinks" class="pt-2" />
-  </DevOnly>
+  <div>
+    <UBreadcrumb :links="visitedLinks" class="py-2 md:hidden" :ui="{ active: 'text-gray-950 dark:text-gray-50' }" />
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -14,7 +14,7 @@ const visitedLinks: Ref<Breadcrumb[]> = useState<Breadcrumb[]>("visitedLinks", (
 
 interface Breadcrumb {
   label: string;
-  path: string;
+  to: string;
 }
 
 // Watch for route changes to update visited links
@@ -26,11 +26,11 @@ watch(
     const currentBreadcrumb: Breadcrumb = {
       label: decodeURIComponent(paths.at(-1) || "Home").replace(/-/g, " ")
         .replace(/\b\w/g, (char) => char.toUpperCase()),
-      path: currentPath,
+      to: currentPath,
     };
     // Check if the current link already exists in visited links
     const existingIndex = visitedLinks.value.findIndex(
-      (link) => link.path === currentPath
+      (link) => link.to === currentPath
     );
     if (existingIndex !== -1) {
       // Reset breadcrumbs up to the repeated link
