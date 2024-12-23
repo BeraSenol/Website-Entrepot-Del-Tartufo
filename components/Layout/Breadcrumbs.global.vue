@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <UBreadcrumb :links="visitedLinks" class="py-2 md:hidden" :ui="{ active: 'text-gray-950 dark:text-gray-50' }" />
-  </div>
+  <UBreadcrumb :links="visitedLinks" class="py-2 block md:hidden" :ui="{ active: 'text-gray-950 dark:text-gray-50' }" />
 </template>
 
 <script lang="ts" setup>
