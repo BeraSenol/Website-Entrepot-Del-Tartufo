@@ -6,7 +6,7 @@
           before: 'hover:before:bg-gray-50 dark:hover:before:bg-gray-950'
         }">
           <template #default="{ link }">
-            <h6 class="relative font-semibold text-lg md:text-xl lg:text-2xl hover-underline-animation transition-all">
+            <h6 class="relative font-semibold text-lg md:text-xl lg:text-2xl hover-underline-animation transition-all px-0 mx-0">
               {{
                 link.label }}</h6>
           </template>

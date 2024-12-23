@@ -1,5 +1,5 @@
 <template>
-  <p class="mb-0.5 text-center tracking-widest">{{ days }}</p>
+  <p class="mb-0.5 text-sm md:text-base text-center tracking-widest">{{ days }}</p>
 </template>
 
 <script lang="ts">

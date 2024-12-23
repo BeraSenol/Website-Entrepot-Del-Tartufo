@@ -9,10 +9,10 @@
       <p class="text-right italic">€40</p>
     </UContainer>
     <UContainer class="grid md:grid-cols-5 grid-rows-2 w-full max-w-2xl">
-      <UButton to="/menu" class="block u-border-gray-200 col-span-2 u-bg-gray-100 text-lg u-button">
+      <UButton to="/menu" class="block u-border-gray-200 col-span-2 u-bg-gray-100 px-0 md:px-12 text-lg u-button">
         Diner Menu
       </UButton>
-      <UButton to="/contact" class="block u-border-gray-200 col-span-2 col-start-4 u-bg-gray-100 text-lg u-button">
+      <UButton to="/contact" class="block u-border-gray-200 col-span-2 col-start-4 u-bg-gray-100 px-0 md:px-12 text-lg u-button">
         Reserveer
       </UButton>
     </UContainer>

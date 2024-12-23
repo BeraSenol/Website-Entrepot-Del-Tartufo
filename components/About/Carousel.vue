@@ -8,14 +8,14 @@
 		</template>
 
 		<template #prev="{ onClick, disabled }">
-			<UButton class="u-border-gray-200 u-bg-gray-950 mt-4 px-2 u-border u-button" @click="onClick"
+			<UButton class="u-border-gray-200 u-bg-gray-950 mt-4 px-3 u-border u-button" @click="onClick"
 				:disabled="disabled">
 				<IconArrowLeft />
 			</UButton>
 		</template>
 
 		<template #next="{ onClick, disabled }">
-			<UButton class="u-border-gray-200 u-bg-gray-950 mt-4 px-2 u-border u-button" @click="onClick"
+			<UButton class="u-border-gray-200 u-bg-gray-950 mt-4 px-3 u-border u-button" @click="onClick"
 				:disabled="disabled">
 				<IconArrowRight />
 			</UButton>

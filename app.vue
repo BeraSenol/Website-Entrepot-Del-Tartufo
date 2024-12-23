@@ -1,12 +1,14 @@
 <template>
   <div class="bg-gray-50 dark:bg-gray-950 min-h-screen select-text appearance-none scroll-smooth">
     <LayoutHeader />
-    <NuxtPage class="pt-16" keepalive/>
+    <NuxtPage class="pt-16" keepalive />
     <LayoutFooter />
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { useSeoMeta, useHead } from 'nuxt/app';
+
 useSeoMeta({
   twitterCard: 'summary'
 })

@@ -4,7 +4,7 @@
     <HomeWelcome />
     <HomeLunchAtEntrepot />
     <MenuLunch />
-    <MenuVegetarian/>
+    <MenuVegetarian />
     <TruffleDivider />
     <HomeParmigianoAtCasa />
     <ParmezanMenu />
@@ -14,9 +14,14 @@
   </UContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { useFetch, useSeoMeta } from 'nuxt/app';
+import { useRoute } from 'vue-router';
+
+
 const route = useRoute()
 const { data } = await useFetch('/api/seo')
+
 
 useSeoMeta({
   title: data.value.home.title,
