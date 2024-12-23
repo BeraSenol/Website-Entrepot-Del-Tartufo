@@ -28,7 +28,7 @@
           <NuxtImg src="logo/white.png" height="33" class="mx-auto" preload />
         </template>
         <UContainer class="flex flex-col">
-          <UVerticalNavigation :links="links" :ui="{
+          <UVerticalNavigation :links="links" @click="isOpen = false" :ui="{
             inactive: 'hover:before:bg-gray-100 dark:hover:before:bg-gray-900',
             divider: {
               wrapper: {
@@ -37,8 +37,8 @@
             },
             active: 'before:bg-gray-100 dark:before:bg-gray-900',
           }">
-            <template #default="{ link }">
-              <span class="relative font-light" @click="isOpen = false">
+            <template #default="{ link }" >
+              <span class="relative font-light" >
                 <h6>{{ link.label }}</h6>
               </span>
             </template>
