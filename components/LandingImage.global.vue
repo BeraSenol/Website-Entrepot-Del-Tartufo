@@ -2,9 +2,9 @@
   <div>
     <LayoutBreadcrumbs/>
     <div class="relative u-border-gray-200 u-border u-rounded">
-      <NuxtImg class="md:block hidden u-rounded" width="1212" height="520" alt="landing_image" :src="image"
+      <NuxtImg class="lg:block hidden u-rounded" width="1212" height="700" alt="landing_image" :src="image"
         :placeholder="[1212, 520]" preload />
-      <NuxtImg class="md:hidden u-rounded" width="800" height="700" alt="landing_image" :src="image"
+      <NuxtImg class="lg:hidden u-rounded" width="800" height="600" alt="landing_image" :src="image"
         :placeholder="[800, 700]" preload />
       <div class="absolute inset-0 flex justify-center items-center">
         <div class="flex flex-col place-items-center text-center">
